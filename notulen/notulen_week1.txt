@@ -6,9 +6,10 @@ wouter, daan, kevin, koen, andrew, daniel
 
 Informatie:
 De software die wordt gebruikt tijdens het project:
-- Git (bestanden delen & versiebeheer)
-- Lyx (tekstverwerking)
+- Git met GitHub (bestanden delen & versiebeheer)
+- Lyx (tekstverwerking met LaTeX)
 - Blackboard (bestanden inleveren)
+- Telegram (communicatie intern)
 - Email (communicatie extern)
 
 Taakverdeling:
