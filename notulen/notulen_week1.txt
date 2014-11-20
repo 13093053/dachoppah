@@ -5,7 +5,7 @@ Aanwezigen:
 wouter, daan, kevin, koen, andrew, daniel
 
 Informatie:
-De software die wordt gebruikt tijdens het project:
+De software en andere tools die worden gebruikt tijdens het project:
 - Git met GitHub (bestanden delen & versiebeheer)
 - Lyx (tekstverwerking met LaTeX)
 - Blackboard (bestanden inleveren)
