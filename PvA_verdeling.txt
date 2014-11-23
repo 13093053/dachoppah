@@ -1,10 +1,10 @@
-Achtergronden:			[insert name here]
+Achtergronden:			K.J.H.W.X.Oei
 Resultaten:				[insert name here]
 Projectactiviteiten:	[insert name here]
 Grenzen:				[insert name here]
-Tussenresultaten:		[D.R.Conijn]
+Tussenresultaten:		D.R.Conijn
 Kwaliteitsbewaking:		[insert name here]
-Organisatie:			[insert name here]
-Planning:				[D.R.Conijn]
+Organisatie:			K.J.H.W.X.Oei
+Planning:				D.R.Conijn
 Kosten & Baten:			[insert name here]
 Risico's:				[insert name here]
