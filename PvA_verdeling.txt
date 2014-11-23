@@ -1,10 +1,10 @@
 Achtergronden:			K.J.H.W.X.Oei
 Resultaten:			Martoredjo D.J.
-Projectactiviteiten:	[insert name here]
-Grenzen:				[insert name here]
+Projectactiviteiten:	        [insert name here]
+Grenzen:	   		[insert name here]
 Tussenresultaten:		D.R.Conijn
 Kwaliteitsbewaking:		Martoredjo D.J.
 Organisatie:			K.J.H.W.X.Oei
-Planning:				D.R.Conijn
-Kosten & Baten:			[insert name here]
-Risico's:				[insert name here]
+Planning:			D.R.Conijn
+Kosten & Baten:	 		A.H.Lau
+Risico's:			A.H.Lau
