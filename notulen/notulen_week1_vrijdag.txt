@@ -1,0 +1,16 @@
+Notulen week1
+Datum: 21-nov-2014
+
+Aanwezigen:
+wouter, daan, kevin, koen, andrew, daniel
+
+Informatie:
+Op 28 november moet er een tussenverslag worden ingeleverd
+
+Actiepunten:
+Projectboek doorlezen (dit weekend - allen)
+Git programma installeren en min. 1 commit pp. (dit weekend - allen)
+Checklist op repo (dit weekend - Koen)
+PvA verdeling (dit weekend - allen)
+
+

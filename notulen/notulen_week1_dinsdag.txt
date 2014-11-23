@@ -1,0 +1,26 @@
+Notulen week1
+Datum: 18-nov-2014
+
+Aanwezigen:
+wouter, daan, kevin, koen, andrew, daniel
+
+Informatie:
+De software en andere tools die worden gebruikt tijdens het project:
+- Git met GitHub (bestanden delen & versiebeheer)
+- Lyx (tekstverwerking met LaTeX)
+- Blackboard (bestanden inleveren)
+- Telegram (communicatie intern)
+- Email (communicatie extern)
+
+Taakverdeling:
+- Groepsleider & contactpersoon extern: Andrew
+- Notulen: Koen
+
+Actiepunten:
+- Projectcontract opstellen
+- PVA schrijven (kort en leesbaar)
+- Boek rapport over rapporteren aanschaffen
+
+Volgende meetings:
+- Vrijdag 12:00 (Vergadering)
+- Maandag 15:00 (Vergadering met dhr. H. Ferchani)
