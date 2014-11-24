@@ -44,18 +44,22 @@ Optie B:
 	De volgende specificaties zijn voor het bedradingsplan van optie A:
 	Voor normale PC's is er een kabel nodig die geschikt is voor 
 	Berekening voor in bijlage:
-		230v AC -> 160v DC (effectief)
+		230v AC
 		300 * 5 = 1500 watt
 		Tafels staan minimaal 1,5m uit elkaar (examennorm)
 
-	(~)----[R1]--+-[R1]--+-[R1]--+
+		230v					210v
+		 |                       |
+	( )--+-[R1]--+-[R1]--+-[R1]--+
 			 	 |       |       |
-			    [R2]    [R2]    [R2]
 			     |       |       |
 			   [Load]  [Load]  [Load]
 			     |       |       |
-	(~)----[R1]--+-[R1]--+-[R1]--+
+	( )----[R1]--+-[R1]--+-[R1]--+
 
-		Wat is teveel spanningsval??
+		20V spanningsval is acceptabel
+		De load van een normale PC's kan worden vergeleken met een 176 Ohm weerstand
+		(...)
+
 
 ==Bekabeling voor LAN==
