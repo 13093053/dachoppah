@@ -1,10 +1,10 @@
-Achtergronden:			[insert name here]
-Resultaten:				[insert name here]
-Projectactiviteiten:	[insert name here]
-Grenzen:				[insert name here]
-Tussenresultaten:		[insert name here]
-Kwaliteitsbewaking:		[insert name here]
-Organisatie:			[insert name here]
-Planning:				[insert name here]
-Kosten & Baten:			[insert name here]
-Risico's:				[insert name here]
+Achtergronden:			K.J.H.W.X.Oei
+Resultaten:			Martoredjo D.J.
+Projectactiviteiten:	        W.F. Boogert
+Grenzen:	   		W.F. Boogert
+Tussenresultaten:		D.R.Conijn
+Kwaliteitsbewaking:		Martoredjo D.J.
+Organisatie:			K.J.H.W.X.Oei
+Planning:			D.R.Conijn
+Kosten & Baten:	 		A.H.Lau
+Risico's:			A.H.Lau
