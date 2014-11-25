@@ -6,16 +6,7 @@ We houden dan nog 15m * 10m over.
 
 12 rijen van 8 computers, 1 rij van 4 computers.
 
-
-De weerstand van de kabel is 15,9068 ohm/km  (bron:http://www.draka.nl/producten/printDatasheet.asp?hoofdstuk=35)
-Heen en terug is dat dus 31,8136 ohm/km
-
-De spanningsval over de draad zal heel weinig zijn. 
-
-
 Elke computer trekt maximaal 300/230 = 1,3A
-
-Voor een standaard soepele kabel van 1,5^2 is 15,5A toelaatbaar.
 
 De totale stroom van 100 pc's is maximaal 1,3 * 100 = 130A
 
@@ -26,3 +17,8 @@ Als de groepen op 35A zijn gezekerd kunnen er maximaal 35/1,3 = 26 computers op 
 
 Hieruit kiezen we een kabel. Afhankelijk van de stroom die er gaat lopen: http://www.draka.nl/producten/datasheet.asp?MofBoomBool=&targetpage=&boom=5000&hoofdstuk=63
 
+We plaatsen 4 computers per kabel. Daar loopt dan maximaal 4*1.3 = 5,2A. Een kabel van 0,75mm^2 voldoet. Bijvoorbeeld deze:http://www.draka.nl/producten/printartikel.asp?boom=5000&hoofdstuk=63&artnr=103896
+
+De kabel wordt 5 meter lang omdat het lokaal 10 meter breed is, en er 8 computers per rij staan. 
+
+De weerstand van dit stuk kabel is 30.1 ohm/km. Dit is voor 5 meter(heen en terug) 30,1/1000*5*2 = 0,1505 ohm. Dit is verwaarloosbaar bij deze belastingen.
