@@ -7,5 +7,10 @@ We houden dan nog 15m * 10m over.
 12 rijen van 8 computers, 1 rij van 4 computers.
 
 
+De weerstand van de kabel is 15,9068 ohm/km  (bron:http://www.draka.nl/producten/printDatasheet.asp?hoofdstuk=35)
+Heen en terug is dat dus 31,8136 ohm/km
+
+De spanningsval over de draad zal heel weinig zijn. 
+
 
 
