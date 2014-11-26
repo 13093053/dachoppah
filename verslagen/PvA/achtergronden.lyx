@@ -1,0 +1,168 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Achtergronden
+\end_layout
+
+\begin_layout Standard
+M2Desk is een innovatief bedrijf bekend om haar unieke 'M2Desk-Classic',
+ een multimedia computer die volledig geïntegreerd is in het tafelblad.
+ M2Desk wilt graag een klaslokaal (lokaal 0.126) in De Haagse Hogeschool
+ te Delft laten inrichten voor digitaaltoetsen, en heeft de opdracht gegeven
+ onderzoek te doen naar de mogelijkheden voor het aansluiten van 100 PC's
+ op 230V wisselspanning waarbij de netwerkverbinding niet via Wi-Fi gaat.
+ Hetzelfde wordt gevraagd voor 350V gelijkspanning.
+ Na het onderzoek ontwerpt men zogenaamde flyback converters voor het aansluiten
+ van de computers.
+ Hierbij is het de bedoeling dat ook onderzocht wordt hoe de computers worden
+ aangesloten op deze converters.
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+De opdrachtgever, Dennis Luiten (directeur M2Desk), geeft in naam van M2Desk
+ de opdracht.
+ De opdrachtnemers zijn groepen van 6 tweedejaars Elektrotechniekstudenten.
+ Onze groep bestaat uit de volgende leden:
+\end_layout
+
+\begin_layout Itemize
+Andrew Lau
+\end_layout
+
+\begin_layout Itemize
+Daan Conijn
+\end_layout
+
+\begin_layout Itemize
+Daniel Martoredjo
+\end_layout
+
+\begin_layout Itemize
+Kevin Oei
+\end_layout
+
+\begin_layout Itemize
+Koen van Vliet
+\end_layout
+
+\begin_layout Itemize
+Wouter Boogert
+\end_layout
+
+\begin_layout Standard
+De projectgroep wordt begeleid door een team (gast)docenten en de directeur
+ van M2Desk:
+\end_layout
+
+\begin_layout Itemize
+Johan Woudstra (Projectcoördinator)
+\end_layout
+
+\begin_layout Itemize
+Matthijs Ensing (Projectcoach 1)
+\end_layout
+
+\begin_layout Itemize
+Peter van Duijsen (Projectcoach 2)
+\end_layout
+
+\begin_layout Itemize
+Frank Oldenburg (Technische begeleider)
+\end_layout
+
+\begin_layout Itemize
+Harrie Olsthoorn (Technische begeleider)
+\end_layout
+
+\begin_layout Itemize
+Dennis Luiten (Opdrachtgever)
+\end_layout
+
+\begin_layout Itemize
+Hoesain Ferchani (Docent communicatieve vaardigheden)
+\end_layout
+
+\begin_layout Standard
+Andrew Lau neemt de rol aan van projectleider, maar alle leden zijn eindverantwo
+ordelijk voor het eindresultaat.
+ Meerdere partijen hebben baat bij dit eindresultaat.
+ Een succesvolle afronding van het project kan M2Desk helpen bij het realiseren
+ van de inrichting van lokaal 0.126.
+ De effecten van deze inrichting zullen van toepassing zijn op zowel studenten
+ als de schoolinstelling zelf.
+\end_layout
+
+\end_body
+\end_document
