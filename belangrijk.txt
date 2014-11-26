@@ -1,0 +1,1 @@
+Git is case-sensitive. Gebruik geen hoofdletters in filenames of mappen!
