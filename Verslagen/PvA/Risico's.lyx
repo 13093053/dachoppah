@@ -1,0 +1,139 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Risico's
+\end_layout
+
+\begin_layout Standard
+Er zijn risico's verbonden aan het project PROENT.
+ De risico's vormen een bedreiging bij het succesvol afronden van het project.
+ Er kan een onderscheid gemaakt worden tussen interne risico's en externe
+ risico's.
+\end_layout
+
+\begin_layout Standard
+Enkele interne risico's die het project bedreigen zijn:
+\end_layout
+
+\begin_layout Itemize
+Een projectleider die ongeschikt is;
+\end_layout
+
+\begin_layout Itemize
+Projectleden die geen ervaring hebben;
+\end_layout
+
+\begin_layout Itemize
+Projectleden die onvoldoende kennis bezitten;
+\end_layout
+
+\begin_layout Itemize
+Projectleden die niet goed met elkaar kunnen omgaan;
+\end_layout
+
+\begin_layout Itemize
+Weining of geen motivatie bij de projectleden en projectleider;
+\end_layout
+
+\begin_layout Itemize
+De haalbaarheid van het project;
+\end_layout
+
+\begin_layout Standard
+Enkele externe risico's die het project bedreigen zijn:
+\end_layout
+
+\begin_layout Itemize
+Werkzaamheden en storingen; Op sommige dagen zijn er werkzaamheden op de
+ treinsporen of op de snelwegen.
+ Hierdoor kunnen de projectleden en de projectleider soms laat aanwezig
+ zijn bij een vergadering.
+ Zelfs kunnen de projectleden en projectleider niet aanwezig zijn.
+\end_layout
+
+\begin_layout Itemize
+Onduidelijke projectgrenzen, afbakening.
+\end_layout
+
+\begin_layout Itemize
+Een plotselinge verandering in de samenstelling van het projectgroep;
+\end_layout
+
+\begin_layout Itemize
+Colleges die wegvallen; Het vak 'Vermogenselektronica' loopt parallel aan
+ het project 'PROENT'.
+ Als de colleges van vermogenelektronica wegvallen, kan het project niet
+ goed verlopen.
+\end_layout
+
+\end_body
+\end_document
