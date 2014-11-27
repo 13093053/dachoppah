@@ -25,6 +25,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -53,8 +54,8 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip bigskip
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -78,19 +79,18 @@ M2Desk is een innovatief bedrijf bekend om haar unieke 'M2Desk-Classic',
  M2Desk wilt graag een klaslokaal (lokaal 0.126) in De Haagse Hogeschool
  te Delft laten inrichten voor digitaaltoetsen, en heeft de opdracht gegeven
  onderzoek te doen naar de mogelijkheden voor het aansluiten van 100 PC's
- op 230V wisselspanning waarbij de netwerkverbinding niet via Wi-Fi gaat.
- Hetzelfde wordt gevraagd voor 350V gelijkspanning.
+ op 230V wisselspanning.
+ Voor zowel normale PC's als M2Desk-Classic PC's wordt dit gevraagd.
+ Hierbij is het de bedoeling een oplossing te gebruiken waarbij de netwerkverbin
+ding niet via Wi-Fi gaat.
+ Hetzelfde wordt gevraagd voor het aansluiten op 350V gelijkspanning.
  Na het onderzoek ontwerpt men zogenaamde flyback converters voor het aansluiten
  van de computers.
  Hierbij is het de bedoeling dat ook onderzocht wordt hoe de computers worden
  aangesloten op deze converters.
-\begin_inset Newline linebreak
-\end_inset
+\end_layout
 
-
-\begin_inset Newline linebreak
-\end_inset
-
+\begin_layout Standard
 De opdrachtgever, Dennis Luiten (directeur M2Desk), geeft in naam van M2Desk
  de opdracht.
  De opdrachtnemers zijn groepen van 6 tweedejaars Elektrotechniekstudenten.
@@ -122,7 +122,7 @@ Wouter Boogert
 \end_layout
 
 \begin_layout Standard
-De projectgroep wordt begeleid door een team (gast)docenten en de directeur
+De projectgroep wordt begeleid door een team van (gast)docenten en de directeur
  van M2Desk:
 \end_layout
 
@@ -155,13 +155,15 @@ Hoesain Ferchani (Docent communicatieve vaardigheden)
 \end_layout
 
 \begin_layout Standard
-Andrew Lau neemt de rol aan van projectleider, maar alle leden zijn eindverantwo
-ordelijk voor het eindresultaat.
+Andrew Lau neemt de rol aan van projectleider, maar alle leden zijn uiteindelijk
+ verantwoordelijk voor het eindresultaat.
  Meerdere partijen hebben baat bij dit eindresultaat.
  Een succesvolle afronding van het project kan M2Desk helpen bij het realiseren
  van de inrichting van lokaal 0.126.
  De effecten van deze inrichting zullen van toepassing zijn op zowel studenten
- als de schoolinstelling zelf.
+ (mogelijkheid om digitale toetsen af te leggen) als de schoolinstelling
+ zelf (de mogelijkheid om gemakkelijk zowel digitale als schriftelijke toetsen
+ af te laten leggen).
 \end_layout
 
 \end_body
