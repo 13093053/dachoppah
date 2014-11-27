@@ -5,7 +5,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language dutch
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -25,6 +25,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -55,7 +56,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language polish
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -68,20 +69,36 @@
 
 \begin_body
 
+\begin_layout Section
+Planning
+\end_layout
+
 \begin_layout Standard
 Plannen is een belangrijk onderdeel van een project.
  Als er geen planning is dan kan dit zorgen voor vertraging of onenigheid
  tussen groepsleden.
  Daarom worden de activiteiten gepland zodat er doelgericht en succesvol
  gewerkt kan worden.
-\end_layout
-
-\begin_layout Standard
-In onderstaande tabel en figuren is een overzicht van alle activiteiten
+ In onderstaande tabel en figuren is een overzicht van alle activiteiten
  van het project PRODIG.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Activiteiten
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="13" columns="4">
 <features rotate="0" tabularvalignment="middle">
@@ -590,7 +607,32 @@ J / K
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Planning
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="14" columns="12">
 <features rotate="0" tabularvalignment="middle">
@@ -2147,6 +2189,15 @@ X
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

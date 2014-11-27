@@ -25,6 +25,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -53,8 +54,8 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -68,339 +69,277 @@
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Section
 Projectactiviteiten
 \end_layout
 
 \begin_layout Standard
-In het project “PROENT” worden enkele projectactiviteiten uitgevoerd om
+In het project "PROENT" worden enkele projectactiviteiten uitgevoerd om
  tot de tussen- en eindresultaten te komen.
  Elk projectactiviteit bestaat uit deelactiviteiten.
  Al deze deelactiviteiten moeten worden uitgevoerd om een projectactiviteit
  succesvol af te ronden.
- Hieronder staan al de projectactiviteiten met haar deelactiviteiten: 
-\end_layout
-
-\begin_layout Standard
-3.1 Kick-off Bijeenkomst 
-\end_layout
-
-\begin_layout Standard
--1.
- Aanwezig zijn bij de Kick-off 
-\end_layout
-
-\begin_layout Standard
--2.
- Het volgen van de presentatie van Dhr.
- woudstra en Dhr.
- ferchani
-\end_layout
-
-\begin_layout Standard
--3.
- Vragen stellen met betrekking tot de presentatie
-\end_layout
-
-\begin_layout Standard
-3.2 Ontwerp rapport deel 1: inrichten van lokaal 0.126
-\end_layout
-
-\begin_layout Standard
--1.
- Inlezen van de opdracht deel 1 in het Projecthandboek 
-\end_layout
-
-\begin_layout Standard
--2.
- Bestuderen plattegrond beneden verdieping
-\end_layout
-
-\begin_layout Standard
--3.
- Uitvoeren berekeningen ontwerp rapport deel 1
-\end_layout
-
-\begin_layout Standard
--4.
- Kwaliteitscontrole
-\end_layout
-
-\begin_layout Standard
--5.
- Inleveren voor 28 november 2014 bij Dhr.
- woudstra en Dhr.
- ferchani
-\end_layout
-
-\begin_layout Standard
-3.3 Opstellen Plan van Aanpak (PvA) voornamelijk voor deel 2
-\end_layout
-
-\begin_layout Standard
--1.
- Inlezen in het projectboek en het boek van Grit met betrekking tot het
- Plan van Aanpak 
-\end_layout
-
-\begin_layout Standard
--2.
- Bespreken met groepsleden naar aanleiding van informatie uit projectboek
- en het boek van Grit 
-\end_layout
-
-\begin_layout Standard
--3.
- Maken concept Plan van Aanpak
-\end_layout
-
-\begin_layout Standard
--4.
- Vragen stellen aan de opdrachtgever indien van toepassing
-\end_layout
-
-\begin_layout Standard
--5.
- Concept bespreken met groepsleden 
-\end_layout
-
-\begin_layout Standard
--6.
- Concept aanvullen 
-\end_layout
-
-\begin_layout Standard
--7.
- Kwaliteitscontrole 
-\end_layout
-
-\begin_layout Standard
--8.
- Inleveren bij Dhr.
- woudstra en Dhr.
- ferchani
-\end_layout
-
-\begin_layout Standard
-3.4 Presenteren bevindingen deel 1
-\end_layout
-
-\begin_layout Standard
--1.
- Opstellen powerpoint presentatie voor 2 december 2014 
-\end_layout
-
-\begin_layout Standard
--2.Samenkomen met betrekking tot het voorbereiden van de presentatie.
-\end_layout
-
-\begin_layout Standard
--3.
- Individueel doornemen van alle documentatie en informatie met betrekking
- tot het project.
+ Hieronder staan al de projectactiviteiten met bijbehorende deelactiviteiten:
  
 \end_layout
 
-\begin_layout Standard
--4.
- Ieder lid van de projectgroep heeft zich goed voorbereid op het assessment.
- 
+\begin_layout Subsection
+Kick-off bijeenkomst 
 \end_layout
 
-\begin_layout Standard
--5.
- Samenkomen met betrekking tot het assessment.
- 
+\begin_layout Itemize
+Aanwezig zijn bij de Kick-off;
 \end_layout
 
-\begin_layout Standard
--6.
- Presenteren voor de Jury.
- 
+\begin_layout Itemize
+Het volgen van de presentatie van Dhr.
+ Woudstra en Dhr.
+ Ferchani;
 \end_layout
 
-\begin_layout Standard
--7.
- Vragen jury beantwoorden.
- 
+\begin_layout Itemize
+Vragen stellen met betrekking tot de presentatie.
 \end_layout
 
-\begin_layout Standard
-3.5 Meeting met opdrachtgever waarin het PvA wordt besproken/ goedgekeurd
- 
+\begin_layout Subsection
+Ontwerp rapport deel 1: inrichten van lokaal 0.126
 \end_layout
 
-\begin_layout Standard
--1.
- Een afspraak maken met de opdrachtgever met betrekking tot het Plan van
- Aanpak 
+\begin_layout Itemize
+Inlezen van de opdracht deel 1 in het projecthandboek;
 \end_layout
 
-\begin_layout Standard
--2.
- Het PvA bespreken met de opdrachtgever of met Dhr.
- woudstra of Dhr.
- ferchani
+\begin_layout Itemize
+Bestuderen plattegrond beneden verdieping;
 \end_layout
 
-\begin_layout Standard
--3.
- Als het PvA niet is goedgekeurd, moet het PvA gecorrigeerd worden en moet
+\begin_layout Itemize
+Uitvoeren berekeningen ontwerp rapport deel 1;
+\end_layout
+
+\begin_layout Itemize
+Kwaliteitscontrole;
+\end_layout
+
+\begin_layout Itemize
+Inleveren voor 28 november 2014 bij Dhr.
+ Woudstra en Dhr.
+ Ferchani.
+\end_layout
+
+\begin_layout Subsection
+Opstellen Plan van Aanpak (PvA) voornamelijk voor deel 2
+\end_layout
+
+\begin_layout Itemize
+Inlezen in het projectboek en het boek van Grit met betrekking tot het Plan
+ van Aanpak;
+\end_layout
+
+\begin_layout Itemize
+Bespreken met groepsleden naar aanleiding van informatie uit projectboek
+ en het boek van Grit;
+\end_layout
+
+\begin_layout Itemize
+Maken concept Plan van Aanpak;
+\end_layout
+
+\begin_layout Itemize
+Vragen stellen aan de opdrachtgever indien van toepassing;
+\end_layout
+
+\begin_layout Itemize
+Concept bespreken met groepsleden;
+\end_layout
+
+\begin_layout Itemize
+Concept aanvullen;
+\end_layout
+
+\begin_layout Itemize
+Kwaliteitscontrole;
+\end_layout
+
+\begin_layout Itemize
+Inleveren bij Dhr.
+ Woudstra en Dhr.
+ Ferchani.
+\end_layout
+
+\begin_layout Subsection
+Presenteren bevindingen deel 1
+\end_layout
+
+\begin_layout Itemize
+Opstellen powerpoint presentatie voor 2 december 2014;
+\end_layout
+
+\begin_layout Itemize
+Samenkomen met betrekking tot het voorbereiden van de presentatie;
+\end_layout
+
+\begin_layout Itemize
+Individueel doornemen van alle documentatie en informatie met betrekking
+ tot het project;
+\end_layout
+
+\begin_layout Itemize
+Ieder lid van de projectgroep heeft zich goed voorbereid op het assessment;
+\end_layout
+
+\begin_layout Itemize
+Samenkomen met betrekking tot het assessment;
+\end_layout
+
+\begin_layout Itemize
+Presenteren voor de Jury;
+\end_layout
+
+\begin_layout Itemize
+Vragen jury beantwoorden.
+\end_layout
+
+\begin_layout Subsection
+Meeting met opdrachtgever waarin het PvA wordt besproken/goedgekeurd 
+\end_layout
+
+\begin_layout Itemize
+Een afspraak maken met de opdrachtgever met betrekking tot het Plan van
+ Aanpak;
+\end_layout
+
+\begin_layout Itemize
+Het PvA bespreken met de opdrachtgever of met Dhr.
+ Woudstra en Dhr.
+ Ferchani;
+\end_layout
+
+\begin_layout Itemize
+Als het PvA niet is goedgekeurd, moet het PvA gecorrigeerd worden en moet
  er een nieuwe afspraak worden gemaakt met de opdrachtgever of met Dhr.
- woudstra of Dhr.
- ferchaniom deze herziende versie te bespreken 
+ Woudstra en Dhr.
+ Ferchani om deze herziende versie te bespreken.
 \end_layout
 
-\begin_layout Standard
-3.6 Flyback converter ontwerpen
+\begin_layout Subsection
+Flyback converter ontwerpen
 \end_layout
 
-\begin_layout Standard
--1.
- Passend gebruikmaken van materialen, processen en methoden.
- 
+\begin_layout Itemize
+Passend gebruikmaken van materialen, processen en methoden;
 \end_layout
 
-\begin_layout Standard
--2.
- Assembleren van componenten tot een integraal product, dienst of proces.
- 
+\begin_layout Itemize
+Assembleren van componenten tot een integraal product, dienst of proces;
 \end_layout
 
-\begin_layout Standard
--3.
- Verifiëren en valideren van het product, dienst of proces t.o.v.
- de gestelde eisen.
- 
+\begin_layout Itemize
+Verifiëren en valideren van het product, dienst of proces t.o.v.
+ de gestelde eisen;
 \end_layout
 
-\begin_layout Standard
--4.
- Documenteren van het realisatieproces.
+\begin_layout Itemize
+Documenteren van het realisatieproces.
 \end_layout
 
-\begin_layout Standard
-3.7 Beschrijven Testproceduren
+\begin_layout Subsection
+Beschrijven testproceduren
 \end_layout
 
-\begin_layout Standard
--1.
- Conceptoplossing (architectuur) bedenken en kiezen; 
+\begin_layout Itemize
+Conceptoplossing (architectuur) bedenken en kiezen;
 \end_layout
 
-\begin_layout Standard
--2.
- Maken van gedetailleerde ontwerpen aan de hand van de gekozen conceptoplossing
- (architectuur); 
+\begin_layout Itemize
+Maken van gedetailleerde ontwerpen aan de hand van de gekozen conceptoplossing
+ (architectuur);
 \end_layout
 
-\begin_layout Standard
--3.
- Rekening kunnen houden met de maakbaarheid en testbaarheid van het ontwerp;
+\begin_layout Itemize
+Rekening kunnen houden met de maakbaarheid en testbaarheid van het ontwerp;
 \end_layout
 
-\begin_layout Standard
--4.
- Het verifiëren van het ontwerp aan de hand van het programma van eisen;
- 
+\begin_layout Itemize
+Het verifiëren van het ontwerp aan de hand van het programma van eisen;
 \end_layout
 
-\begin_layout Standard
--5.
- Selecteren van de juiste ontwerphulpmiddelen; 
+\begin_layout Itemize
+Selecteren van de juiste ontwerphulpmiddelen;
 \end_layout
 
-\begin_layout Standard
--6.
- Opstellen van de documentatie ten behoeve van het product, dienst of proces.
+\begin_layout Itemize
+Opstellen van de documentatie ten behoeve van het product, dienst of proces.
 \end_layout
 
-\begin_layout Standard
-3.8 Uitvoeren Testproceduren
+\begin_layout Subsection
+Uitvoeren testproceduren
 \end_layout
 
-\begin_layout Standard
--1.
- Testen 
+\begin_layout Itemize
+Testen.
 \end_layout
 
-\begin_layout Standard
-3.9 Schrijven Testrapport
+\begin_layout Subsection
+Schrijven testrapport
 \end_layout
 
-\begin_layout Standard
--1.
- Resultaten van uitvoeren test in de de beschrijving van de testproceduren
- invullen
+\begin_layout Itemize
+Resultaten van uitvoeren test in de de beschrijving van de testproceduren
+ invullen.
 \end_layout
 
-\begin_layout Standard
-3.10 Opleveren documentatie 
+\begin_layout Subsection
+Opleveren documentatie 
 \end_layout
 
-\begin_layout Standard
--1.
- De ontwerprapport en de PvA inleveren bij projectcoach.
- 
+\begin_layout Itemize
+De ontwerprapport en de PvA inleveren bij projectcoach;
 \end_layout
 
-\begin_layout Standard
--2.
- Documentatie wordt gecontroleerd door de kwaliteitscontrole.
- 
+\begin_layout Itemize
+Documentatie wordt gecontroleerd door de kwaliteitscontrole.
 \end_layout
 
-\begin_layout Standard
-3.11 werken in het lab 
+\begin_layout Subsection
+Werken in het lab 
 \end_layout
 
-\begin_layout Standard
--1.
- Flyback converter ontwerpen en testen in lokaal 1.132 
+\begin_layout Itemize
+Flyback converter ontwerpen en testen in lokaal 1.132.
 \end_layout
 
-\begin_layout Standard
-3.12 Voorbereiding assessment 
+\begin_layout Subsection
+Voorbereiding assessment 
 \end_layout
 
-\begin_layout Standard
--1.
- Samenkomen met betrekking tot het voorbereiden van het assessment.
+\begin_layout Itemize
+Samenkomen met betrekking tot het voorbereiden van het assessment;
 \end_layout
 
-\begin_layout Standard
--2.
- Individueel doornemen van alle documentatie en informatie met betrekking
+\begin_layout Itemize
+Individueel doornemen van alle documentatie en informatie met betrekking
  tot het project.
- 
 \end_layout
 
-\begin_layout Standard
-3.13 Assessment 
+\begin_layout Subsection
+Assessment 
 \end_layout
 
-\begin_layout Standard
--1.
- Ieder lid van de projectgroep heeft zich goed voorbereid op het assessment.
- 
+\begin_layout Itemize
+Ieder lid van de projectgroep heeft zich goed voorbereid op het assessment;
 \end_layout
 
-\begin_layout Standard
--2.
- Samenkomen met betrekking tot het assessment.
- 
+\begin_layout Itemize
+Samenkomen met betrekking tot het assessment;
 \end_layout
 
-\begin_layout Standard
--3.
- Presenteren voor de Jury.
- 
+\begin_layout Itemize
+Presenteren voor de Jury;
 \end_layout
 
-\begin_layout Standard
--4.
- Vragen jury beantwoorden.
- 
+\begin_layout Itemize
+Vragen jury beantwoorden.
 \end_layout
 
 \end_body
