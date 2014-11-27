@@ -1,0 +1,125 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Projectresultaten
+\end_layout
+
+\begin_layout Standard
+Dit project is opgedeeld in twee opdrachten.
+\end_layout
+
+\begin_layout Standard
+De eerste opdracht van dit project is om twee onderzoeken te plegen omtrent
+ de inrichting van het lokaal 0.126 voor digitaal toetsen.
+ Er moet als eerst onderzocht worden wat de mogelijkheden zijn om 100 PC's
+ in lokaal 0.126 van wisselspanning (230V) te voorzien.
+ Hierbij moet er onderzocht worden wat het aansluitingsvermogen gaat worden,
+ hoe dik de stroomkabel genomen moet worden, zodat de voedingspanning niet
+ te laag wordt.
+ Ook moet er onderzocht worden of het mogelijk is om over de voedingkabel
+ de PC's van data te voorzien.
+ Er gaat bij dit project uit van normale PC's (P: 200-300W) en van de M2Desk
+ PC's (P: 11-24W).
+ Bij het tweede onderzoek moeten alle bovenstaande punten weer onderzocht
+ worden, maar dan met een gelijkspanning (350V) in plaats van de eerder
+ opgenoemde wisselspanning (230V).
+\end_layout
+
+\begin_layout Standard
+De tweede opdracht van dit project is om een Flyback converter te ontwerpen
+ die gebruikt zal worden om de optimale voedingspanning van de M2KDesk te
+ bepalen.
+ De Flyback converters zijn zogenaamde DC-DC converters die van een ingangspanni
+ng (300-360V DC), een uitgangspanning (12-19V DC) maken.
+ Er moeten drie Flyback converters ontworpen worden met de uitgangen 12V,
+ 15V en 19V.
+ Ook moet er bekeken worden hoe de PC's aangesloten worden, of deze één
+ Flyback converter krijgt of dat meerdere PC's aan één Flyback converter
+ geplaats zullen worden en hoeveel PC's dat kan worden.
+\end_layout
+
+\begin_layout Standard
+Van de eerste opdracht moeten de resultaten en aanbevelingen onderbouwd
+ in een verslag komen te staan.
+ Ook moet er een korte presentatie hiervan gegeven worden.
+\end_layout
+
+\begin_layout Standard
+Van de tweede opdracht moeten er drie Flyback converters ontworpen worden,
+ elk met een verschillende uitgangspanning.
+ Deze uitgangspanningen zijn 12V, 15V en 19V.
+ Er moet een ontwerpverslag per Flyback converter opgesteld worden en de
+ Specificaties van de Flyback converter moeten gegeven worden.
+ Tot slot moet er ook een presentatie gegeven worden met een demonstratie.
+\end_layout
+
+\end_body
+\end_document
