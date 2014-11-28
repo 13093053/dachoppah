@@ -95,6 +95,8 @@ Het is de bedoeling dat lokaal 0.126 wordt ingericht voor digitaal toetsen.
  Wij onderzochten op welke manieren dit te bewerkstelligen is.
  Hierin beperkten wij ons tot de stroomvoorziening en de data-verbinding
  van de PC's.
+ Ook vergelijkten we desktop PC's met M2Desk geintegreerde PC's op de gebieden
+ stroomverbruik en opbouwtijd.
 \end_layout
 
 \begin_layout Section
@@ -274,6 +276,9 @@ g en een aparte ethernetkabel te gebruiken.
  Hierdoor worden de energiekosten lager maar ook de kostprijs van de bekabeling.
  Een aparte ethernetkabel per PC mag dan wel duurder zijn, maar het garandeert
  wel het meest stabiele netwerk.
+ Het opbouwen van de toetsopstelling is sneller met M2Desks dan met desktop
+ PC's en bovendien kunnen er normale toetsen worden gehouden in een lokaal
+ ingericht met M2Desk computers.
 \end_layout
 
 \end_body
