@@ -106,7 +106,7 @@ Inleiding
 \end_layout
 
 \begin_layout Standard
-Het is de bedoeling dat lokaal 0.126 wordt ingericht voor digitaal toetsen.
+Het is de bedoeling dat lokaal 0.126 wordt ingericht voor digitale toetsen.
  Hiervoor moet het lokaal van 100 PC's worden voorzien.
  Wij onderzochten op welke manieren dit te bewerkstelligen is.
  Hierin beperkten wij ons tot de stroomvoorziening en de data-verbinding
@@ -128,21 +128,15 @@ Opstelling van tafels
 
 \begin_layout Standard
 We adviseren een opstelling bestaande uit 10 rijen van 10 computers.
- Gezien er maximaal twaalf computers kunnen worden aangesloten op één zekeringsg
-roep, is dit een realiseerbare opstelling.
+ Gezien er maximaal tien tafels in de breedte passen in het lokaal zonder
+ dat er wordt afgeweken van de richtlijnen voor toetsopstellingen, is dit
+ een realiseerbare opstelling.
  De kabel voor de voeding van de PC's afkomstig van één zekeringsgroep loopt
  recht van de ene kant van de opstelling naar de ander.
  Op deze manier kan er een gelijk aantal computers worden aangesloten per
  groep zonder dat de groepen maximaal belast worden.
  Deze opstelling is voor alle scenarios (Desktop PC of M2Desk, AC of DC)
  hetzelfde.
- Hoewel het opstellen van de tafels in het geval van zowel desktop PC's
- als M2Desks hetzelfde is, zullen de tafels bij desktop PC's sneller schade
- oplopen door slijtage door het continu neerzetten en opruimen van de PC
- opstellingen.
- Op de langer termijn kan het daardoor aantrekkelijker zijn om met M2Desk
- opstellingen te werken in plaats van normale tafels in combinatie met desktop
- PC's.
 \end_layout
 
 \begin_layout Standard
@@ -259,8 +253,8 @@ Data via de voedingskabels
 
 \begin_layout Standard
 Dit is ook zonder extra kabels te realizeren, maar het is nog maar de vraag
- of het mogelijk is om 100PC's op dit type netwerk aan te sluiten.
- 100PC voedingen zorgen voor veel verstoring op de kabels.
+ of het mogelijk is om 100 PC's op dit type netwerk aan te sluiten.
+ 100 PC voedingen zorgen voor veel verstoring op de kabels.
  Elke computer moet bovendien voorzien worden van een apparaatje wat het
  datasignaal uit de stroomvoorziening extraheert.
  Dit brengt extra kosten met zich mee.
@@ -355,6 +349,13 @@ Conclusie
 \begin_layout Standard
 Wij bevelen aan om M2Desk geintegreerde PC's in combinatie met een DC netspannin
 g en een aparte ethernetkabel te gebruiken.
+ Hoewel het opstellen van de tafels in het geval van zowel desktop PC's
+ als M2Desks hetzelfde is, zullen de tafels bij desktop PC's sneller schade
+ oplopen door slijtage door het continu neerzetten en opruimen van de PC
+ opstellingen.
+ Op de langer termijn kan het daardoor aantrekkelijker zijn om met M2Desk
+ opstellingen te werken in plaats van normale tafels in combinatie met desktop
+ PC's.
  Deze computers verbruiken zeer weinig energie vergeleken met normale desktop
  PC's.
  Hierdoor worden de energiekosten lager maar ook de kostprijs van de bekabeling.
