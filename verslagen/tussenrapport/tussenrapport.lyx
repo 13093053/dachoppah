@@ -263,7 +263,17 @@ Het kost een werkdag om 100 M2Desk computers neer te zetten.
 \end_layout
 
 \begin_layout Section*
-Conclusie & aanbeveling
+Conclusie
+\end_layout
+
+\begin_layout Standard
+Wij bevelen aan om M2Desk geintegreerde PC's in combinatie met een DC netspannin
+g en een aparte ethernetkabel te gebruiken.
+ Deze computers verbruiken zeer weinig energie vergeleken met normale desktop
+ PC's.
+ Hierdoor worden de energiekosten lager maar ook de kostprijs van de bekabeling.
+ Een aparte ethernetkabel per PC mag dan wel duurder zijn, maar het garandeert
+ wel het meest stabiele netwerk.
 \end_layout
 
 \end_body

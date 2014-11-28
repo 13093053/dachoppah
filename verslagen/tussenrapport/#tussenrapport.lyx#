@@ -92,8 +92,9 @@ Inleiding
 \begin_layout Standard
 Het is de bedoeling dat lokaal 0.126 wordt ingericht voor digitaal toetsen.
  Hiervoor moet het lokaal van 100 PC's worden voorzien.
- Elke PC moet gevoed worden en een aansluiting op een lokaal netwerk krijgen.
- In dit rapport worden er verschillende mogelijkheden tegenover elkaar gezet
+ Wij onderzochten op welke manieren dit te bewerkstelligen is.
+ Hierin beperkten wij ons tot de stroomvoorziening en de data-verbinding
+ van de PC's.
 \end_layout
 
 \begin_layout Section
@@ -158,7 +159,7 @@ M2Desk AC 230V
 \begin_layout Standard
 De M2Desk computers verbruiken veel minder stroom dan de normale 200-300W
  PC's.
- Alle 100 M2Desk computers hebben een opgeteld vermogen van minder dan 11A.
+ De M2Desk computers vereisen samen een stroomsterkte van minder dan 11A.
  Het is mogelijk om alles op een groep van 16A aan te sluiten.
  Hiervoor kunnen dezelfde 2,5mm^2 kabels worden gebruikt.
  Om elke kolom aan te sluiten kan een dunnere kabel gebruikt worden, omdat
@@ -263,6 +264,15 @@ Het kost een werkdag om 100 M2Desk computers neer te zetten.
 
 \begin_layout Section*
 Conclusie & aanbeveling
+\end_layout
+
+\begin_layout Standard
+Wij bevelen aan om M2Desk geintegreerde PC's in combinatie met een DC netspannin
+g en een aparte ethernetkabel te gebruiken.
+ Deze computers verbruiken zeer weinig energie vergeleken met normale desktop
+ PC's.
+ Hierdoor worden de energiekosten lager maar ook de kostprijs van de bekabeling.
+ 
 \end_layout
 
 \end_body
