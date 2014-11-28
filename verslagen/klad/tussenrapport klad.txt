@@ -22,3 +22,4 @@ We plaatsen 4 computers per kabel. Daar loopt dan maximaal 4*1.3 = 5,2A. Een kab
 De kabel wordt 5 meter lang omdat het lokaal 10 meter breed is, en er 8 computers per rij staan. 
 
 De weerstand van dit stuk kabel is 30.1 ohm/km. Dit is voor 5 meter(heen en terug) 30,1/1000*5*2 = 0,1505 ohm. Dit is verwaarloosbaar bij deze belastingen.
+Kosten per 100m: € 122,67 (https://www.electrokarweishop.nl/draka-vmvl-bk-3g0-75-mm2)
