@@ -70,7 +70,8 @@
 
 \begin_layout Standard
 Montage-methode E (tabel A.52-1) type kabel (tabel A.52-2) (H07RN-F slijtvaste
- mantel, bestand tegen zware mechanische belasting)
+ mantel, bestand tegen zware mechanische belasting) weerstand: De weerstand
+ de draad is 15.4 ohm/km.
 \end_layout
 
 \begin_layout Standard
@@ -116,9 +117,18 @@ Stap5: De Iz is 16A/1,0 = 16A de doorsnede wordt dan 1,5mm^2 (tabel A.52-9)
 \end_layout
 
 \begin_layout Standard
-Stap6: De maximale lengte is 37m (tabel A.53-2).
- Als dit te weinig is moet er voor een kabel van 2,5mm^2 gekozen worden.
- Deze heeft een maximale lengte van 64 meter.
+Stap6: De maximale lengte is 37m (tabel A.53-2).De lengte van het lokaal is
+ 30m, dus dit is voldoende.
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+
+\end_layout
+
+\begin_layout Standard
+De maximale spanningsval bij de nominale stroom is: 13*((15,4/1000)*30)=6V
 \end_layout
 
 \begin_layout Standard
@@ -164,9 +174,18 @@ Stap5: De Iz is 10A/1,0 = 10A de doorsnede wordt dan 1,5mm^2 (tabel A.52-9)
 \end_layout
 
 \begin_layout Standard
-Stap6: De maximale lengte is 37m (tabel A.53-2).
- Als dit te weinig is moet er voor een kabel van 2,5mm^2 gekozen worden.
- Deze heeft een maximale lengte van 64 meter.
+Stap6: De maximale lengte is 37m (tabel A.53-2).De lengte van het lokaal is
+ 30m, dus dit is voldoende.
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+
+\end_layout
+
+\begin_layout Standard
+De maximale spanningsval bij de nominale stroom is: 8,6*((15,4/1000)*30)=4V
 \end_layout
 
 \begin_layout Standard
@@ -216,9 +235,18 @@ Stap5: De Iz is 16A/1,0 = 16A de doorsnede wordt dan 1,5mm^2 (tabel A.52-9)
 \end_layout
 
 \begin_layout Standard
-Stap6: De maximale lengte is 37m (tabel A.53-2).
- Als dit te weinig is moet er voor een kabel van 2,5mm^2 gekozen worden.
- Deze heeft een maximale lengte van 64 meter.
+Stap6: De maximale lengte is 37m (tabel A.53-2).De lengte van het lokaal is
+ 30m, dus dit is voldoende.
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+
+\end_layout
+
+\begin_layout Standard
+De maximale spanningsval bij de nominale stroom is: 10,4*((15,4/1000)*30)=4,8V
 \end_layout
 
 \begin_layout Standard
@@ -265,8 +293,28 @@ Stap5: De Iz is 10A/1,0 = 10A de doorsnede wordt dan 1,5mm^2 (tabel A.52-9)
 
 \begin_layout Standard
 Stap6: De maximale lengte is 37m (tabel A.53-2).
- Als dit te weinig is moet er voor een kabel van 2,5mm^2 gekozen worden.
- Deze heeft een maximale lengte van 64 meter.
+ De lengte van het lokaal is 30m, dus dit is voldoende.
+\end_layout
+
+\begin_layout Standard
+
+\backslash
+
+\end_layout
+
+\begin_layout Standard
+De maximale spanningsval bij de nominale stroom is: 8,6*((15,4/1000)*30)=4V
+\end_layout
+
+\begin_layout Standard
+/
+\end_layout
+
+\begin_layout Standard
+De weerstand de draad is 15.4 ohm/km.
+ De maximale lengte van de draad is 30m.
+ De maximale spanningsval is bij gelijkspanning: 13A * ((15,4/1000)*30)=
+ 
 \end_layout
 
 \end_body
