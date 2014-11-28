@@ -69,6 +69,11 @@
 \begin_body
 
 \begin_layout Standard
+Montage-methode E (tabel A.52-1) type kabel (tabel A.52-2) (H07RN-F slijtvaste
+ mantel, bestand tegen zware mechanische belasting)
+\end_layout
+
+\begin_layout Standard
 Berekening draad voor 10 PC's
 \end_layout
 
@@ -80,7 +85,8 @@ Stap1: De bedrijfstroom is: (300/230) * 10= 13A
 Stap2: Er word gekozen voor een automaat met een C-karakterestiek en een
  nominale stroom van 16A.
  Omdat computers een inschakelstroom hebben die fors hoger is dan de nominale
- stroom word er gekozen voor een automaat met een c karakterestiek
+ stroom word er gekozen voor een automaat met een c karakterestiek.
+ De uitschakelstroom van een C-karakterestiek is 10*Inominaal.
 \end_layout
 
 \begin_layout Standard
@@ -90,11 +96,21 @@ De eerste standaardwaarde boven 13A is 16A.
 \begin_layout Standard
 Stap3: De Iz van de leiding kan gelijk worden gestald aan de nominale stroom
  van de automaat.
- In dit geval dus 16A
+ In dit geval dus 16A.
 \end_layout
 
 \begin_layout Standard
-Stap4: 
+Stap4: De correctiefactor voor de omgevingtemperatuur van 30 graden is 1,00
+ (tabel A.52-15) bij een leiding van PVC.
+\end_layout
+
+\begin_layout Standard
+Stap5: De Iz is 16A/1,0 = 16A de doorsnede wordt dan 1,5mm^2 (tabel A.52-9)
+ 
+\end_layout
+
+\begin_layout Standard
+Stap6: De maximale lengte is 37m (tabel A.53-2)
 \end_layout
 
 \end_body
