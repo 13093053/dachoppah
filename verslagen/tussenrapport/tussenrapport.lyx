@@ -102,7 +102,13 @@ Opstelling van tafels
 \end_layout
 
 \begin_layout Standard
-We adviseren een 
+We adviseren een opstelling bestaande uit 10 rijen van 10 computers.
+ Gezien er maximaal twaalf computers kunnen worden aangesloten op één zekeringsg
+roep, is dit een realiseerbare opstelling.
+ De kabel voor de voeding van de PC's afkomstig van één zekeringsgroep loopt
+ recht van de ene kant van de opstelling naar de ander.
+ Deze opstelling is voor alle scenarios (Desktop PC of M2Desk, AC of DC)
+ hetzelfde.
 \end_layout
 
 \begin_layout Section
