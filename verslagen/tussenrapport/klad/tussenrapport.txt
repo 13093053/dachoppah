@@ -1,0 +1,65 @@
+==Bekabeling voor Stroomvoorziening==
+Meerdere computers worden van stroom voorzien door een kabel. Deze dikke kabel splitst zich af in dunnere kabels bij elke computer in een groep.
+
+Optie A:
+	(..)___________      _________ (..)[wandcontact]
+	       [] [] []     [] [] []
+	(..)___________      _________ (..)
+	       [] [] []     [] [] []
+	(..)___________      _________ (..)
+	       [] [] []     [] [] []
+	etc..
+
+	Groep van 3 computers per wandcontact
+
+	Voordelen:
+	* Minder vermogen door kabel -> Minder dikke kabel nodig dan bij optie B
+	* Lagere stroom door wandcontect dan bij optie B
+	* Sneller op te bouwen dan optie B (van twee kanten tegelijk bedrading aanleggen)
+
+	Nadelen:
+	* Neemt 34 wandcontacten in gebruik.
+
+Optie B:
+	________________________ (..)[wandcontact]
+	[] [] []     [] [] []
+	________________________ (..)
+	[] [] []     [] [] []
+	________________________ (..)
+	[] [] []     [] [] []
+	etc..
+
+	Groep van 6 computers per wandcontact
+
+	Voordelen:
+	* Neemt slechts 17 wandcontacten in gebruik.
+
+	Nadelen:
+	* Meer vermogen door kabel -> Dikkere kabel nodig dan bij optie A
+	* Hogere stroom door wandcontact dan bij optie A
+
+
+	Optie A is duidelijk voordeliger dan optie B met als enige nadeel dat het meer wandcontacten in gebruik neemt. Omdat er wandcontacten voldoende aanwezig zijn is dit geen probleem.
+
+	De volgende specificaties zijn voor het bedradingsplan van optie A:
+	Voor normale PC's is er een kabel nodig die geschikt is voor 
+	Berekening voor in bijlage:
+		230v AC
+		300 * 5 = 1500 watt
+		Tafels staan minimaal 1,5m uit elkaar (examennorm)
+
+		230v					210v
+		 |                       |
+	( )--+-[R1]--+-[R1]--+-[R1]--+
+			 	 |       |       |
+			     |       |       |
+			   [Load]  [Load]  [Load]
+			     |       |       |
+	( )----[R1]--+-[R1]--+-[R1]--+
+
+		20V spanningsval is acceptabel
+		De load van een normale PC's kan worden vergeleken met een 176 Ohm weerstand
+		(...)
+
+
+==Bekabeling voor LAN==

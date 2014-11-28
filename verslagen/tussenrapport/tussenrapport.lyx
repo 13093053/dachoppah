@@ -1,0 +1,263 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tussenrapport PROENT-pj1
+\end_layout
+
+\begin_layout Author
+Groep2
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Inleiding
+\end_layout
+
+\begin_layout Standard
+Het is de bedoeling dat er een lokaal van 100 PC's wordt voorzien.
+ Elke PC moet van stroom en dataverbinding worden voorzien.
+ Het moet zo snel mogelijk kunnen worden opgebouwd.
+\end_layout
+
+\begin_layout Section
+Opstelling van tafels
+\end_layout
+
+\begin_layout Standard
+We adviseren een 
+\end_layout
+
+\begin_layout Section
+Stroomvoorziening
+\end_layout
+
+\begin_layout Standard
+Elke kolom wordt van stroom voorzien door een kabel die vertakt bij elke
+ pc in de kolom.
+ De kabels liggen naast de tafels zodat ze niet in de weg liggen.
+\end_layout
+
+\begin_layout Standard
+Hierop kunnen maximaal 10 computers worden aangesloten.
+ Er zijn dus minimaal 10 groepen nodig.
+ Het is belangrijk dat deze groepen niet aan de aardlek geschakeld zijn
+ i.v.m lekstromen in de computers.
+ Die zijn dusdanig hoog dat de aardlek afschakelt.
+ 
+\end_layout
+
+\begin_layout Subsection
+Desktop PC AC 230V
+\end_layout
+
+\begin_layout Standard
+Per groep loopt er ongeveer een stroom 10 * 300/230 = 13A.
+ Elke kolom wordt aangesloten op een aparte groep gezekerd op 16A.
+ De kabels moeten minimaal 16A aankunnen en voldoen aan de Nederlandse veilighei
+dsnorm voor laagspanningsinstallaties.
+ De draaddikte is minimaal 2,5mm^2.
+ De spanningsval als gevolg van draadweerstand is verwaarloosbaar met de
+ korte draadlengtes in deze installatie.
+\end_layout
+
+\begin_layout Subsection
+Desktop PC DC 350V
+\end_layout
+
+\begin_layout Standard
+Voor een DC installatie kunnen dezelfde kabels worden gebruikt.
+ Door de hogere spanning kunnen er meer computers per groep worden aangesloten.
+ Als er nog steeds 10 computers op een groep worden aangesloten kunnen er
+ ook dunnere kabels worden gebruikt en zekeringen van 10A.
+ Zo kan de installatie goedkoper worden gemaakt.
+ Door de hogere spanning wordt de installatie ook efficienter.
+\end_layout
+
+\begin_layout Subsection
+M2Desk AC 230V
+\end_layout
+
+\begin_layout Standard
+De M2Desk computers verbruiken veel minder stroom dan de normale 200-300W
+ PC's.
+ Alle 100 M2Desk computers hebben een opgeteld vermogen van minder dan 11A.
+ Het is mogelijk om alles op een groep van 16A aan te sluiten.
+ Hiervoor kunnen dezelfde 2,5mm^2 kabels worden gebruikt.
+ Om elke kolom aan te sluiten kan een dunnere kabel gebruikt worden, omdat
+ deze slechts 1,1A per stuk hoeven te leveren.
+\end_layout
+
+\begin_layout Subsection
+M2Desk DC 350V
+\end_layout
+
+\begin_layout Standard
+Bij de hogere spanning is het mogelijk om nog dunnere kabels te gebruiken,
+ omdat er minder stroom geleverd hoeft te worden.
+ Alle computers kunnen worden aangesloten op een groep gezekerd op 10A.
+ Verliezen in kabels worden ook kleiner door de hogere spanning.
+\end_layout
+
+\begin_layout Section
+LAN data-verbinding
+\end_layout
+
+\begin_layout Standard
+Iedere computer moet een verbinding met het lokale netwerk hebben.
+ De datavoorziening moet stabiel, veilig en redelijk snel zijn.
+ Het is belangrijk dat het netwerk niet zomaar stil komt te liggen tijdens
+ een toets, omdat de toets dan opnieuw moet worden afgenomen op een ander
+ moment.
+\end_layout
+
+\begin_layout Subsection
+Draadloos (WIFI)
+\end_layout
+
+\begin_layout Standard
+Dit type netwerk is zonder extra kabels te realiseren waardoor het snel
+ op te zetten is.
+ Een draadloze verbinding brengt wel een beveiligingsrisico met zich mee.
+ Het is mogelijk om met een ander netwerk te verbinden zoals de Eduroam.
+ Dit netwerk heeft vrije internet toegang.
+ Dit is niet wenselijk in een toetsopstelling.
+\end_layout
+
+\begin_layout Subsection
+Data via de voedingskabels
+\end_layout
+
+\begin_layout Standard
+Dit is ook zonder extra kabels te realizeren, maar het is nog maar de vraag
+ of het mogelijk is om 100PC's op dit type netwerk aan te sluiten.
+ 100PC voedingen zorgen voor veel verstoring op de kabels.
+ Elke computer moet bovendien voorzien worden van een apparaatje wat het
+ datasignaal uit de stroomvoorziening extraheert.
+ Dit brengt extra kosten met zich mee.
+\end_layout
+
+\begin_layout Subsection
+Ethernetkabels
+\end_layout
+
+\begin_layout Standard
+Iedere PC wordt voorzien van een eigen ethernet kabel.
+ Het kost wat extra tijd om het netwerk aan te leggen, maar dit garandeerd
+ het meest stabiele, veilige en snelste netwerk.
+\end_layout
+
+\begin_layout Section
+Opbouwtijd
+\end_layout
+
+\begin_layout Subsection
+Desktop PC
+\end_layout
+
+\begin_layout Standard
+Er zijn veel verschillende soorten desktop PC's.
+ Hier wordt als voorbeeld hetzelfde type PC gebruikt als bij het studie-eiland
+ elektrotechniek gebruikt.
+ Het kost ongeveer 2-3 uur om elke tafel van een PC te voorzien.
+ Er moeten ook nog toetsenborden en muizen worden aangesloten.
+ Dit kost ongeveer 2 uur extra.
+ Daarna moeten de PC's nog van stroom en e.v.t.
+ ethernetkabels worden voorzien.
+ Het uitrollen en aansluiten van de bedrading kost ongeveer 2-3 uur.
+ Daarna moet de installatie getest worden
+\end_layout
+
+\begin_layout Subsection
+M2Desk
+\end_layout
+
+\begin_layout Standard
+Het kost een werkdag om 100 M2Desk computers neer te zetten.
+ Bij een uurtarief van 50 euro per uur kost het ongeveer 450 euro om alle
+ computers te installeren.
+ De M2Desk computers kunnen worden getransformeerd tot normale tafels, dus
+ deze opstelling kan blijven staan voor alle toetsen.
+\end_layout
+
+\begin_layout Section*
+Conclusie & aanbeveling
+\end_layout
+
+\end_body
+\end_document
