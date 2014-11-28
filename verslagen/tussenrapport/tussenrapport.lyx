@@ -142,7 +142,7 @@ Het is de bedoeling dat lokaal 0.126 wordt ingericht voor digitale toetsen.
  Wij onderzochten op welke manieren dit te bewerkstelligen is.
  Hierin beperkten wij ons tot de stroomvoorziening en de data-verbinding
  van de PC's.
- Ook vergelijkten we desktop PC's met M2Desk geintegreerde PC's.
+ Ook vergeleken we desktop PC's met M2Desk geïntegreerde PC's.
 \end_layout
 
 \begin_layout Standard
@@ -182,13 +182,13 @@ Stroomvoorziening
 
 \begin_layout Standard
 Elke kolom wordt van stroom voorzien door een kabel die vertakt bij elke
- pc in de kolom.
+ PC in de kolom.
  De kabels liggen naast de tafels zodat ze niet in de weg liggen.
  Hierop kunnen maximaal 10 computers worden aangesloten.
  Er zijn dus minimaal 10 groepen nodig.
  Het is belangrijk dat deze groepen niet aan de aardlek geschakeld zijn
- i.v.m lekstromen in de computers.
- Die zijn dusdanig hoog dat de aardlek afschakelt.
+ in verband met lekstromen in de computers.
+ De lekstromen zijn dusdanig hoog dat de aardlek afschakelt.
  
 \end_layout
 
@@ -197,11 +197,20 @@ Desktop PC AC 230V
 \end_layout
 
 \begin_layout Standard
-Per groep loopt er ongeveer een stroom 10 * 300/230 = 13A.
+Per groep loopt er ongeveer een stroom van 13A (10 * 300/230).
  Elke kolom wordt aangesloten op een aparte groep gezekerd op 16A.
  De kabels moeten minimaal 16A aankunnen en voldoen aan de Nederlandse veilighei
 dsnorm voor laagspanningsinstallaties.
- De draaddikte is minimaal 2,5mm^2.
+ De draaddikte is minimaal 2,5mm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+.
  De spanningsval als gevolg van draadweerstand is verwaarloosbaar met de
  korte draadlengtes in deze installatie.
 \end_layout
@@ -216,7 +225,7 @@ Voor een DC installatie kunnen dezelfde kabels worden gebruikt.
  Als er nog steeds 10 computers op een groep worden aangesloten kunnen er
  ook dunnere kabels worden gebruikt en zekeringen van 10A.
  Zo kan de installatie goedkoper worden gemaakt.
- Door de hogere spanning wordt de installatie ook efficienter.
+ Door de hogere spanning wordt de installatie ook efficiënter.
  
 \end_layout
 
@@ -229,7 +238,16 @@ De M2Desk computers verbruiken veel minder stroom dan de normale 200-300W
  PC's.
  De M2Desk computers vereisen samen een stroomsterkte van minder dan 11A.
  Het is mogelijk om alles op een groep van 16A aan te sluiten.
- Hiervoor kunnen dezelfde 2,5mm^2 kabels worden gebruikt.
+ Hiervoor kunnen dezelfde 2,5mm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+kabels worden gebruikt.
  Om elke kolom aan te sluiten kan een dunnere kabel gebruikt worden, omdat
  deze slechts 1,1A per stuk hoeven te leveren.
 \end_layout
@@ -239,10 +257,10 @@ M2Desk DC 350V
 \end_layout
 
 \begin_layout Standard
-Bij de hogere spanning is het mogelijk om nog dunnere kabels te gebruiken,
+Bij een spanning van 350V is het mogelijk om nog dunnere kabels te gebruiken,
  omdat er minder stroom geleverd hoeft te worden.
  Alle computers kunnen worden aangesloten op een groep gezekerd op 10A.
- Verliezen in kabels worden ook kleiner door de hogere spanning.
+ Verliezen in kabels worden ook kleiner door deze hogere spanning.
 \end_layout
 
 \begin_layout Standard
@@ -272,7 +290,7 @@ Draadloos (WIFI)
 Dit type netwerk is zonder extra kabels te realiseren waardoor het snel
  op te zetten is.
  Een draadloze verbinding brengt wel een beveiligingsrisico met zich mee.
- Het is mogelijk om met een ander netwerk te verbinden zoals de Eduroam.
+ Het is mogelijk om met een ander netwerk te verbinden zoals Eduroam.
  Dit netwerk heeft vrije internet toegang.
  Dit is niet wenselijk in een toetsopstelling.
 \end_layout
@@ -282,7 +300,7 @@ Data via de voedingskabels
 \end_layout
 
 \begin_layout Standard
-Dit is ook zonder extra kabels te realizeren, maar het is nog maar de vraag
+Dit is ook zonder extra kabels te realiseren, maar het is nog maar de vraag
  of het mogelijk is om 100 PC's op dit type netwerk aan te sluiten.
  100 PC voedingen zorgen voor veel verstoring op de kabels.
  Elke computer moet bovendien voorzien worden van een apparaatje wat het
@@ -295,8 +313,8 @@ Ethernetkabels
 \end_layout
 
 \begin_layout Standard
-Iedere PC wordt voorzien van een eigen ethernet kabel.
- Het kost wat extra tijd om het netwerk aan te leggen, maar dit garandeerd
+Iedere PC wordt voorzien van een eigen ethernetkabel.
+ Het kost wat extra tijd om het netwerk aan te leggen, maar dit garandeert
  het meest stabiele, veilige en snelste netwerk.
 \end_layout
 
@@ -317,14 +335,14 @@ Desktop PC
 
 \begin_layout Standard
 Er zijn veel verschillende soorten desktop PC's.
- Hier wordt als voorbeeld hetzelfde type PC gebruikt als bij het studie-eiland
+ Hier wordt als voorbeeld hetzelfde type PC gebruikt als bij het studielandschap
  elektrotechniek gebruikt.
  Het neerzetten van de tafels kost ongeveer 3-4 uur.
  Het kost ongeveer 2-3 uur om elke tafel van een PC te voorzien.
  Er moeten ook nog toetsenborden en muizen worden aangesloten.
  Dit kost ongeveer 2 uur extra.
- Daarna moeten de PC's nog van stroom en eventueel ethernetkabels worden
- voorzien.
+ Daarna moeten de PC's nog van stroom en e.v.t.
+ ethernetkabels worden voorzien.
  Het uitrollen en aansluiten van de bedrading kost ongeveer 2-3 uur.
  In totaal kost het 9-12 uur om alle PC's neer te zetten en startklaar te
  maken.
@@ -360,8 +378,8 @@ Het komt voor dat de ethernet- en stroomkabels stuk gaan waardoor de kabels
  niet meer goed functioneren.
  De kapotte kabels moeten dan vervangen worden.
  De prijs per meter is ongeveer 2 euro.
- Er is gekozen voor vervangen van kapotte kabels en niet voor regelmatige
- controles, omdat het vervangen van kapotte kabels goedkoper is dan regelmatige
+ Het is gekozen voor vervangen van kapotte kabels en niet voor regelmatig
+ controles, omdat het vervangen van kapotte kabels goedkoper is dan regelmatig
  controles.
 \end_layout
 
@@ -377,7 +395,7 @@ Conclusie
 \end_layout
 
 \begin_layout Standard
-Wij bevelen aan om M2Desk geïntegreerde PC's in combinatie met een DC netspannin
+Wij bevelen aan om M2Desk geintegreerde PC's in combinatie met een DC netspannin
 g en een aparte ethernetkabel te gebruiken.
  Hoewel het opstellen van de tafels in het geval van zowel desktop PC's
  als M2Desks hetzelfde is, zullen de tafels bij desktop PC's sneller schade
@@ -394,6 +412,229 @@ g en een aparte ethernetkabel te gebruiken.
  Het opbouwen van de toetsopstelling is sneller met M2Desks dan met desktop
  PC's en bovendien kunnen er normale toetsen worden gehouden in een lokaal
  ingericht met M2Desk computers.
+\end_layout
+
+\begin_layout Section*
+Bijlagen
+\end_layout
+
+\begin_layout Standard
+Alle gebruikte tabellen komen uit de NEN1010.
+\begin_inset Newline newline
+\end_inset
+
+Montage-methode E (tabel A.52-1) type kabel (tabel A.52-2) (H07RN-F slijtvaste
+ mantel, bestand tegen zware mechanische belasting)
+\end_layout
+
+\begin_layout Subsubsection*
+Berekening draad voor 10 normale PC's AC
+\end_layout
+
+\begin_layout Standard
+Stap 1: De bedrijfstroom is: (300/230) * 10 = 13A
+\begin_inset Newline newline
+\end_inset
+
+Stap 2: De eerste standaardwaarde boven 13A is 16A.
+\end_layout
+
+\begin_layout Standard
+Als zekering kiezen we voor een 16A trage diazed patroon.
+ Op een automaat kunnen maximaal 5 standaard computers door de hoge inschakelstr
+omen.
+ Een traag smeltpatroon kan een veel hogere inschakelstroom verdragen.
+ 
+\end_layout
+
+\begin_layout Standard
+Stap 3: De bijbehorende Iz van de leiding is bij dit type zekering 17,7A.
+\begin_inset Newline newline
+\end_inset
+
+Stap 4: De correctiefactor voor de omgevingstemperatuur van 30°C is 1,00
+ (tabel A.52-15).
+\begin_inset Newline newline
+\end_inset
+
+Stap 5: De Iz is 17,7A/1,0 = 17,7A de doorsnede wordt dan 1,5mm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ (tabel A.52-9) .
+ De weerstand van deze draad is 15.4 ohm/km.
+\begin_inset Newline newline
+\end_inset
+
+Stap 6: De maximale lengte is 53m (tabel A.53-4).De lengte van het lokaal
+ is 30m, dus dit is voldoende.
+\end_layout
+
+\begin_layout Standard
+De maximale spanningsval bij de nominale stroom is: 13*((15,4/1000)*30)
+ = 6V
+\end_layout
+
+\begin_layout Subsubsection*
+Berekening draad voor 10 normale PC's DC
+\end_layout
+
+\begin_layout Standard
+Stap 1: De bedrijfstroom is: (300/350) * 10 = 8,6A
+\begin_inset Newline newline
+\end_inset
+
+Stap 2: De eerste standaardwaarde boven 8,6A is 10A.
+\end_layout
+
+\begin_layout Standard
+Als zekering kiezen we voor een 10A trage diazed patroon.
+ Op een automaat kunnen maximaal 5 standaard computers door de hoge inschakelstr
+omen.
+ Een traag smeltpatroon kan een veel hogere inschakelstroom verdragen.
+ 
+\end_layout
+
+\begin_layout Standard
+Stap 3: De Iz van de leiding kan gelijk worden gesteld aan de nominale stroom
+ van de automaat.
+ Dit is dus 10A.
+\begin_inset Newline newline
+\end_inset
+
+Stap 4: De correctiefactor voor de omgevingtemperatuur van 30°C is 1,00
+ (tabel A.52-15).
+\begin_inset Newline newline
+\end_inset
+
+Stap 5: De Iz is 13,1A/1,0 = 13,1A de doorsnede wordt dan 1,5mm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ (tabel A.52-9) .
+ De weerstand van deze draad is 15.4 ohm/km.
+\begin_inset Newline newline
+\end_inset
+
+Stap 6: De maximale lengte is 53m (tabel A.53-4).De lengte van het lokaal
+ is 30m, dus dit is voldoende.
+\end_layout
+
+\begin_layout Standard
+De maximale spanningsval bij de nominale stroom is: 8,6*((15,4/1000)*30)
+ = 4V
+\end_layout
+
+\begin_layout Subsubsection*
+Berekening draad voor M2Desk PC's AC
+\end_layout
+
+\begin_layout Standard
+Stap 1: De bedrijfsstroom voor 100 M2Desk PC's is (2400/230) = 10,4A
+\begin_inset Newline newline
+\end_inset
+
+Stap 2: De eerste standaardwaarde boven 10,4A is 16A
+\end_layout
+
+\begin_layout Standard
+Als zekering kiezen we voor een 16A trage diazed patroon.
+ Een automaat kan de hoge inschakelstromen van de PC's niet verdragen.
+ Een traag smeltpatroon wel.
+\end_layout
+
+\begin_layout Standard
+Stap 3: De bijbehorende Iz van de leiding is bij dit type zekering 17,7A.
+\begin_inset Newline newline
+\end_inset
+
+Stap 4: De correctiefactor voor de omgevingtemperatuur van 30°C is 1,00
+ (tabel A.52-15).
+\begin_inset Newline newline
+\end_inset
+
+Stap 5: De Iz is 17,7A/1,0 = 17,7A de doorsnede wordt dan 1,5mm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ (tabel A.52-9) .
+ De weerstand van deze draad is 15.4 ohm/km.
+\begin_inset Newline newline
+\end_inset
+
+Stap 6: De maximale lengte is 53m (tabel A.53-4).De lengte van het lokaal
+ is 30m, dus dit is voldoende.
+\end_layout
+
+\begin_layout Standard
+De maximale spanningsval bij de nominale stroom is: 10,4*((15,4/1000)*30)
+ = 4,8V
+\end_layout
+
+\begin_layout Subsubsection*
+Berekening draad voor M2Desk PC's DC
+\end_layout
+
+\begin_layout Standard
+Stap 1: De bedrijfsstroom voor 100 M2Desk PC's is (2400/350) = 6,8A
+\begin_inset Newline newline
+\end_inset
+
+Stap 2: De eerste standaardwaarde boven 6,8A is 10A.
+\end_layout
+
+\begin_layout Standard
+Als zekering kiezen we voor een 10A trage diazed patroon.
+ Een automaat kan de hoge inschakelstromen van de PC's niet verdragen.
+ Een traag smeltpatroon wel.
+\end_layout
+
+\begin_layout Standard
+Stap 3: De bijbehorende Iz van de leiding is bij dit type zekering 13,1A
+\begin_inset Newline newline
+\end_inset
+
+Stap 4: De correctiefactor voor de omgevingtemperatuur van 30°C is 1,00
+ (tabel A.52-15).
+\begin_inset Newline newline
+\end_inset
+
+Stap 5: De Iz is 13,1A/1,0 = 13,1A de doorsnede wordt dan 1,5mm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ (tabel A.52-9) .
+ De weerstand van deze draad is 15.4 ohm/km.
+\begin_inset Newline newline
+\end_inset
+
+Stap 6: De maximale lengte is 53m (tabel A.53-4).De lengte van het lokaal
+ is 30m, dus dit is voldoende.
+\end_layout
+
+\begin_layout Standard
+De maximale spanningsval bij de nominale stroom is: 6,8*((15,4/1000)*30)
+ = 3,1V
 \end_layout
 
 \end_body
