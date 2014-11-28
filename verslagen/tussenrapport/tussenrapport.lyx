@@ -90,9 +90,10 @@ Inleiding
 \end_layout
 
 \begin_layout Standard
-Het is de bedoeling dat er een lokaal van 100 PC's wordt voorzien.
- Elke PC moet van stroom en dataverbinding worden voorzien.
- Het moet zo snel mogelijk kunnen worden opgebouwd.
+Het is de bedoeling dat lokaal 0.126 wordt ingericht voor digitaal toetsen.
+ Hiervoor moet het lokaal van 100 PC's worden voorzien.
+ Elke PC moet gevoed worden en een aansluiting op een lokaal netwerk krijgen.
+ In dit rapport worden er verschillende mogelijkheden tegenover elkaar gezet.
 \end_layout
 
 \begin_layout Section
@@ -147,6 +148,7 @@ Voor een DC installatie kunnen dezelfde kabels worden gebruikt.
  ook dunnere kabels worden gebruikt en zekeringen van 10A.
  Zo kan de installatie goedkoper worden gemaakt.
  Door de hogere spanning wordt de installatie ook efficienter.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -234,13 +236,17 @@ Desktop PC
 Er zijn veel verschillende soorten desktop PC's.
  Hier wordt als voorbeeld hetzelfde type PC gebruikt als bij het studie-eiland
  elektrotechniek gebruikt.
+ Het neerzetten van de tafels kost ongeveer 3-4 uur.
  Het kost ongeveer 2-3 uur om elke tafel van een PC te voorzien.
  Er moeten ook nog toetsenborden en muizen worden aangesloten.
  Dit kost ongeveer 2 uur extra.
  Daarna moeten de PC's nog van stroom en e.v.t.
  ethernetkabels worden voorzien.
  Het uitrollen en aansluiten van de bedrading kost ongeveer 2-3 uur.
- Daarna moet de installatie getest worden
+ In totaal kost het 9-12 uur om alle PC's neer te zetten en startklaar te
+ maken.
+ Bij een uurtarief van 50 euro per uur kost het naar schatting 450-600 euro
+ om alles in orde te maken.
 \end_layout
 
 \begin_layout Subsection
