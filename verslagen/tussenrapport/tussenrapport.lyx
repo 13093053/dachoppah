@@ -85,6 +85,13 @@ LatexCommand tableofcontents
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 Inleiding
 \end_layout
@@ -99,6 +106,13 @@ Het is de bedoeling dat lokaal 0.126 wordt ingericht voor digitaal toetsen.
  stroomverbruik en opbouwtijd.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Opstelling van tafels
 \end_layout
@@ -111,6 +125,13 @@ roep, is dit een realiseerbare opstelling.
  recht van de ene kant van de opstelling naar de ander.
  Deze opstelling is voor alle scenarios (Desktop PC of M2Desk, AC of DC)
  hetzelfde.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -185,6 +206,13 @@ Bij de hogere spanning is het mogelijk om nog dunnere kabels te gebruiken,
  Verliezen in kabels worden ook kleiner door de hogere spanning.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 LAN data-verbinding
 \end_layout
@@ -233,6 +261,13 @@ Iedere PC wordt voorzien van een eigen ethernet kabel.
  het meest stabiele, veilige en snelste netwerk.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Opbouwtijd
 \end_layout
@@ -268,6 +303,34 @@ Het kost een werkdag om 100 M2Desk computers neer te zetten.
  computers te installeren.
  De M2Desk computers kunnen worden getransformeerd tot normale tafels, dus
  deze opstelling kan blijven staan voor alle toetsen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Onderhoud
+\end_layout
+
+\begin_layout Standard
+Het komt voor dat de ethernet- en stroomkabels stuk gaan waardoor de kabels
+ niet meer goed functioneren.
+ De kapotte kabels moeten dan vervangen worden.
+ De prijs per meter is ongeveer 2 euro.
+ Het is gekozen voor vervangen van kapotte kabels en niet voor regelmatig
+ controles, omdat het vervangen van kapotte kabels goedkoper is dan regelmatig
+ controles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
