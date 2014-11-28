@@ -25,6 +25,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -53,8 +54,8 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip bigskip
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -123,8 +124,14 @@ We adviseren een opstelling bestaande uit 10 rijen van 10 computers.
 roep, is dit een realiseerbare opstelling.
  De kabel voor de voeding van de PC's afkomstig van één zekeringsgroep loopt
  recht van de ene kant van de opstelling naar de ander.
+ Op deze manier kan er een gelijk aantal computers worden aangesloten per
+ groep zonder dat de groepen maximaal belast worden.
  Deze opstelling is voor alle scenarios (Desktop PC of M2Desk, AC of DC)
  hetzelfde.
+ Hoewel het opstellen van de tafels in het geval van zowel desktop PC's
+ als M2Desks hetzelfde is, zullen de tafels bij desktop PC's sneller schade
+ oplopen door slijtage door het continu neerzetten en opruimen van de PC
+ opstellingen.
 \end_layout
 
 \begin_layout Standard
@@ -142,10 +149,7 @@ Stroomvoorziening
 Elke kolom wordt van stroom voorzien door een kabel die vertakt bij elke
  pc in de kolom.
  De kabels liggen naast de tafels zodat ze niet in de weg liggen.
-\end_layout
-
-\begin_layout Standard
-Hierop kunnen maximaal 10 computers worden aangesloten.
+ Hierop kunnen maximaal 10 computers worden aangesloten.
  Er zijn dus minimaal 10 groepen nodig.
  Het is belangrijk dat deze groepen niet aan de aardlek geschakeld zijn
  i.v.m lekstromen in de computers.
