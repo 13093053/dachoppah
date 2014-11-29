@@ -1,12 +1,14 @@
-%% LyX 2.1.0 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[english]{article}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\setlength{\parskip}{\bigskipamount}
-\setlength{\parindent}{0pt}
-\usepackage{textcomp}
-\usepackage{babel}
+\documentclass[11pt,a4paper]{article}
+%\usepackage{a4wide}
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[latin1]{inputenc}
+\usepackage{url}
+\usepackage[small,bf,hang]{caption}
+\usepackage[Gray,squaren,thinqspace,thinspace]{SIunits}
+
+
 \begin{document}
 
 \title{Tussenrapport PROENT-pj1\\
@@ -25,22 +27,22 @@ Wouter Boogert}
 \date{28 november 2014}
 
 \maketitle
-$\pagebreak$
+\pagebreak
 
 \tableofcontents{}
 
-$\pagebreak$
+\pagebreak
 
 
 \section*{Inleiding}
 
-Het is de bedoeling dat lokaal 0.126 wordt ingericht voor digitale
+Lokaal 0.126 moet worden ingericht voor digitale
 toetsen. Hiervoor moet het lokaal van 100 PC's worden voorzien. Wij
 onderzochten op welke manieren dit te bewerkstelligen is. Hierin beperkten
 wij ons tot de stroomvoorziening en de data-verbinding van de PC's.
 Ook vergeleken we desktop PC's met M2Desk geïntegreerde PC's.
 
-$\pagebreak$
+\pagebreak
 
 
 \section{Opstelling van tafels}
@@ -49,100 +51,67 @@ We adviseren een opstelling bestaande uit 10 rijen van 10 computers.
 Gezien er maximaal tien tafels in de breedte passen in het lokaal
 zonder dat er wordt afgeweken van de richtlijnen voor toetsopstellingen,
 is dit een realiseerbare opstelling. De kabel voor de voeding van
-de PC's afkomstig van één zekeringsgroep loopt recht van de ene kant
-van de opstelling naar de ander. Op deze manier kan er een gelijk
-aantal computers worden aangesloten per groep zonder dat de groepen
-maximaal belast worden. Deze opstelling is voor alle scenarios (Desktop
-PC of M2Desk, AC of DC) hetzelfde.
+de PC's afkomstig van één zekeringsgroep loopt recht van de achterkant van het lokaal naar de voorste tafel. 
 
-$\pagebreak$
+\pagebreak
 
 
 \section{Stroomvoorziening}
 
 Elke kolom wordt van stroom voorzien door een kabel die vertakt bij
 elke PC in de kolom. De kabels liggen naast de tafels zodat ze niet
-in de weg liggen. Hierop kunnen maximaal 10 computers worden aangesloten.
-Er zijn dus minimaal 10 groepen nodig. Het is belangrijk dat deze
-groepen niet aan de aardlek geschakeld zijn in verband met lekstromen
-in de computers. De lekstromen zijn dusdanig hoog dat de aardlek afschakelt. 
+in het voetpad liggen. Hierop kunnen maximaal 10 computers worden aangesloten.
+Computers kunnen een lekstroom hebben. Door het grote aantal computers kan deze lekstroom in totaal zo groot worden dat de aardlek onbedoeld afschakelt. Het is daarom verstandig om de computers niet achter een aardlekschakelaar te zetten. Dit komt de betrouwbaarheid van de installatie ten goede.
+De kabels worden regelmatig afgerold, en afgerold. Ook word er op gelopen. Hierdoor krijgen de kabels wel wat te verduren. Het is belangrijk om een stevige en slijtvaste kabel te nemen. Een kabel die hieraan voldoet is de H07RN-F.
+
 
 
 \subsection{Desktop PC AC 230V}
 
-Per groep loopt er ongeveer een stroom van 13A (10 {*} 300/230). Elke
-kolom wordt aangesloten op een aparte groep gezekerd op 16A. De kabels
-moeten minimaal 16A aankunnen en voldoen aan de Nederlandse veiligheidsnorm
-voor laagspanningsinstallaties. De draaddikte is minimaal 2,5mm\textsuperscript{2}.
-De spanningsval als gevolg van draadweerstand is verwaarloosbaar met
-de korte draadlengtes in deze installatie.
+Elke kolom van 10 computers krijgt een aparte groep. 
+Per groep loopt er dan een stroom van 13A. De zekering wordt 16A. De kabels moeten voldoen aan de Nederlandse veiligheidsnorm
+voor laagspanningsinstallaties(NEN1010). De draaddikte moet in deze situatie minimaal 1,5 mm\textsuperscript{2} zijn.
+De spanningsval als gevolg van draadweerstand bij nominale belasting valt met 6V ruim binnen de toleranties.
 
 
 \subsection{Desktop PC DC 350V}
 
-Voor een DC installatie kunnen dezelfde kabels worden gebruikt. Door
-de hogere spanning kunnen er meer computers per groep worden aangesloten.
-Als er nog steeds 10 computers op een groep worden aangesloten kunnen
-er ook dunnere kabels worden gebruikt en zekeringen van 10A. Zo kan
-de installatie goedkoper worden gemaakt. Door de hogere spanning wordt
-de installatie ook efficiënter. 
+Ook hier krijgt elke kolom zijn eigen groep. Omdat we een hogere spanning hebben is de stroom lager. Daarom kunnen we nu zekeringen van 10A gebruiken. 
+Er kunnen nu in meer computers per groep worden aangesloten In onze opstelling is het onhandig om niet gehele kolommen aan te sluiten. De draaddikte die de NEN1010 minimaal voorschrijft is 1,5mm\textsuperscript{2}. Hier kan dus exact hetzelfde draad worden gekozen als bij de AC installatie. De spanningsval over de draad is met 4V lager dan bij de AC-installatie. De DC-installatie is dus efficiënter.
 
 
 \subsection{M2Desk AC 230V}
 
-De M2Desk computers verbruiken veel minder stroom dan de normale 200-300W
-PC's. De M2Desk computers vereisen samen een stroomsterkte van minder
-dan 11A. Het is mogelijk om alles op een groep van 16A aan te sluiten.
-Hiervoor kunnen dezelfde 2,5mm\textsuperscript{2}kabels worden gebruikt.
-Om elke kolom aan te sluiten kan een dunnere kabel gebruikt worden,
-omdat deze slechts 1,1A per stuk hoeven te leveren.
+De M2Desk computers verbruiken veel minder stroom dan de desktop Pc's.  De M2Desk computers vereisen samen een stroomsterkte van minder dan 11A. Het is mogelijk om alles op een groep van 16A aan te sluiten. Hiervoor kunnen dezelfde 1,5mm\textsuperscript{2}kabels worden gebruikt als bij de desktop. De spanningsval is met 4,8V lager dan bij de desktop Pc's op AC.
 
 
 \subsection{M2Desk DC 350V}
 
-Bij een spanning van 350V is het mogelijk om nog dunnere kabels te
-gebruiken, omdat er minder stroom geleverd hoeft te worden. Alle computers
-kunnen worden aangesloten op een groep gezekerd op 10A. Verliezen
-in kabels worden ook kleiner door deze hogere spanning.
+Alle computers kunnen worden aangesloten op één groep gezekerd op 10A. Ook hier moet is de draaddikte 1,5mm\textsuperscript{2}. De spanningsval is met 3,1V het kleinst in deze installatie. 
 
-$\pagebreak$
+\pagebreak
 
 
 \section{LAN data-verbinding}
 
-Iedere computer moet een verbinding met het lokale netwerk hebben.
-De datavoorziening moet stabiel, veilig en redelijk snel zijn. Het
-is belangrijk dat het netwerk niet zomaar stil komt te liggen tijdens
-een toets, omdat de toets dan opnieuw moet worden afgenomen op een
-ander moment.
+Iedere computer moet een verbinding met het lokale netwerk hebben. De datavoorziening moet stabiel, veilig en redelijk snel zijn. Het is belangrijk dat het netwerk niet zomaar stil komt te liggen tijdens een toets, omdat de toets dan opnieuw moet worden afgenomen op een ander moment.
 
 
 \subsection{Draadloos (WIFI)}
 
-Dit type netwerk is zonder extra kabels te realiseren waardoor het
-snel op te zetten is. Een draadloze verbinding brengt wel een beveiligingsrisico
-met zich mee. Het is mogelijk om met een ander netwerk te verbinden
-zoals Eduroam. Dit netwerk heeft vrije internet toegang. Dit is niet
-wenselijk in een toetsopstelling.
+Dit type netwerk is zonder extra kabels te realiseren waardoor het snel op te zetten is. Een draadloze verbinding brengt wel een beveiligingsrisico met zich mee. Het is mogelijk om met een ander netwerk te verbinden zoals Eduroam. Dit netwerk heeft vrije internet toegang. Dit is niet wenselijk in een toetsopstelling.
 
 
 \subsection{Data via de voedingskabels}
 
-Dit is ook zonder extra kabels te realiseren, maar het is nog maar
-de vraag of het mogelijk is om 100 PC's op dit type netwerk aan te
-sluiten. 100 PC voedingen zorgen voor veel verstoring op de kabels.
-Elke computer moet bovendien voorzien worden van een apparaatje wat
-het datasignaal uit de stroomvoorziening extraheert. Dit brengt extra
-kosten met zich mee.
+Dit is ook zonder extra kabels te realiseren, maar het is nog maar de vraag of het mogelijk is om 100 PC's op dit type netwerk aan te sluiten. 100 PC voedingen zorgen voor veel verstoring op de kabels. Elke computer moet bovendien voorzien worden van een apparaatje wat het datasignaal uit de stroomvoorziening extraheert. Dit brengt extra kosten met zich mee.
 
 
 \subsection{Ethernetkabels}
 
-Iedere PC wordt voorzien van een eigen ethernetkabel. Het kost wat
-extra tijd om het netwerk aan te leggen, maar dit garandeert het meest
-stabiele, veilige en snelste netwerk.
+Iedere PC wordt voorzien van een eigen ethernetkabel. Het kost wat extra tijd om het netwerk aan te leggen, maar dit garandeert het meest stabiele, veilige en snelste netwerk.
 
-$\pagebreak$
+\pagebreak
 
 
 \section{Opbouwtijd}
@@ -150,150 +119,120 @@ $\pagebreak$
 
 \subsection{Desktop PC}
 
-Er zijn veel verschillende soorten desktop PC's. Hier wordt als voorbeeld
-hetzelfde type PC gebruikt als bij het studielandschap elektrotechniek
-gebruikt. Het neerzetten van de tafels kost ongeveer 3-4 uur. Het
-kost ongeveer 2-3 uur om elke tafel van een PC te voorzien. Er moeten
-ook nog toetsenborden en muizen worden aangesloten. Dit kost ongeveer
-2 uur extra. Daarna moeten de PC's nog van stroom en e.v.t. ethernetkabels
-worden voorzien. Het uitrollen en aansluiten van de bedrading kost
-ongeveer 2-3 uur. In totaal kost het 9-12 uur om alle PC's neer te
-zetten en startklaar te maken. Bij een uurtarief van 50 euro per uur
-kost het naar schatting 450-600 euro om alles in orde te maken.
+Er zijn veel verschillende soorten desktop PC's. Hier wordt als voorbeeld hetzelfde type PC gebruikt als bij het studielandschap elektrotechniek gebruikt. Het neerzetten van de tafels kost ongeveer 3-4 uur. Het kost ongeveer 2-3 uur om elke tafel van een PC te voorzien. Er moeten ook nog toetsenborden en muizen worden aangesloten. Dit kost ongeveer 2 uur extra. Daarna moeten de PC's nog van stroom en e.v.t. ethernetkabels worden voorzien. Het uitrollen en aansluiten van de bedrading kost ongeveer 2-3 uur. In totaal kost het 9-12 uur om alle PC's neer te zetten en startklaar te maken. Bij een uurtarief van 50 euro per uur kost het naar schatting 450-600 euro om alles in orde te maken.
 
 
 \subsection{M2Desk}
 
-Het kost een werkdag om 100 M2Desk computers neer te zetten. Bij een
-uurtarief van 50 euro per uur kost het ongeveer 450 euro om alle computers
-te installeren. De M2Desk computers kunnen worden getransformeerd
-tot normale tafels, dus deze opstelling kan blijven staan voor alle
-toetsen.
+Het kost een werkdag om 100 M2Desk computers neer te zetten. Bij een uurtarief van 50 euro per uur kost het ongeveer 450 euro om alle computers te installeren. De M2Desk computers kunnen worden getransformeerd tot normale tafels, dus deze opstelling kan blijven staan voor alle toetsen.
 
-$\pagebreak$
+\pagebreak
 
 
 \section{Onderhoud}
 
 Het komt voor dat de ethernet- en stroomkabels stuk gaan waardoor
-de kabels niet meer goed functioneren. De kapotte kabels moeten dan
-vervangen worden. De prijs per meter is ongeveer 2 euro. Het is gekozen
-voor vervangen van kapotte kabels en niet voor regelmatig controles,
-omdat het vervangen van kapotte kabels goedkoper is dan regelmatig
-controles.
+de kabels niet meer goed functioneren. De kapotte kabels moeten dan vervangen worden. De prijs per meter is ongeveer 2 euro. Het is gekozen voor vervangen van kapotte kabels en niet voor regelmatig controles, omdat het vervangen van kapotte kabels goedkoper is dan regelmatig controles.
 
-$\pagebreak$
+\pagebreak
 
 
 \section*{Conclusie}
 
-Wij bevelen aan om M2Desk geintegreerde PC's in combinatie met een
-DC netspanning en een aparte ethernetkabel te gebruiken. Hoewel het
-opstellen van de tafels in het geval van zowel desktop PC's als M2Desks
-hetzelfde is, zullen de tafels bij desktop PC's sneller schade oplopen
-door slijtage door het continu neerzetten en opruimen van de PC opstellingen.
-Op de langer termijn kan het daardoor aantrekkelijker zijn om met
-M2Desk opstellingen te werken in plaats van normale tafels in combinatie
-met desktop PC's. Deze computers verbruiken zeer weinig energie vergeleken
-met normale desktop PC's. Hierdoor worden de energiekosten lager maar
-ook de kostprijs van de bekabeling. Een aparte ethernetkabel per PC
-mag dan wel duurder zijn, maar het garandeert wel het meest stabiele
-netwerk. Het opbouwen van de toetsopstelling is sneller met M2Desks
-dan met desktop PC's en bovendien kunnen er normale toetsen worden
-gehouden in een lokaal ingericht met M2Desk computers.
+Wij bevelen aan om M2Desk geintegreerde PC's in combinatie met een DC netspanning en een aparte ethernetkabel te gebruiken. Hoewel het opstellen van de tafels in het geval van zowel desktop PC's als M2Desks hetzelfde is, zullen de tafels bij desktop PC's sneller schade oplopen door slijtage door het continu neerzetten en opruimen van de PC opstellingen. Op de langer termijn kan het daardoor aantrekkelijker zijn om met M2Desk opstellingen te werken in plaats van normale tafels in combinatie met desktop PC's. Deze computers verbruiken zeer weinig energie vergeleken met normale desktop PC's. Hierdoor worden de energiekosten lager maar ook de kostprijs van de bekabeling. Een aparte ethernetkabel per PC mag dan wel duurder zijn, maar het garandeert wel het meest stabiele netwerk. Het opbouwen van de toetsopstelling is sneller met M2Desks dan met desktop PC's en bovendien kunnen er normale toetsen worden gehouden in een lokaal ingericht met M2Desk computers.
 
+\pagebreak
 
 \section*{Bijlagen}
 
 Alle gebruikte tabellen komen uit de NEN1010.\\
-Montage-methode E (tabel A.52-1) type kabel (tabel A.52-2) (H07RN-F
-slijtvaste mantel, bestand tegen zware mechanische belasting)
+De kabels liggen gewoon op de vloer. Dit is montage-methode E (tabel A.52-1). Het type kabel wat wij aanraden, en wat voldoet aan de norm is H07RN-F (tabel A.52-2). Deze kabel heeft een slijtvaste mantel,en is bestand tegen zware mechanische belasting.
+
 
 
 \subsubsection*{Berekening draad voor 10 normale PC's AC}
 
-Stap 1: De bedrijfstroom is: (300/230) {*} 10 = 13A\\
-Stap 2: De eerste standaardwaarde boven 13A is 16A.
-
+\begin{description}
+\item[Stap 1:] De bedrijfstroom is: (300/230) {*} 10 = 13A
+\item[Stap 2:] De eerste standaardwaarde boven 13A is 16A.
+ 
 Als zekering kiezen we voor een 16A trage diazed patroon. Op een automaat
 kunnen maximaal 5 standaard computers door de hoge inschakelstromen.
 Een traag smeltpatroon kan een veel hogere inschakelstroom verdragen. 
 
-Stap 3: De bijbehorende Iz van de leiding is bij dit type zekering
-17,7A.\\
-Stap 4: De correctiefactor voor de omgevingstemperatuur van 30\textdegree C
-is 1,00 (tabel A.52-15).\\
-Stap 5: De Iz is 17,7A/1,0 = 17,7A de doorsnede wordt dan 1,5mm\textsuperscript{2}
-(tabel A.52-9) . De weerstand van deze draad is 15.4 ohm/km.\\
-Stap 6: De maximale lengte is 53m (tabel A.53-4).De lengte van het
+\item[Stap 3:] De bijbehorende Iz van de leiding is bij dit type zekering
+17,7A.
+\item[Stap 4:] De correctiefactor voor de omgevingstemperatuur van 30\textdegree C
+is 1,00 (tabel A.52-15).
+\item[Stap 5:] De Iz is 17,7A/1,0 = 17,7A de doorsnede wordt dan 1,5mm\textsuperscript{2}
+(tabel A.52-9) . De weerstand van deze draad is 15.4 ohm/km.
+\item[Stap 6:] De maximale lengte is 53m (tabel A.53-4).De lengte van het
 lokaal is 30m, dus dit is voldoende.
+\end{description}
+De maximale spanningsval bij de nominale stroom is: $13 * ((15,4/1000) * 30) = 6V$
 
-De maximale spanningsval bij de nominale stroom is: 13{*}((15,4/1000){*}30)
-= 6V
-
+\pagebreak
 
 \subsubsection*{Berekening draad voor 10 normale PC's DC}
-
-Stap 1: De bedrijfstroom is: (300/350) {*} 10 = 8,6A\\
-Stap 2: De eerste standaardwaarde boven 8,6A is 10A.
+\begin{description}
+\item[Stap 1:] De bedrijfstroom is: (300/350) {*} 10 = 8,6A
+\item[Stap 2:] De eerste standaardwaarde boven 8,6A is 10A.
 
 Als zekering kiezen we voor een 10A trage diazed patroon. Op een automaat
 kunnen maximaal 5 standaard computers door de hoge inschakelstromen.
 Een traag smeltpatroon kan een veel hogere inschakelstroom verdragen. 
 
-Stap 3: De Iz van de leiding kan gelijk worden gesteld aan de nominale
-stroom van de automaat. Dit is dus 10A.\\
-Stap 4: De correctiefactor voor de omgevingtemperatuur van 30\textdegree C
-is 1,00 (tabel A.52-15).\\
-Stap 5: De Iz is 13,1A/1,0 = 13,1A de doorsnede wordt dan 1,5mm\textsuperscript{2}
-(tabel A.52-9) . De weerstand van deze draad is 15.4 ohm/km.\\
-Stap 6: De maximale lengte is 53m (tabel A.53-4).De lengte van het
+\item[Stap 3:] De Iz van de leiding kan gelijk worden gesteld aan de nominale
+stroom van de automaat. Dit is dus 10A.
+\item[Stap 4:] De correctiefactor voor de omgevingstemperatuur van 30\textdegree C
+is 1,00 (tabel A.52-15).
+\item[Stap 5:] De Iz is 13,1A/1,0 = 13,1A de doorsnede wordt dan 1,5mm\textsuperscript{2}
+(tabel A.52-9) . De weerstand van deze draad is 15.4 ohm/km.
+\item[Stap 6:] De maximale lengte is 53m (tabel A.53-4).De lengte van het
 lokaal is 30m, dus dit is voldoende.
-
-De maximale spanningsval bij de nominale stroom is: 8,6{*}((15,4/1000){*}30)
-= 4V
+\end{description}
+De maximale spanningsval bij de nominale stroom is: $8,6*((15,4/1000)*30) = 4V$
 
 
 \subsubsection*{Berekening draad voor M2Desk PC's AC}
-
-Stap 1: De bedrijfsstroom voor 100 M2Desk PC's is (2400/230) = 10,4A\\
-Stap 2: De eerste standaardwaarde boven 10,4A is 16A
+\begin{description}
+\item[Stap 1:] De bedrijfsstroom voor 100 M2Desk PC's is (2400/230) = 10,4A
+\item[Stap 2:] De eerste standaardwaarde boven 10,4A is 16A
 
 Als zekering kiezen we voor een 16A trage diazed patroon. Een automaat
 kan de hoge inschakelstromen van de PC's niet verdragen. Een traag
 smeltpatroon wel.
 
-Stap 3: De bijbehorende Iz van de leiding is bij dit type zekering
-17,7A.\\
-Stap 4: De correctiefactor voor de omgevingtemperatuur van 30\textdegree C
-is 1,00 (tabel A.52-15).\\
-Stap 5: De Iz is 17,7A/1,0 = 17,7A de doorsnede wordt dan 1,5mm\textsuperscript{2}
-(tabel A.52-9) . De weerstand van deze draad is 15.4 ohm/km.\\
-Stap 6: De maximale lengte is 53m (tabel A.53-4).De lengte van het
+\item[Stap 3:] De bijbehorende Iz van de leiding is bij dit type zekering
+17,7A.
+\item[Stap 4:] De correctiefactor voor de omgevingtemperatuur van 30\textdegree C
+is 1,00 (tabel A.52-15).
+\item[Stap 5:] De Iz is 17,7A/1,0 = 17,7A de doorsnede wordt dan 1,5mm\textsuperscript{2}
+(tabel A.52-9) . De weerstand van deze draad is 15.4 ohm/km.
+\item[Stap 6:] De maximale lengte is 53m (tabel A.53-4).De lengte van het
 lokaal is 30m, dus dit is voldoende.
-
-De maximale spanningsval bij de nominale stroom is: 10,4{*}((15,4/1000){*}30)
-= 4,8V
+\end{description}
+De maximale spanningsval bij de nominale stroom is: $10,4*((15,4/1000)*30)= 4,8V$
 
 
 \subsubsection*{Berekening draad voor M2Desk PC's DC}
 
-Stap 1: De bedrijfsstroom voor 100 M2Desk PC's is (2400/350) = 6,8A\\
-Stap 2: De eerste standaardwaarde boven 6,8A is 10A.
+\begin{description}
+\item[Stap 1:] De bedrijfsstroom voor 100 M2Desk PC's is (2400/350) = 6,8A
+\item[Stap 2:] De eerste standaardwaarde boven 6,8A is 10A.
 
 Als zekering kiezen we voor een 10A trage diazed patroon. Een automaat
 kan de hoge inschakelstromen van de PC's niet verdragen. Een traag
 smeltpatroon wel.
 
-Stap 3: De bijbehorende Iz van de leiding is bij dit type zekering
-13,1A\\
-Stap 4: De correctiefactor voor de omgevingtemperatuur van 30\textdegree C
-is 1,00 (tabel A.52-15).\\
-Stap 5: De Iz is 13,1A/1,0 = 13,1A de doorsnede wordt dan 1,5mm\textsuperscript{2}
-(tabel A.52-9) . De weerstand van deze draad is 15.4 ohm/km.\\
-Stap 6: De maximale lengte is 53m (tabel A.53-4).De lengte van het
-lokaal is 30m, dus dit is voldoende.
+\item[Stap 3:] De bijbehorende Iz van de leiding is bij dit type zekering
+13,1A
+\item[Stap 4:] De correctiefactor voor de omgevingtemperatuur van 30\textdegree C
+is 1,00 (tabel A.52-15).
+\item[Stap 5:] De Iz is 13,1A/1,0 = 13,1A de doorsnede wordt dan 1,5mm\textsuperscript{2} (tabel A.52-9). De weerstand van deze draad is 15.4 ohm/km.
+\item[Stap 6:] De maximale lengte is 53m (tabel A.53-4).De lengte van het lokaal is 30m, dus dit is voldoende.
+\end{description}
+De maximale spanningsval bij de nominale stroom is: $6,8 * ((15,4/1000) * 30) = 3,1V$
 
-De maximale spanningsval bij de nominale stroom is: 6,8{*}((15,4/1000){*}30)
-= 3,1V
+
 \end{document}

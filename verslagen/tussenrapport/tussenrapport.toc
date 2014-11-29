@@ -1,0 +1,15 @@
+\select@language {dutch}
+\contentsline {section}{\numberline {1}Opstelling van tafels}{4}
+\contentsline {section}{\numberline {2}Stroomvoorziening}{5}
+\contentsline {subsection}{\numberline {2.1}Desktop PC AC 230V}{5}
+\contentsline {subsection}{\numberline {2.2}Desktop PC DC 350V}{5}
+\contentsline {subsection}{\numberline {2.3}M2Desk AC 230V}{5}
+\contentsline {subsection}{\numberline {2.4}M2Desk DC 350V}{6}
+\contentsline {section}{\numberline {3}LAN data-verbinding}{7}
+\contentsline {subsection}{\numberline {3.1}Draadloos (WIFI)}{7}
+\contentsline {subsection}{\numberline {3.2}Data via de voedingskabels}{7}
+\contentsline {subsection}{\numberline {3.3}Ethernetkabels}{7}
+\contentsline {section}{\numberline {4}Opbouwtijd}{8}
+\contentsline {subsection}{\numberline {4.1}Desktop PC}{8}
+\contentsline {subsection}{\numberline {4.2}M2Desk}{8}
+\contentsline {section}{\numberline {5}Onderhoud}{9}
