@@ -73,12 +73,12 @@ Projectgrenzen
 \end_layout
 
 \begin_layout Standard
-In it hoofdtuk worden de grenzen van dit project besproken, wat er wel en
- niet gedaan moet worden.
+In dit hoofdstuk worden de grenzen van dit project besproken, wat er wel
+ en niet gedaan moet worden.
 \end_layout
 
 \begin_layout Paragraph
-Binnen de projectgrenzen:
+Binnen de projectgrenzen
 \end_layout
 
 \begin_layout Itemize
@@ -116,7 +116,7 @@ Er moet gekeken worden hoe de in het bovende punt genoemde flyback converters
 \end_layout
 
 \begin_layout Paragraph*
-Buiten de projectgrenzen:
+Buiten de projectgrenzen
 \end_layout
 
 \begin_layout Itemize
@@ -130,7 +130,7 @@ Data via de voedingskabel wordt niet gemaakt.
 \end_layout
 
 \begin_layout Paragraph*
-Randvoorwaarden:
+Randvoorwaarden
 \end_layout
 
 \begin_layout Itemize

@@ -4,9 +4,6 @@
 \begin_header
 \textclass article
 \use_default_options true
-\begin_modules
-tabs-within-sections
-\end_modules
 \maintain_unincluded_children false
 \language dutch
 \language_package default

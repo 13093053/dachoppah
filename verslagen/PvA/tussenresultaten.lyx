@@ -68,6 +68,10 @@
 
 \begin_body
 
+\begin_layout Section
+Tussenresultaten
+\end_layout
+
 \begin_layout Standard
 Het beoogde resultaat bestaat uit tussenresultaten die volgen uit de activiteite
 n van dit project.
@@ -78,8 +82,8 @@ n van dit project.
 <lyxtabular version="3" rows="13" columns="3">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="35text%">
+<column alignment="left" valignment="top" width="50text%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -103,7 +107,7 @@ Activiteiten
 \begin_inset Text
 
 \begin_layout Plain Layout
-Beoogde tussenresultaat
+Beoogd tussenresultaat
 \end_layout
 
 \end_inset
@@ -454,7 +458,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-Assesment
+Assessment
 \end_layout
 
 \end_inset

@@ -73,7 +73,7 @@ Kwaliteitsbewaking
 \end_layout
 
 \begin_layout Subsection*
-Flyback converters:
+Flyback converters
 \end_layout
 
 \begin_layout Standard
@@ -92,8 +92,8 @@ Documentatie
 
 \begin_layout Standard
 Alle documenten die gezien zullen/kunnen worden door de klant, coördinator,
- coaches en/of begeleiders, worden in latex geschreven.
- Alle bestanden worden in een Github repository geplaatst, waar alle projectlede
+ coaches en/of begeleiders, worden in LaTeX geschreven.
+ Alle bestanden worden in een GitHub repository geplaatst, waar alle projectlede
 n toegang tot hebben.
  Deze wordt tevens ook gebruikt om de documenten te wijzigen.
  Er is voor deze software gekozen, omdat er heel duidelijk te zien valt
