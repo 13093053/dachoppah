@@ -1,0 +1,31 @@
+Notulen dinsdag week 3
+Datum: 2 dec 2014
+
+==Aanwezigen==
+wouter, daan, kevin, koen, andrew, daniel, dhr. H. Ferchani
+
+==Flyback converter==
+12v -> Daan & Wouter
+15v -> Daniel & Koen
+19v -> Andrew & Kevin
+
+==Eindrapport==
+Er moeten 3 ontwerprapporten in het eindrapport verwerkt worden. De ontwerpen moeten ook vergeleken worden: Welke van ONZE 3 ontwerpen is het beste?
+Om te bepalen welk ontwerp het beste is moeten we zelf criterea stellen, maar ook criterea van de opdrachtgever meenemen.
+
+DEADLINE: Vrijdag Lesweek 7
+
+Inhoud:
+* Feedback op deelrapport moet worden meegenomen in het eindrapport.
+* Klantgericht (M2Desk directeur)
+* Overwegingen: Kosten, snelheid, veiligheid. (Tastbare dingen die de opdrachtgever begrijpt)
+* Neem de lezer mee in gedachtengang.
+* Er moet een samenvatting in het rapport. Dit is de samenvatting van alle hoofdstukken inclusief de inleiding en conclusie.
+* Kopteksten zijn vragen: Hoe kan ik ...? Waarom is ...?
+* Elk hoofdstuk heeft zijn eigen inleiding en conclusie. In de inleiding wordt kort verteld waar het hoofdstuk over gaat. Gebruikt signaalwoorden (om te beginnen, ten tweede, daarna, vervolgens)
+
+==Eindpresentatie==
+
+==Actiepunten==
+Woensdagmiddag PvA samengevoegd (Kevin)
+Woensdagavond PvA inleveren (Andrew)
