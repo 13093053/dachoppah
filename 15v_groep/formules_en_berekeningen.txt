@@ -1,0 +1,65 @@
+PROENT
+Auteurs: Daniël Martoredjo en Koen van Vliet
+Datum:  10-12-2014
+
+Flybackconverter (Basisontwerp van dictaat Hoofdstuk 10)
+
+Vin = 300..360V ===> kies gem. ===> Vin = (360 + 300) / 2 = 330V
+Vout = 15V
+
+signaal:
+	- fsig = 100KHz (blokvormig)
+	- Tsig = 1/fsig = 1/10^5 = 10 us
+	- duty-cycle = 50%
+	- dT = 50% * 10 us = 5 us
+
+basisformule: 
+	Vout = Vin * (Ns/Np) * (dT / (Tsig - dT))
+	Ns/Np = Vout / (Vin * (dT / (Tsig - dT)))
+	Ns/Np = 15 / (330 * (1)) = 1/22
+	Conclusie:	Ns:Np == 1:22
+			Np:Ns == 22:1
+
+
+// Some more stuff 
+// Ns/Np = 1/22
+// Bereken dan dutycycle bij Vin min en max
+//
+// Vout = Vin * (Ns/Np) * (dT / (Tsig - dT))
+// <=> (dT / (Tsig - dT)) = Vout / (Vin * (Ns/Np))
+// Note: Vin = 360V (max)
+// (dT / (Tsig - dT)) = 15 / (360 * (1/22)) = 0.91667
+// dT = Tsig * 0.91667 - dT * 0.91667
+// dT = (Tsig * 0.91667) / 1.91667 = (10^-5 * 0.91667) / 1.91667 = 4.783 us
+// duty-cycle = dT / Tsig = 4.783/10 = 47.83%
+// Note: Vin = 300V (min)
+// (dT / (Tsig - dT)) = 15 / (300 * (1/22)) = 1.1
+// dT = Tsig * 1.1 - dT * 1.1
+// dT = (Tsig * 1.1) / 1.91667 = (10^-5 * 1.1) / 2.1 = 5.238 us
+// duty-cycle = dT / Tsig = 5.238/10 = 52.38%
+
+
+Date: 11-12-2014
+Na gesprek met docent VRMELA
+
+-----------------
+	|
+	|
+	|
+       | |
+       |R| ES	Uesr = i*RESR
+       | |
+	|
+	|
+	|    + 
+      ===== C  	Uc
+      	|    -
+	|
+	|
+------------------
+
+Kies een condensator met RESR = 0,1...0,2 Ohm
+Rimpel moet +- 0.05V
+Rimpel beïnvloed door Uesr
+
+	
