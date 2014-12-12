@@ -1,0 +1,22 @@
+Notulen dinsdag week 4
+Datum: 9 dec 2014
+
+==Aanwezigen==
+wouter, daan, kevin, koen, andrew, daniel, dhr. H. Ferchani
+
+==Informatie==
+Het assesment is in week 9
+Er kan een afspraak gemaakt worden met dhr. Ferchani om te oefenen met presenteren. (Sessie van 1 uur)
+
+/!\ Het is nog steeds onduidelijk aan wie het verslag gericht moet zijn. Dhr. Woudstra zegt dat het naar hem gericht moet zijn, maar Dhr. Ferchani zegt dat het naar de opdrachtgever: M2Desk gericht moet zijn.
+	Er moet nog uitsluitsel over worden gegeven.
+
+	Het is ook nog niet duidelijk hoe de beheer-competentie getoetst zal worden.
+
+==Actiepunten==
+Testprocedure schrijven - Week 6 (Koen)
+Simulatie - Maandag (Wouter)
+PCB & schema's krijgen - Vrijdag (Iedereen)
+Berekenen van waarden voor standaard flyback - Donderdag (Iedereen)
+
+Volgende meeting: Dinsdag 16 dec. 11:20
