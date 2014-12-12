@@ -1,0 +1,11 @@
+Rimpelspanning metingen M2Desk voeding:
+
+P = Vermogen
+Ur = Rimpelspanning
+
+P[in W] Ur[in mV]
+0	250
+5	450
+10	500
+20	580
+25	640
