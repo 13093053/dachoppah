@@ -1,0 +1,27 @@
+Groep: Daan Conijn & Wouter boogert
+
+
+Flybackconverter volgens de basis schakelingen
+
+	Vin = 300..360V
+	Vingem = (360 + 300) / 2 = 330V
+	Vout = 12V
+	P = 30w
+	fs = 100 kHz (blok)
+
+signaal:
+	Ts = 1/fs = 1/10^5 = 10 us
+	duty-cycle = 50%
+	dT = 1/2 * 10 us = 5 us
+
+Spoel verhouding:
+	Vout = Vin * (Ns/Np) * (dT / (Tsig - dT))
+	Ns/Np = Vout / (Vin * (dT / (Tsig - dT)))
+	Ns/Np = (12 / 330) = 2/55
+	
+	Dus:
+	Ns:Np == 2:55
+	Np:Ns == 55:2
+
+
+	
