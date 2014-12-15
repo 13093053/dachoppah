@@ -9,3 +9,5 @@ P[in W] Ur[in mV]
 10	500
 20	580
 25	640
+
+Waveform picture in m2desk_voedingtest_1.png and m2desk_voedingtest_2.png
