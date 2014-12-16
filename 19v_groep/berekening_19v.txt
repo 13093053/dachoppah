@@ -1,0 +1,66 @@
+﻿Andrew & Kevin
+
+Vout = 19 V
+Vin = 300 V - 360 V. Gemiddeld 330 V.
+
+Verhouding spoelwindingen:
+	Np/Ns = Vin/Vout dus Np/Ns = 300/19
+
+Bij Vin = 300V hoort de volgende duty-cycle:
+	Vout = Vin * Ns/Np * (dT / (T-dT))
+	19 = 300 * 19/300 * (dT / (10^-5 - dT))
+	1 = 1 * (dT / (10^-5 - dT))
+	10^-5 - dT = dT
+	10^-5 = 2 * dT
+	dT = 0.5*10^-5
+	duty-cycle = dT / T = (0.5*10^-5 / 10^-5) * 100% = 50%
+
+Bij Vin = 330V hoort de volgende duty-cycle:
+	Vout = Vin * Ns/Np * (dT / (T-dT))
+	19 = 330 * 19/300 * (dT / (10^-5 - dT))
+	1 =  11/10 * (dT / (10^-5 - dT))
+	10^-5 - dT = 11/10 * dT
+	10^-5 = (21/10) * dT
+	dT = 10^-5 / (21/10) ≈ 4.762*10^-5
+	duty-cycle = dT / T = (4.762*10^-5 / 10^-5) * 100% = 47.62%
+
+Bij Vin = 360V hoort de volgende duty-cycle:
+	Vout = Vin * Ns/Np * (dT / (T-dT))
+	19 = 360 * 19/300 * (dT / (10^-5 - dT))
+	1 = 6/5 * (dT / (10^-5 - dT))
+	10^-5 - dT = 6/5 * dT
+	10^-5 = 11/5 * dT
+	dT = 10^-5 / (11/5) ≈ 4.545*10^-5
+	duty-cycle = dT / T = (4.545*10^-5 / 10^-5) * 100% = 45,45%
+
+Blokkeerspanningen (uit gaan van maximale ingangsspanningen):
+	Mosfset: VDS = Vin + Vout * Np/Ns = 360 + 19 * 300/19 = 660 V
+	Diode: UR = Vout + Vin * Ns/Np = 19 + 360 * 19/300 = 41.8 V
+
+Berekeningen gekoppelde spoelen:
+	Waarde primaire spoel:
+		Lp ≈ (Vin^2 / (8 * Pout * f)) * η
+		Neem voor η 0.8 -> zie blz. 58
+		
+		Voor Vin = 300V: Lp ≈ (300^2 / (8 * 30 * 100*10^3)) * 0.8 = 3*10^-3 H
+		Voor Vin = 330V: Lp ≈ (330^2 / (8 * 30 * 100*10^3)) * 0.8 = 3.63*10^-3 H
+		Voor Vin = 360V: Lp ≈ (360^2 / (8 * 30 * 100*10^3)) * 0.8 = 4.32*10^-3 H
+	
+	Piekwaarde stroom Ip (stroom door primaire spoel):
+		Ip(max) = (4 * Pout) / (Vin * η)
+		
+		Voor Vin = 300V: Ip(max) = (4 * 30) / (300 * 0.8) = 0.5 A
+		Voor Vin = 330V: Ip(max) = (4 * 30) / (330 * 0.8) = 0.454 A
+		Voor Vin = 360V: Ip(max) = (4 * 30) / (360 * 0.8) = 0.417 A
+	
+	Effectieve waarde stroom Ip:
+		Ip(eff) = Ip(max) / sqrt(6)
+		
+		Voor Vin = 300V: 0.5 / sqrt(6) ≈ 0.204 A
+		Voor Vin = 330V: ((4 * 30) / (330 * 0.8)) / sqrt(6) ≈ 0.186 A
+		Voor Vin = 360V: ((4 * 30) / (360 * 0.8)) / sqrt(6) ≈ 0.170 A
+	
+	Energie in de spoelkern aan het einde van de magnetiseringstijd dT = T/2:
+		W = Vin * (Ip(max) / 2) * (T / 2)
+		
+		
