@@ -1,0 +1,45 @@
+Berekeningen flyback 15v
+
+
+
+Wikkelverhouding:
+Np/Ns = Vin/Vout = 300/15 = 20/1
+
+Spoelstroom:
+Ip,top = 4 * Pout / (Vin*rendement)
+ = 4 * 30 / (300 * 0.85) = 0.47 A
+Is,top = 1.2 * 2 = 2.4A
+
+
+Inductie gekoppelde spoelen:
+Lp = (Vin^2 / (8*Pout*f)) * rendement
+ = (300^2 / (8 * 30 * 100000)) * 0.85
+ = 3,18 * 10^-3 H -> 3,18mH
+
+
+Gekozen spoelkern:
+Bsat <= 0.3T
+B = L*Itop / (sqrt(L/Al) * Amin)
+ETD29:	Al = 621 nH
+	Amin = 71 mm^2
+Bp = 3,18 * 10^-3 * 0.47 / (sqrt(3,18 * 10^-3 / (621 * 10^-9)) * 71*10^-6)
+   = 0.2945 < 0.3
+
+
+
+Np = sqrt( Lp / Al )
+ = sqrt( 3,18*10^-3 / 621*10^-9 ) = 72
+Ns = Np / 20 = 3,6
+Afronden naar geheel
+Ns = 4
+Ls = (4*sqrt(621*10^-9))^2 = 9,9 * 10^-6 H -> 9,9uH
+
+
+Spanning over diode
+Ud = 2 * Vout = 30v
+Id,top = Is,top = 1.2 * 2 = 2.4A
+
+
+Spanning over mosfet
+Uds = 2 * Vin = 720V
+Ids,top = Ip,top = 0.47A
