@@ -1,6 +1,42 @@
+Eisen:
+Uitgangspanning: 15v
+Rimpelspanning: 0.5v
+Uitgangsvermogen: 30W
+Schakelfrequentie: 100KHz
+Moet werken tussen 300 en 360v op de ingang.
+
+
+De componenten voor de flyback converter moeten aan de volgende eisen voldoen.
+Spoel windingen
+	Er is een wikkelverhouding van 20:1 nodig voor de gekoppelde spoelen. Om voldoende energie over te dragen zijn er 72 primaire en 4 secundaire windingen nodig.
+Spoel draaddikte
+	d = sqrt(I,top * 4 / (S * pi) )
+	Bijv. bij een koperdraad met stroomdichtheid van 3A/mm
+	d,p = sqrt(0.47 * 4 / (3 * pi) ) = 0.44mm
+	d,s = sqrt(2.4 * 4 / (3 * pi) ) = 1.0mm
+
+	Omdat er op hoge frequentie geschakeld wordt is het verstandig om in plaats van een enkele draad meerdere dunnere draadjes in parallel te winden. Deze moeten opgeteld het zelfde oppervlak als de enkele dikke draad hebben.
+
+	Er is meer dan voldoende ruimte voor 72 windingen van 0.44mm draad op de spoelkern.
+Spoelkern
+	De ETD29 kern is het meest gunstige voor deze flyback converter
+Mosfet
+	Om de voeding te schakelen is er een mosfet nodig die een Uds van 720V en een Ids van 0.47A aan kan. De mosfet moet van een heatsink worden voorzien om dit vermogen te kunnen schakelen.
+Diode
+	Om de spoelstroom gelijk te richten is er een diode nodig die een spanning van 30v kan sperren en een stroom van 2,4A kan doorlaten.
+Uitgangscondensator:
+	Er wordt een 100uF uitgangscondensator gebruikt. Het is een speciale low-ESR condensator. Bij deze condensator is de rimpelspanning n.a.v. de ESR hoger dan die van de C, dus er wordt gekeken naar de rimpel n.a.v. de ESR.
+	dVout = dIs * ESR
+	0.5v rimpel is acceptabel
+	dIs = 0.4 * 2
+	ESR = 0.5 / (0.4 * 2) = 0.625 Ohm
+	De condensator die gebruikt heeft een veel lagere ESR, dus de rimpelspanning valt binnen de specificatie.
+
+	
+
+
+
 Berekeningen flyback 15v
-
-
 
 Wikkelverhouding:
 Np/Ns = Vin/Vout = 300/15 = 20/1
@@ -17,15 +53,13 @@ Lp = (Vin^2 / (8*Pout*f)) * rendement
  = 3,18 * 10^-3 H -> 3,18mH
 
 
-Gekozen spoelkern:
+Spoelkern veld:
 Bsat <= 0.3T
-B = L*Itop / (sqrt(L/Al) * Amin)
+B = L*I,top / (sqrt(L/Al) * Amin)
 ETD29:	Al = 621 nH
 	Amin = 71 mm^2
 Bp = 3,18 * 10^-3 * 0.47 / (sqrt(3,18 * 10^-3 / (621 * 10^-9)) * 71*10^-6)
    = 0.2945 < 0.3
-
-
 
 Np = sqrt( Lp / Al )
  = sqrt( 3,18*10^-3 / 621*10^-9 ) = 72
