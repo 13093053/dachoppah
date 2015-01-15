@@ -75,8 +75,19 @@ Eisen
 \end_layout
 
 \begin_layout Standard
-Voor het ontwerpen van de Flyback converter, zijn enkele eisen gesteld voor
- de Flyback converter met een uitgangsspanning van 19V, 15V en 12V.
+Het is duidelijk dat voor een digitaal klaslokaal het beste met de M2Desk
+ computers gewerkt kan worden.
+ Daarom moeten er Flyback converters ontworpen worden waar enkele eisen
+ aan zijn gesteld.
+ Er worden Flyback converters ontworpen met een uitgangsspanningen van 19V,
+ 15V en 12V.
+\end_layout
+
+\begin_layout Standard
+De flyback converter is zo special omdat, de ingang en de uitgang zijn galvanisc
+h gescheiden.
+ Hierdoor is er geen kans dat de voedingspanning van 360 V direct op de
+ computer komt.
 \end_layout
 
 \begin_layout Standard
@@ -95,6 +106,9 @@ Overzicht gegeven eisen voor flyback converters
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
 <features rotate="0" tabularvalignment="middle">
