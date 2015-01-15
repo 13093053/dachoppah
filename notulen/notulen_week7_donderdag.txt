@@ -1,0 +1,72 @@
+Notulen week 7 donderdag
+Datum: 
+	15 Jan 2015
+
+Aanwezigen:
+	- Andrew
+	- Daan
+	- Daniel
+	- Kevin
+	- Koen
+	- Wouter
+
+
+Indeling eindverslag:
+	Voorwoord 		- Daan
+	Samenvatting		- } Daniel
+	Inleiding		- }
+	Beheer			- Kevin
+	Eisen			- Daan
+	Ontwerp			- Andrew
+	Testprocedure		- Koen
+	Simulatie		- } Wouter
+	Voldaan aan eisen? 	- }
+	Conclusie		- }
+	
+Indeling overig:
+	Soldeerduo: 			Daan en Daniel
+	Samenvoegen eindverslag:	Kevin
+	Assesment presenteren:		Daan en Koen
+	Meten aan flyback:		Wouter en Daniel
+	
+Inhoud eindverslag:
+	-----------------
+	Het is de bedoeling dat ieder hoofdstuk van een korte inleiding en conclusie wordt voorzien. Dit bevordert de structuur.
+	-----------------
+	Voorwoord:
+	- Dankwoord
+	- Dingen die niets met het verslag zelf te maken hebben, maar wel relevant zijn.
+	
+	Samenvatting:
+	- Samenvatting van alle hoofdstukken die volgen
+	
+	Inleiding:
+	- Achtergronden
+	- Wie is de groep?
+	- Voor wie is de opdracht uitgevoerd?
+	- Probleemstelling
+	
+	Beheer:
+	- Kennis, informatie, communicatie, inventaris, tijd & planning, grenzen
+	
+	Ontwerpeisen:
+	- Eisen voor de 3 flyback converters
+	
+	Ontwerp:
+	- Ontwerpkeuzes
+	- Ontwerpproces met enkele berekeningen
+	- Eisen voor componenten
+	
+	Testprocedure:
+	- Stappenplan voor het testen van een flyback converter.
+	
+	Simulatie:
+	- Overzicht simulatie + resultaten
+	
+	Voldaan aan de eisen?
+	- Vergelijken van simulatie-resultaten met ontwerpeisen.
+	
+	Conclusie
+	- Conclusie van de voorgaande hoofdstukken.
+	
+	
