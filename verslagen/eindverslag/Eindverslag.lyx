@@ -1,0 +1,1947 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Eindverslag Flyback Converter
+\begin_inset Newline newline
+\end_inset
+
+PROENT 
+\end_layout
+
+\begin_layout Author
+Andrew Lau, 13058339
+\begin_inset Newline newline
+\end_inset
+
+Kevin Oei, 13090062
+\begin_inset Newline newline
+\end_inset
+
+Daniel Martoredjo, 130xxxxx
+\begin_inset Newline newline
+\end_inset
+
+Koen van Vliet, 130xxxxx
+\begin_inset Newline newline
+\end_inset
+
+Daan Conijn, 130xxxxxx
+\begin_inset Newline newline
+\end_inset
+
+Wouter Boogert, 130xxxxx
+\begin_inset Newline newline
+\end_inset
+
+Projectgroep 2
+\end_layout
+
+\begin_layout Date
+16 januari 2015
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Voorwoord
+\end_layout
+
+\begin_layout Standard
+Dankzegging aan de docenten, De Haagse Hogeschool etc.
+ Ervaring van het project, hoe het ging etc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Samenvatting
+\end_layout
+
+\begin_layout Standard
+In hoofdstuk een wordt besproken over.....
+\end_layout
+
+\begin_layout Standard
+Hoofdstuk twee omschrijft de competentie beheer en hoe we aan niveau twee
+ voldaan hebben.
+\end_layout
+
+\begin_layout Standard
+Hoofdstuk drie ........
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inleiding
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Competentie: Beheren
+\end_layout
+
+\begin_layout Standard
+Gebruik gemaakt van Github.
+\end_layout
+
+\begin_layout Standard
+Communicatie door Telegram, e-mail en telefoonnummer.
+\end_layout
+
+\begin_layout Standard
+Achter de docenten gegaan voor informatie met betrekking tot het project
+ die vaag was.
+\end_layout
+
+\begin_layout Standard
+Kwaliteitsbeheer door elkaar zijn/haar werk nagegeken.
+\end_layout
+
+\begin_layout Standard
+Beheren door de plan van aanpak te wijzen.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Eisen
+\end_layout
+
+\begin_layout Standard
+Voor het ontwerpen van de Flyback converter, zijn enkele eisen gesteld voor
+ de Flyback converter met een uitgangsspanning van 19V,15V en 12V.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+f
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+s
+\end_layout
+
+\end_inset
+
+[kHz]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+[V]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P[W]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+[V]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+19V uitgang
+\end_layout
+
+\begin_layout Standard
+In tabel 4.1 zijn de specificaties van het ontworpen Flyback converter van
+ de 19V te zien.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+f
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+s
+\end_layout
+
+\end_inset
+
+[kHz]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+[V]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P[W]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+[V]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tabel 4.1 
+\end_layout
+
+\begin_layout Subsection
+15V uitgang
+\end_layout
+
+\begin_layout Subsection
+12V uitgang
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ontwerpen
+\end_layout
+
+\begin_layout Standard
+De Flyback converter is afgeleid van de Buck-Boost converter.
+ In figuur 4.1 is een overzicht gegeven van de afleiding van Buck-Boost converter
+ naar Flyback converter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename afleiding_van_BB_naar_flyback.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figuur 4.1: Afleiding van Buck-Boost naar Flyback.
+ Het bovenste schakeling is de Buck-Boost converter en de onderste schakeling
+ is de Flyback converter
+\end_layout
+
+\begin_layout Subsection
+Ontwerp 19V
+\end_layout
+
+\begin_layout Subsubsection
+Periodetijd
+\end_layout
+
+\begin_layout Standard
+De frequentie waarop de Flyback converter draait, is 100kHz.
+ De periodetijd is gelijk aan: 
+\end_layout
+
+\begin_layout Standard
+T = 1/100kHz = 1/100000 = 10μs
+\end_layout
+
+\begin_layout Subsubsection
+Wikkelverhouding
+\end_layout
+
+\begin_layout Standard
+Voor het ontwerpen van de Flyback converter, mag de duty cycle maximaal
+ 50% zijn.
+ De formule voor de wikkelverhouding is:
+\end_layout
+
+\begin_layout Standard
+N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+/ N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+= V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN
+\end_layout
+
+\end_inset
+
+/ V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Voor het bepalen van de wikkelverhouding met een duty cycle van maximaal
+ 50%, moet V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN
+\end_layout
+
+\end_inset
+
+gelijk zijn aan de minimale spanning van de gegeven specificaties.
+ De wikkelverhouding is gelijk aan:
+\end_layout
+
+\begin_layout Standard
+N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+/ N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+= 300 / 19
+\begin_inset Newline newline
+\end_inset
+
+N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+: : N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+<=> 300 : : 19
+\end_layout
+
+\begin_layout Standard
+Voor het bewijs dat de wikkelverhouding N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+/ N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+= 300 / 19 is, zijn de volgende berekeningen gemaakt:
+\end_layout
+
+\begin_layout Standard
+Voor V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN
+\end_layout
+
+\end_inset
+
+ = 360V:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT
+\end_layout
+
+\end_inset
+
+= V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN
+\end_layout
+
+\end_inset
+
+* (N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S 
+\end_layout
+
+\end_inset
+
+/ N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+
+)* (dT / (T - dT))
+\begin_inset Newline newline
+\end_inset
+
+19 = 360 * ( 19 / 300 ) * ( dT / 0,00001 - dT )
+\begin_inset Newline newline
+\end_inset
+
+19 * 300 * ( 0,00001 - dT) = 360 * 19 *dT
+\begin_inset Newline newline
+\end_inset
+
+0,057 - 5700*dT = 6840*dT
+\begin_inset Newline newline
+\end_inset
+
+12540*dT = 0,057
+\begin_inset Newline newline
+\end_inset
+
+dT = 4,545μs
+\end_layout
+
+\begin_layout Standard
+d = dT/T = 4,545 / 10 = 0,4545 (45,45%)
+\end_layout
+
+\begin_layout Standard
+De duty cycle is voor de maximale ingangsspanning (V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN
+\end_layout
+
+\end_inset
+
+ = 360V) ongeveer gelijk aan 45,45% en 45,45% ligt onder de 50%.
+ Dus de wikkelverhouding is:
+\end_layout
+
+\begin_layout Standard
+N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+: : N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+<=> 300 : : 19
+\end_layout
+
+\begin_layout Subsubsection
+Blokkeerspanningen
+\end_layout
+
+\begin_layout Standard
+De formule voor de spanning door de Mosfet is:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+= V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+ + V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
+*(N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+/N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S 
+\end_layout
+
+\end_inset
+
+) ≈ 2 * V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Voor de maximale spanning door de Mosfet wordt van uit gegaan dat de ingangspann
+ing (V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+) gelijk is aan 360V.
+ De maximale spanning door de Mosfet is gelijk aan:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+= 360 + 19*(300/19) = 660V
+\end_layout
+
+\begin_layout Standard
+De formule voor de spanning door de diode is:
+\begin_inset Newline newline
+\end_inset
+
+U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+R 
+\end_layout
+
+\end_inset
+
+= V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
++ V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+*(N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S 
+\end_layout
+
+\end_inset
+
+/N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+) ≈ 2 * V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Voor de maximale spanning door de Diode wordt van uit gegaan dat de ingangspanni
+ng (V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+) gelijk is aan 360V.
+ De maximale spanning door de Diode is gelijk aan:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+= 19 + 360*(19/300) = 41,8V
+\end_layout
+
+\begin_layout Subsubsection
+Primaire Piekstroom
+\end_layout
+
+\begin_layout Standard
+De formule voor de piekwaarde van de primaire stroom is:
+\begin_inset Newline newline
+\end_inset
+
+I
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+= (4 * P
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT
+\end_layout
+
+\end_inset
+
+) / ( V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+* η)
+\end_layout
+
+\begin_layout Standard
+Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
+ 0,85.
+\end_layout
+
+\begin_layout Standard
+In tabel 4.4.1 zijn de piekstromen van de primaire spoel weergegeven met een
+ ingangsspanning van 300V, 330V en 360V en met een rendement van 0,75, 0,80
+ en 0,85.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+η 
+\backslash
+ V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+[V]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+330
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+360
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,533A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,485A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,444A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,500A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,455A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,417A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,471A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,428A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,392A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tabel 4.4.1
+\end_layout
+
+\begin_layout Subsubsection
+Primaire Spoel
+\end_layout
+
+\begin_layout Standard
+De formule voor de primaire spoel is:
+\begin_inset Newline newline
+\end_inset
+
+L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+≈ ((V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN
+\end_layout
+
+\end_inset
+
+^2) / (8 * P
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
+* f )) * η
+\end_layout
+
+\begin_layout Standard
+Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
+ 0,85.
+\end_layout
+
+\begin_layout Standard
+In tabel 4.1.6 zijn de waarden van de primaire spoel weergegeven met een ingangssp
+anning van 300V, 330V en 360V en met een rendement van 0,75, 0,80 en 0,85.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+η 
+\backslash
+ V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+[V]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+330
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+360
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,8125mH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,4030mH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,0500mH
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,0000mH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,6300mH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,3200mH
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,1875mH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,8570mH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,5900mH
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tabel 4.1.6
+\end_layout
+
+\begin_layout Subsubsection
+Opgeslagen Energie
+\end_layout
+
+\begin_layout Standard
+De formule voor de energie die opgeslagen is in de luchtspleet is:
+\begin_inset Newline newline
+\end_inset
+
+W = 0,5*L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+
+*I
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+
+^2
+\end_layout
+
+\begin_layout Standard
+In tabel 4.1.7 zijn de berekende energies in de luchtspleet weergegeven met
+ een ingangsspanning van 300V, 330V en 360V en met een rendement van 0,75,
+ 0,80 en 0,85.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+η 
+\backslash
+ V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+[V]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+330
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+360
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3995mJ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,4000mJ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3990mJ
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3750mJ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3760mJ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3560mJ
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3536mJ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3533mJ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3527mJ
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tabel 4.1.7
+\end_layout
+
+\begin_layout Subsubsection
+Secundaire Spoel
+\end_layout
+
+\begin_layout Standard
+Voor het bepalen van de secundaire spoel, moet eerst een ETD kern gekozen
+ worden.
+ Daarna met behulp van de formules kan de secundaire spoel berekend worden.
+ Het stappenplan voor het berekenen van de secundaire spoel is hieronder
+ weergegegeven:]
+\end_layout
+
+\begin_layout Enumerate
+ETD kern bepalen
+\end_layout
+
+\begin_layout Enumerate
+Met behulp van de formule N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P_werkelijk
+\end_layout
+
+\end_inset
+
+= Square(L/A
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+) kan de werkelijke primaire wikkelingen berekend worden.
+\end_layout
+
+\begin_layout Enumerate
+De werkelijke secundaire wikkelingen kan berekend worden door de formule
+ N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S_werkelijk
+\end_layout
+
+\end_inset
+
+= (N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+*N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P_werkelijk
+\end_layout
+
+\end_inset
+
+)/N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+De secundaire spoel kan uiteindelijk berekend worden met de formule L
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+= N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S_werkelijk
+\end_layout
+
+\end_inset
+
+^2 * A
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De waarde van A
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+
+ is in de bijlage van de dictaat te vinden.
+\end_layout
+
+\begin_layout Subsubsection
+Secundaire Piekstroom
+\end_layout
+
+\begin_layout Subsubsection
+Rimpelstroom
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ontwerp 15V
+\end_layout
+
+\begin_layout Standard
+Koen's en Daniel's deel hier
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ontwerp 12V
+\end_layout
+
+\begin_layout Standard
+Daan's en Wouter's deel hier
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Test procedure
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Simulatie
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusies en aanbevelingen
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Literatuur
+\end_layout
+
+\begin_layout Enumerate
+van Duijsen, P.J.
+ (2014).
+ Vermogenselektronica: Schakelende Voeding.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bijlage
+\end_layout
+
+\begin_layout Standard
+De notulen en agenda's van projectgroep 2 is hieronder te zien.
+\end_layout
+
+\end_body
+\end_document
