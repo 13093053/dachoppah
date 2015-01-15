@@ -87,10 +87,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Graphics
 	filename afleiding_van_BB_naar_flyback.png
 	scale 80
@@ -111,10 +107,6 @@ Afleiding van Buck-Boost naar Flyback.
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -122,19 +114,6 @@ Afleiding van Buck-Boost naar Flyback.
 
 \begin_layout Subsection
 Ontwerp 19V
-\end_layout
-
-\begin_layout Subsubsection
-Periodetijd
-\end_layout
-
-\begin_layout Standard
-De frequentie waarop de Flyback converter draait, is 100kHz.
- De periodetijd is gelijk aan: 
-\end_layout
-
-\begin_layout Standard
-T = 1/100kHz = 1/100000 = 10μs
 \end_layout
 
 \begin_layout Subsubsection
@@ -148,40 +127,7 @@ Voor het ontwerpen van de Flyback converter, mag de duty cycle maximaal
 \end_layout
 
 \begin_layout Standard
-N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P 
-\end_layout
-
-\end_inset
-
-/ N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S
-\end_layout
-
-\end_inset
-
-= V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN
-\end_layout
-
-\end_inset
-
-/ V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT
-\end_layout
-
+\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{V_{IN}}{V_{OUT}}$
 \end_inset
 
 
@@ -203,25 +149,10 @@ gelijk zijn aan de minimale spanning van de gegeven specificaties.
 \end_layout
 
 \begin_layout Standard
-N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P 
-\end_layout
-
+\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{300}{19}$
 \end_inset
 
-/ N
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-S
-\end_layout
-
-\end_inset
-
-= 300 / 19
 \begin_inset Newline newline
 \end_inset
 
@@ -247,25 +178,11 @@ S
 \end_layout
 
 \begin_layout Standard
-Voor het bewijs dat de wikkelverhouding N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P 
-\end_layout
-
+Voor het bewijs dat de wikkelverhouding 
+\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{300}{19}$
 \end_inset
 
-/ N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S
-\end_layout
-
-\end_inset
-
-= 300 / 19 is, zijn de volgende berekeningen gemaakt:
+ is, zijn de volgende berekeningen gemaakt:
 \end_layout
 
 \begin_layout Standard
@@ -282,67 +199,58 @@ IN
 \begin_inset Newline newline
 \end_inset
 
-V
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-OUT
-\end_layout
-
+\begin_inset Formula $V_{OUT}=V_{IN}*\frac{N_{S}}{N_{P}}*\frac{dT}{T-dT}$
 \end_inset
 
-= V
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-IN
-\end_layout
-
-\end_inset
-
-* (N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S 
-\end_layout
-
-\end_inset
-
-/ N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P
-\end_layout
-
-\end_inset
-
-)* (dT / (T - dT))
 \begin_inset Newline newline
 \end_inset
 
-19 = 360 * ( 19 / 300 ) * ( dT / 0,00001 - dT )
+
+\begin_inset Formula $19=360*\frac{19}{300}*\frac{dT}{0,00001-dT}$
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
-19 * 300 * ( 0,00001 - dT) = 360 * 19 *dT
+
+\begin_inset Formula $19*300*(0,00001-dT)=360*19*dT$
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
-0,057 - 5700*dT = 6840*dT
+
+\begin_inset Formula $0,057-5700*dT=6840*dT$
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
-12540*dT = 0,057
+
+\begin_inset Formula $12540*dT=0,057$
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
-dT = 4,545μs
+
+\begin_inset Formula $dT=4,545μs$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-d = dT/T = 4,545 / 10 = 0,4545 (45,45%)
+\begin_inset Formula $d=\frac{dT}{T}=\frac{4,545}{10}=0,4545(45,45\%)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -382,7 +290,269 @@ S
 \end_layout
 
 \begin_layout Subsubsection
-Blokkeerspanningen
+Primaire Piekstroom
+\end_layout
+
+\begin_layout Standard
+De formule voor de piekwaarde van de primaire stroom is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{P}=\frac{4*P_{OUT}}{V_{IN}*η}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
+ 0,85.
+\end_layout
+
+\begin_layout Standard
+Voor het berekenen van de primaire piekstroom, wordt een ingangsspanning
+ van 330V en een rendement van 0,80 gebruikt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{Ppiek}=\frac{4*30}{330*0,80}=0,455A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Primaire Spoel
+\end_layout
+
+\begin_layout Standard
+De formule voor de primaire spoel is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L_{P}=\frac{V_{IN^{2}}}{8*P_{OUT}*f}*η$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
+ 0,85.
+\end_layout
+
+\begin_layout Standard
+Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
+ 330V en een rendement van 0,80 gebruikt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{P}=\frac{330^{2}}{8*30*100000}*0,80=3,63mH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opgeslagen Energie
+\end_layout
+
+\begin_layout Standard
+De formule voor de energie die opgeslagen is in de luchtspleet is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $W=\frac{1}{2}*L_{P}*I_{Ppiek}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De energie die opgeslagen is in de luchtspleet is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $W=\frac{1}{2}*3,63*10^{-3}*0,455^{2}=0,376mJ$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Secundaire Spoel
+\end_layout
+
+\begin_layout Standard
+Voor het bepalen van de secundaire spoel, moet eerst een ETD kern gekozen
+ worden.
+\end_layout
+
+\begin_layout Standard
+Voor de ETD kern is voor ETD59/31/22 met een luchtspleet en matriaal N27
+ gekozen, omdat met deze kern de minste wikkelingen voor berekend zijn en
+ ook zijn de wikkelingen het meest naukeurig vergeleken met de andere kernen.
+ Voor andere kernen worden wikkelingen berekent met bijvoorbeeld 58,46 en
+ wikkelingen kunnen alleen hele getallen zijn.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{L}=1588nH$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $A_{MIN}=368mm^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eerst wordt de werkelijke primaire wikkelingen berekent:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $N_{Pwerkelijk}=\sqrt{\frac{L_{P}}{A_{L}}}=\sqrt{\frac{0,00318}{621*10^{-9}}}=47,81$
+\end_inset
+
+≈ 48
+\end_layout
+
+\begin_layout Standard
+De werkelijke secundaire wikkelingen is nu te berekenen:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $N_{Swerkelijk}=\frac{N_{S}}{N_{P}}*N_{Pwerkelijk}=\frac{15}{300}*72=3,04$
+\end_inset
+
+ ≈ 3
+\end_layout
+
+\begin_layout Standard
+De secundaire spoel kan nu berekent worden:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L_{S}=N_{Swerklijk}{}^{2}*A_{L}=3^{2}*1588*10^{-9}=14,292*10^{-6}H=14,292μH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ter controle wordt de B berekend en de B mag maximaal 0,3T zijn.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $B=\frac{L_{p}*I_{Ppiek}}{N_{P}*A_{MIN}}=\frac{0,00363*0,455}{48*368*10^{-6}}=0,093T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+0,093T is kleiner dan 0,3T dus een secundaire spoel van 14,292μH voldoet.
+\end_layout
+
+\begin_layout Subsubsection
+Secundaire Piekstroom
+\end_layout
+
+\begin_layout Standard
+De energie opgeslagen in de luchtspleet is gelijk aan:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $W=\frac{1}{2}*L_{P}*I_{Ppiek}=\frac{1}{2}*L_{S}*L_{Spiek}=0,376mJ$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De secundaire piekstroom is als volg te berekenen:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{S}=\sqrt{\frac{2*W}{L_{S}}}=\sqrt{\frac{2*0,376*10^{-3}}{14,292*10^{-6}}}=7,25A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ESR
+\end_layout
+
+\begin_layout Standard
+Voor de rimpelspanning word gekozen voor 0,5V.
+ Met de rimpelspanning bekend kan de ESR (equivalent series resistance)
+ berekend worden met hehulp van de volgende formulen:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $∆V_{OUT}^{ESR}\text{≈}\text{∆}I_{S}*ESR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Omdat er vanuit gaat dat de Flyback converter in discontinue bedrijf zit,
+ geldt:
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $I_{Spiek}=\text{∆}I_{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ESR kan berekent worden:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $ESR=\frac{0,5}{7,25}=0,0689Ohm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Mosfet
 \end_layout
 
 \begin_layout Standard
@@ -472,7 +642,47 @@ DS
 
 \end_inset
 
-= 360 + 19*(300/19) = 660V
+= 2*360 = 720V
+\end_layout
+
+\begin_layout Standard
+De maximale stroom door de mosfet is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{DS}=I_{Ppiek}=0,455A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Om de voeding te schakelen is er een mosfet nodig die een V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+ van 720V en een I
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS
+\end_layout
+
+\end_inset
+
+van 0.455A aan kan.
+ De mosfet moet van een heatsink worden voorzien om dit vermogen te kunnen
+ schakelen.
+\end_layout
+
+\begin_layout Subsubsection
+Diode
 \end_layout
 
 \begin_layout Standard
@@ -562,7 +772,96 @@ DS
 
 \end_inset
 
-= 19 + 360*(19/300) = 41,8V
+= 2*19 = 38V
+\end_layout
+
+\begin_layout Standard
+De maximale stroom door de diode is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{D}=I_{Spiek}=7,25A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Om de spoelstroom gelijk te richten is er een diode nodig die een spanning
+ van 38v kan sperren en een stroom van 7,25A kan doorlaten.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ontwerp 15V
+\end_layout
+
+\begin_layout Subsubsection
+Wikkelverhouding
+\end_layout
+
+\begin_layout Standard
+Voor het ontwerpen van de Flyback converter, mag de duty cycle maximaal
+ 50% zijn.
+ De formule voor de wikkelverhouding is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{V_{IN}}{V_{OUT}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Voor het bepalen van de wikkelverhouding met een duty cycle van maximaal
+ 50%, moet V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN
+\end_layout
+
+\end_inset
+
+gelijk zijn aan de minimale spanning van de gegeven specificaties.
+ De wikkelverhouding is gelijk aan:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{300}{15}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+: : N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+<=> 20 : : 1
 \end_layout
 
 \begin_layout Subsubsection
@@ -574,34 +873,11 @@ De formule voor de piekwaarde van de primaire stroom is:
 \begin_inset Newline newline
 \end_inset
 
-I
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-P 
-\end_layout
-
+\begin_inset Formula $I_{Ppiek}=\frac{4*P_{OUT}}{V_{IN}*η}$
 \end_inset
 
-= (4 * P
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-OUT
-\end_layout
-
-\end_inset
-
-) / ( V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
-* η)
 \end_layout
 
 \begin_layout Standard
@@ -610,221 +886,12 @@ Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
 \end_layout
 
 \begin_layout Standard
-In tabel 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Piekstromen-primaire-spoel"
-
-\end_inset
-
- zijn de piekstromen van de primaire spoel weergegeven met een ingangsspanning
- van 300V, 330V en 360V en met een rendement van 0,75, 0,80 en 0,85.
+Voor het berekenen van de primaire piekstroom, wordt een ingangsspanning
+ van 300V en een rendement van 0,85 gebruikt.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Piekstromen primaire spoel bij enkele rendementen
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Piekstromen-primaire-spoel"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="4">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-η 
-\backslash
- V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
-[V]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-300
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-330
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-360
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,75
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,533A
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,485A
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,444A
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,80
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,500A
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,455A
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,417A
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,85
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,471A
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,428A
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,392A
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Formula $I_{Ppiek}=\frac{4*30}{300*0,85}=0,47A$
 \end_inset
 
 
@@ -839,34 +906,11 @@ De formule voor de primaire spoel is:
 \begin_inset Newline newline
 \end_inset
 
-L
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-P 
-\end_layout
-
+\begin_inset Formula $L_{P}=\frac{V_{IN^{2}}}{8*P_{OUT}*f}*η$
 \end_inset
 
-≈ ((V
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-IN
-\end_layout
-
-\end_inset
-
-^2) / (8 * P
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
-\end_inset
-
-* f )) * η
 \end_layout
 
 \begin_layout Standard
@@ -875,472 +919,12 @@ Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
 \end_layout
 
 \begin_layout Standard
-In tabel 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Inductantiewaarden-primaire-spoe"
-
-\end_inset
-
- zijn de waarden van de primaire spoel weergegeven met een ingangsspanning
- van 300V, 330V en 360V en met een rendement van 0,75, 0,80 en 0,85.
+Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
+ 300V en een rendement van 0,85 gebruikt
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Inductantiewaarden primaire spoel bij enkele rendementen
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Inductantiewaarden-primaire-spoe"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="4">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-η 
-\backslash
- V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
-[V]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-300
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-330
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-360
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,75
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2,8125mH
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3,4030mH
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4,0500mH
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,80
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3,0000mH
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3,6300mH
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4,3200mH
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,85
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3,1875mH
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3,8570mH
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4,5900mH
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Opgeslagen Energie
-\end_layout
-
-\begin_layout Standard
-De formule voor de energie die opgeslagen is in de luchtspleet is:
-\begin_inset Newline newline
-\end_inset
-
-W = 0,5*L
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P
-\end_layout
-
-\end_inset
-
-*I
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P
-\end_layout
-
-\end_inset
-
-^2
-\end_layout
-
-\begin_layout Standard
-In tabel 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Energie-in-luchtspleet"
-
-\end_inset
-
- zijn de berekende energies in de luchtspleet weergegeven met een ingangsspannin
-g van 300V, 330V en 360V en met een rendement van 0,75, 0,80 en 0,85.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Energie in luchtspleet bij enkele rendementen
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Energie-in-luchtspleet"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="4">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-η 
-\backslash
- V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
-[V]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-300
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-330
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-360
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,75
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,3995mJ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,4000mJ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,3990mJ
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,80
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,3750mJ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,3760mJ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,3560mJ
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,85
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,3536mJ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,3533mJ
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0,3527mJ
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
+\begin_inset Formula $L_{P}=\frac{300^{2}}{8*30*100000}*0,85=3,18mH$
 \end_inset
 
 
@@ -1351,145 +935,366 @@ Secundaire Spoel
 \end_layout
 
 \begin_layout Standard
-Voor het bepalen van de secundaire spoel, moet eerst een ETD kern gekozen
+Voor het bepalen van een secundaire spoel moet eerst een ETD kern gekozen
  worden.
- Daarna met behulp van de formules kan de secundaire spoel berekend worden.
- Het stappenplan voor het berekenen van de secundaire spoel is hieronder
- weergegegeven:]
 \end_layout
 
-\begin_layout Enumerate
-ETD kern bepalen
+\begin_layout Standard
+ETD29/16/10 is het meest gunstige voor de Flyback converter met een uitgangsspan
+ning van 15V.
 \end_layout
 
-\begin_layout Enumerate
-Met behulp van de formule N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P_werkelijk
-\end_layout
-
-\end_inset
-
-= Square(L/A
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-L
-\end_layout
-
-\end_inset
-
-) kan de werkelijke primaire wikkelingen berekend worden.
-\end_layout
-
-\begin_layout Enumerate
-De werkelijke secundaire wikkelingen kan berekend worden door de formule
- N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S_werkelijk
-\end_layout
-
-\end_inset
-
-= (N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S
-\end_layout
-
-\end_inset
-
-*N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P_werkelijk
-\end_layout
-
-\end_inset
-
-)/N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P
-\end_layout
-
+\begin_layout Standard
+\begin_inset Formula $A_{L}=621nH$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Enumerate
-De secundaire spoel kan uiteindelijk berekend worden met de formule L
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S
-\end_layout
-
+\begin_inset Newline newline
 \end_inset
 
-= N
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-S_werkelijk
-\end_layout
-
-\end_inset
-
-^2 * A
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-L
-\end_layout
-
+\begin_inset Formula $A_{MIN}=71mm^{2}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-De waarde van A
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-L
-\end_layout
-
+Eerst wordt de werkelijke primaire wikkelingen berekent:
+\begin_inset Newline newline
 \end_inset
 
- is in de bijlage van de dictaat te vinden.
+
+\begin_inset Formula $N_{Pwerkelijk}=\sqrt{\frac{L_{P}}{A_{L}}}=\sqrt{\frac{0,00318}{621*10^{-9}}}=72$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De werkelijke secundaire wikkelingen is nu te berekenen:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $N_{Swerkelijk}=\frac{15}{300}*72=3,6$
+\end_inset
+
+ ≈ 4
+\end_layout
+
+\begin_layout Standard
+De secundaire spoel kan nu berekent worden:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L_{S}=4^{2}*621*10^{-9}=9,9μH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ter controle wordt de B berekend en de B mag maximaal 0,3T zijn.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $B=\frac{L_{p}*I_{Ppiek}}{N_{P}*A_{MIN}}=\frac{0,00318*0,47}{72*71*10^{-6}}=0,2945T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+0,2945T is kleiner dan 0,3T dus een secundaire spoel van 9,9μH voldoet.
 \end_layout
 
 \begin_layout Subsubsection
 Secundaire Piekstroom
 \end_layout
 
-\begin_layout Subsubsection
-Rimpelstroom
-\end_layout
-
 \begin_layout Standard
-\begin_inset Newpage newpage
+De secundaire piekstroom is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{Spiek}=1,2*2=2,4A$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsection
-Ontwerp 15V
+\begin_layout Subsubsection
+ESR
 \end_layout
 
 \begin_layout Standard
-Koen's en Daniel's deel hier
+Er wordt een 100uF uitgangscondensator gebruikt.
+ Het is een speciale low-ESR condensator.
+ Bij deze condensator is de rimpelspanning van de ESR hoger dan die van
+ de C, dus er wordt gekeken naar de rimpel van de ESR.
+ ∆Vout = ∆Is * ESR 
+\end_layout
+
+\begin_layout Standard
+Een rimpelspanning van 0,5V is acceptabel.
+\end_layout
+
+\begin_layout Standard
+∆Is = 0.4 * 2 = 0,8A 
+\end_layout
+
+\begin_layout Standard
+ESR = 0.5 / (0.4 * 2) = 0.625 Ohm 
+\end_layout
+
+\begin_layout Standard
+De condensator die gebruikt wordt, heeft een veel lagere ESR, dus de rimpelspann
+ing valt binnen de specificatie.
+\end_layout
+
+\begin_layout Subsubsection
+Mosfet
+\end_layout
+
+\begin_layout Standard
+De formule voor de spanning door de Mosfet is:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+= V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+ + V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
+*(N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+/N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S 
+\end_layout
+
+\end_inset
+
+) ≈ 2 * V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Voor de maximale spanning door de Mosfet wordt van uit gegaan dat de ingangspann
+ing (V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+) gelijk is aan 360V.
+ De maximale spanning door de Mosfet is gelijk aan:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+= 2*360 = 720V
+\end_layout
+
+\begin_layout Standard
+De maximale stroom door de mosfet is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{DS}=I_{Ppiek}=0,47A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Om de voeding te schakelen is er een mosfet nodig die een V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+ van 720V en een I
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS
+\end_layout
+
+\end_inset
+
+van 0.47A aan kan.
+ De mosfet moet van een heatsink worden voorzien om dit vermogen te kunnen
+ schakelen.
+\end_layout
+
+\begin_layout Subsubsection
+Diode
+\end_layout
+
+\begin_layout Standard
+De formule voor de spanning door de diode is:
+\begin_inset Newline newline
+\end_inset
+
+U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+R 
+\end_layout
+
+\end_inset
+
+= V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
++ V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+*(N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S 
+\end_layout
+
+\end_inset
+
+/N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+) ≈ 2 * V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Voor de maximale spanning door de Diode wordt van uit gegaan dat de ingangspanni
+ng (V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+) gelijk is aan 360V.
+ De maximale spanning door de Diode is gelijk aan:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+= 2 * 15V = 30V
+\end_layout
+
+\begin_layout Standard
+De maximale stroom door de diode is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{D}=I_{Spiek}=1,2*2=2,4A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Om de spoelstroom gelijk te richten is er een diode nodig die een spanning
+ van 30v kan sperren en een stroom van 2,4A kan doorlaten.
 \end_layout
 
 \begin_layout Standard
@@ -1503,8 +1308,473 @@ Koen's en Daniel's deel hier
 Ontwerp 12V
 \end_layout
 
+\begin_layout Subsubsection
+Wikkelverhouding
+\end_layout
+
 \begin_layout Standard
-Daan's en Wouter's deel hier
+Voor het ontwerpen van de Flyback converter, mag de duty cycle maximaal
+ 50% zijn.
+ De formule voor de wikkelverhouding is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{V_{IN}}{V_{OUT}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Voor het bepalen van de wikkelverhouding met een duty cycle van maximaal
+ 50%, moet V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN
+\end_layout
+
+\end_inset
+
+gelijk zijn aan de minimale spanning van de gegeven specificaties.
+ De wikkelverhouding is gelijk aan:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{300}{12}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+: : N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+
+<=> 20 : : 1
+\end_layout
+
+\begin_layout Subsubsection
+Primaire Piekstroom
+\end_layout
+
+\begin_layout Standard
+De formule voor de piekwaarde van de primaire stroom is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{Ppiek}=\frac{4*P_{OUT}}{V_{IN}*η}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
+ 0,85.
+\end_layout
+
+\begin_layout Standard
+Voor het berekenen van de primaire piekstroom, wordt een ingangsspanning
+ van ???? en een rendement van ????? gebruikt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{Ppiek}=\frac{4*30}{????*???}=????A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Primaire Spoel
+\end_layout
+
+\begin_layout Standard
+De formule voor de primaire spoel is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L_{P}=\frac{V_{IN^{2}}}{8*P_{OUT}*f}*η$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
+ 0,85.
+\end_layout
+
+\begin_layout Standard
+Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
+ ???? en een rendement van ???? gebruikt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{P}=\frac{???^{2}}{8*30*100000}*????=????mH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Secundaire Spoel
+\end_layout
+
+\begin_layout Standard
+Voor het bepalen van een secundaire spoel moet eerst een ETD kern gekozen
+ worden.
+\end_layout
+
+\begin_layout Standard
+ETD??/??/?? is het meest gunstige voor de Flyback converter met een uitgangsspan
+ning van 12V.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{L}=????nH$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $A_{MIN}=????mm^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eerst wordt de werkelijke primaire wikkelingen berekent:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $N_{Pwerkelijk}=\sqrt{\frac{L_{P}}{A_{L}}}=\sqrt{\frac{???}{???}}=???$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De werkelijke secundaire wikkelingen is nu te berekenen:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $N_{Swerkelijk}=\frac{12}{300}*???=????$
+\end_inset
+
+ ≈ ???
+\end_layout
+
+\begin_layout Standard
+De secundaire spoel kan nu berekent worden:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L_{S}=???^{2}*???*10^{-9}=???μH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ter controle wordt de B berekend en de B mag maximaal 0,3T zijn.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $B=\frac{L_{p}*I_{Ppiek}}{N_{P}*A_{MIN}}=\frac{???*????}{??*??*10^{-6}}=????T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+?????T is kleiner dan 0,3T dus een secundaire spoel van ???μH voldoet.
+\end_layout
+
+\begin_layout Subsubsection
+Secundaire Piekstroom
+\end_layout
+
+\begin_layout Standard
+De secundaire piekstroom is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{Spiek}=???$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ESR
+\end_layout
+
+\begin_layout Subsubsection
+Mosfet
+\end_layout
+
+\begin_layout Standard
+De formule voor de spanning door de Mosfet is:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+= V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+ + V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
+*(N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+/N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S 
+\end_layout
+
+\end_inset
+
+) ≈ 2 * V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Voor de maximale spanning door de Mosfet wordt van uit gegaan dat de ingangspann
+ing (V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+) gelijk is aan 360V.
+ De maximale spanning door de Mosfet is gelijk aan:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+= 2*360 = 720V
+\end_layout
+
+\begin_layout Standard
+De maximale stroom door de mosfet is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{DS}=I_{Ppiek}=???A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Om de voeding te schakelen is er een mosfet nodig die een V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+ van 720V en een I
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS
+\end_layout
+
+\end_inset
+
+van ???A aan kan.
+ De mosfet moet van een heatsink worden voorzien om dit vermogen te kunnen
+ schakelen.
+\end_layout
+
+\begin_layout Subsubsection
+Diode
+\end_layout
+
+\begin_layout Standard
+De formule voor de spanning door de diode is:
+\begin_inset Newline newline
+\end_inset
+
+U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+R 
+\end_layout
+
+\end_inset
+
+= V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
++ V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+*(N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+S 
+\end_layout
+
+\end_inset
+
+/N
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+
+) ≈ 2 * V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+OUT 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Voor de maximale spanning door de Diode wordt van uit gegaan dat de ingangspanni
+ng (V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+IN 
+\end_layout
+
+\end_inset
+
+) gelijk is aan 360V.
+ De maximale spanning door de Diode is gelijk aan:
+\begin_inset Newline newline
+\end_inset
+
+V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+DS 
+\end_layout
+
+\end_inset
+
+= 2 * 12V = 24V
+\end_layout
+
+\begin_layout Standard
+De maximale stroom door de diode is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{D}=I_{Spiek}=????A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Om de spoelstroom gelijk te richten is er een diode nodig die een spanning
+ van 24V kan sperren en een stroom van ???A kan doorlaten.
 \end_layout
 
 \end_body
