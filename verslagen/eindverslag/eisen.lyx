@@ -77,51 +77,20 @@ Eisen
 \begin_layout Standard
 Het is duidelijk dat voor een digitaal klaslokaal het beste met de M2Desk
  computers gewerkt kan worden.
- Daarom moeten er Flyback converters ontworpen worden waar enkele eisen
+ Daarom moeten er flyback converters ontworpen worden waar enkele eisen
  aan zijn gesteld.
- Er worden Flyback converters ontworpen met een uitgangsspanningen van 19V,
+ Er worden flyback converters ontworpen met een uitgangsspanningen van 19V,
  15V en 12V.
 \end_layout
 
 \begin_layout Standard
-De flyback converter is zo special omdat, de ingang en de uitgang zijn galvanisc
-h gescheiden.
- Hierdoor is er geen kans dat de voedingspanning van 360 V direct op de
+De flyback converter is speciaal omdat de ingang en de uitgang galvanisch
+ zijn gescheiden.
+ Hierdoor is er geen kans dat de voedingsspanning van 360V direct op de
  computer komt.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Overzicht gegeven eisen voor flyback converters
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="4">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-f
+ Er volgt een beschrijving van de vereiste specificaties voor de drie te
+ ontwerpen converters.
+ Hierbij is f
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -130,16 +99,7 @@ s
 
 \end_inset
 
-[kHz]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-U
+de schakelfrequentie van de mosfet, U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -148,25 +108,7 @@ U
 
 \end_inset
 
-[V]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-P[W]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-U
+is de ingangsspanning, P is het uitgangsvermogen en U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -175,136 +117,7 @@ U
 
 \end_inset
 
-[V]
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-100kHz
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-300-360
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-100kHz
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-300-360
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-15
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-100kHz
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-300-360
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-12
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+is de uitgangsspanning.
 \end_layout
 
 \begin_layout Subsection
@@ -319,8 +132,7 @@ reference "tab:Specificaties-19V-converter"
 
 \end_inset
 
- zijn de specificaties van het ontworpen Flyback converter van de 19V te
- zien.
+ zijn de specificaties van de 19V flyback converter te zien.
 \end_layout
 
 \begin_layout Standard
@@ -394,7 +206,7 @@ U
 \begin_inset Text
 
 \begin_layout Plain Layout
-P[W]
+P [W]
 \end_layout
 
 \end_inset
@@ -423,7 +235,7 @@ U
 \begin_inset Text
 
 \begin_layout Plain Layout
-100kHz
+100
 \end_layout
 
 \end_inset
@@ -463,10 +275,6 @@ U
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -484,8 +292,7 @@ reference "tab:Specificaties-15V-converter"
 
 \end_inset
 
- zijn de specificaties van het ontworpen Flyback converter van de 15V te
- zien.
+ zijn de specificaties van de 15V flyback converter te zien.
 \end_layout
 
 \begin_layout Standard
@@ -562,7 +369,7 @@ U
 \begin_inset Text
 
 \begin_layout Plain Layout
-P[W]
+P [W]
 \end_layout
 
 \end_inset
@@ -591,7 +398,7 @@ U
 \begin_inset Text
 
 \begin_layout Plain Layout
-100kHz
+100
 \end_layout
 
 \end_inset
@@ -648,8 +455,7 @@ reference "tab:Specificaties-12V-converter"
 
 \end_inset
 
- zijn de specificaties van het ontworpen Flyback converter van de 12V te
- zien.
+ zijn de specificaties van de 12V flyback converter te zien.
 \end_layout
 
 \begin_layout Standard
@@ -726,7 +532,7 @@ U
 \begin_inset Text
 
 \begin_layout Plain Layout
-P[W]
+P [W]
 \end_layout
 
 \end_inset
@@ -755,7 +561,7 @@ U
 \begin_inset Text
 
 \begin_layout Plain Layout
-100kHz
+100
 \end_layout
 
 \end_inset
