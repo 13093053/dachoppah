@@ -75,6 +75,10 @@ Samenvatting
 \end_layout
 
 \begin_layout Standard
+Dit rapport behandeld....
+\end_layout
+
+\begin_layout Standard
 In hoofdstuk een wordt besproken over.....
 \end_layout
 
@@ -88,6 +92,42 @@ Hoofdstuk drie ........
 \end_layout
 
 \begin_layout Standard
+Dit rapport behandelt de voortgang van het ontwerpen en het ontwerpen en
+ testen van drie flyback converters.
+ Deze flyback converter moeten van een ingangsspanning 300-360 V een uitgangspan
+ning maken van 12, 15 en 19 V.
+\end_layout
+
+\begin_layout Standard
+De achtereenvolgende hoofdstukken gaan in op:
+\end_layout
+
+\begin_layout Itemize
+Het beheer van dit project
+\end_layout
+
+\begin_layout Itemize
+De ontwerpeisen van de flyback converters, de ontwerpkeuzen en het ontwerpproces
+ van de drie flyback converters.
+\end_layout
+
+\begin_layout Itemize
+Het testen van de flyback converter.
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+Ter conclusie....
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -96,6 +136,83 @@ Hoofdstuk drie ........
 
 \begin_layout Section
 Inleiding
+\end_layout
+
+\begin_layout Standard
+verhaaltje...
+\end_layout
+
+\begin_layout Standard
+in hoofdstuk 1 wordt aandacht besteed aan .....
+\end_layout
+
+\begin_layout Standard
+in hoofdstuk 2 ....
+\end_layout
+
+\begin_layout Standard
+De Haagse Hogeschool wilt het lokaal 0.126 geschikt maken voor digitaal toetsen.
+ In dit lokaal moet in de toetsperiode voorzien worden van 100-400 computers.
+ In tegenstelling tot het gebruik van een normale PC die een vermogen vraagt
+ van ongeveer 360W, wordt de M2Desk gebruikt die een vermogen vraagt van
+ 11-24W.
+ Stel dat het lokaal 100 computers nodig heeft, dan wordt de gevraagde vermogen
+ van de normale PC's rond de 36 kW, terwijl de gevraagde vermogen van de
+ M2Desk's 1,1-2,4 kW is.
+ Het is dan duidelijk dat het lokaal het beste met de M2Desk ingericht moet
+ worden.
+ Helaas is nog niet bekend wat de optimale voedingspanning is van de M2Desk
+ computers.
+\end_layout
+
+\begin_layout Standard
+Aan ons, studenten van projectgroep 2 van de opleiding Elektrotechniek aan
+ de Haagse Hogeschool, is de opdracht gegeven om converters te ontwikkelen
+ met verschillende uitgangspanning: 12, 15 en 19 V.
+ Voor de voeding van deze computers wordt een gelijkspanningsvoeding van
+ 300-360V gebruikt.
+ Dit houdt in dat er DC-DC converters, oftewel flyback converters, ontwikkeld
+ moeten worden die de 300-360 V omzetten naar een spanning van 12, 15 en
+ 19V.
+\end_layout
+
+\begin_layout Standard
+Dit rapport behandelt de voortgang van het ontwerpen en het ontwerpen en
+ testen van deze flyback converters.
+\end_layout
+
+\begin_layout Standard
+In hoofdstuk 2 van dit rapport wordt aandacht besteed aan hoe dit project
+ beheerd werd.
+ Hier wordt er gekeken naar het beheren van communicatie, informatie, kwaliteit,
+ het project, ....
+\end_layout
+
+\begin_layout Standard
+In hoofdstuk 3 komen de ontwerpeisen, van de drie flyback converters aan
+ bod.
+\end_layout
+
+\begin_layout Standard
+In hoofdstuk 4 wordt er aandacht besteed aan de ontwerpkeuzes en het ontwerpproc
+es van de drie flyback converters.
+ Ook wordt er naar de eisen van de gewenste componenten gekeken.
+\end_layout
+
+\begin_layout Standard
+In hoofdstuk 5 komt het stappenplan voor het testen van de flyback converters
+ aan bod.
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+Ten slotte wordt het rapport afgesloten met de conclusies en aanbevelingen
+ met daarna de bijlagen met formules ter ondersteuning van de ontwerpkeuzen.
+ Ook komen er in de bijlagen de agenda's en notulen ter ondersteuning voor
+ het hoofdstuk beheer.
 \end_layout
 
 \end_body
