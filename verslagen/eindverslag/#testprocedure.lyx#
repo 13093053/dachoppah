@@ -1,0 +1,214 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Testprocedure
+\end_layout
+
+\begin_layout Standard
+De ontwerpen zijn onderworpen aan twee tests: Een test in de simulator en
+ een hardware test.
+\end_layout
+
+\begin_layout Standard
+De simulatie dient ervoor om de berekeningen voor ieder ontwerp te controleren.
+ Meer hierover in het hoofdstuk Simulatie.
+\end_layout
+
+\begin_layout Standard
+De hardwaretest geeft inzicht over de onvoorziene effecten van niet-ideale
+ componenten op de schakeling.
+ Als deze effecten de werking teveel beinvloeden zodat de schakeling niet
+ naar behoren werkt moeten er aanpassingen in het ontwerp worden gemaakt.
+\end_layout
+
+\begin_layout Subsection
+Hardware test
+\end_layout
+
+\begin_layout Standard
+De flyback converter kan volgens dit stappenplan getest worden.
+\end_layout
+
+\begin_layout Standard
+Voor de test moeten de volgende componenten nog niet worden bestukt:
+\end_layout
+
+\begin_layout Itemize
+R1, R2, R14, R15, R19, R21, R24
+\end_layout
+
+\begin_layout Itemize
+C8, C13
+\end_layout
+
+\begin_layout Itemize
+D5, D2, D7
+\end_layout
+
+\begin_layout Itemize
+T1
+\end_layout
+
+\begin_layout Itemize
+J3, J10 en J4, J9 nog niet verbinden
+\end_layout
+
+\begin_layout Standard
+Dit zijn de jumpers die de secundaire en tertiaire spoelen met de rest van
+ de achterliggende schakeling verbinden moeten nog niet verbonden worden.
+ De spanning over de spoelen moet eerst bepaald worden zonder belasting
+ om te controleren of spoelen goed gewikkeld en aangesloten zijn.
+ Daarna kan er een stroommeting gedaan worden door tussen de spoelterminals
+ en de achterliggende schakeling een shunt te plaatsen en hierover de spanning
+ te meten.
+\end_layout
+
+\begin_layout Subsubsection
+Test of het driver IC werkt
+\end_layout
+
+\begin_layout Itemize
+Voed het driver IC met 8,5 - 15v.
+ Als de driver aan staat trekt deze ongeveer 10mA.
+\end_layout
+
+\begin_layout Itemize
+Schakel nu de ingangsspanning aan.
+ Begin laag en schroef de spanning geleidelijk op tot 360v.
+ Meet de stroom en spanning over de primaire spoel* en over de mosfet.
+ Werkt de schakeling in flyback mode?
+\end_layout
+
+\begin_layout Itemize
+Meet de spanning over de secundaire spoel.
+\end_layout
+
+\begin_layout Subsubsection
+Test de flyback zonder opstartcircuit
+\end_layout
+
+\begin_layout Itemize
+Sluit de secundaire spoel aan zodat deze in tegenfase is met de primaire
+ spoel.
+ Zet een stroommeter tussen de spoel en de achterliggende schakeling voordat
+ de jumper wordt kortgesloten.
+\end_layout
+
+\begin_layout Itemize
+Meet spanning en stroom van de secundaire spoel onbelast bij een ingangspanning
+ van 360v.
+ De dutycycle van de gate zou nu minder dan 50% moeten zijn.
+\end_layout
+
+\begin_layout Itemize
+Herhaal deze meting met een belasting van 2A.
+ De dutycycle van de gate zou nu 50% moeten zijn.
+\end_layout
+
+\begin_layout Itemize
+Laat de ingangspanning zakken tot de uitgangspanning onder de gewenste spanning
+ valt.
+\end_layout
+
+\begin_layout Subsubsection
+Test de flyback met opstartcircuit
+\end_layout
+
+\begin_layout Itemize
+Meet de spanning over de tertiaire spoel.
+\end_layout
+
+\begin_layout Itemize
+Sluit de tertiaire spoel aan zodat deze in tegenfase is met de primaire
+ spoel.
+\end_layout
+
+\begin_layout Itemize
+Het opstartcircuit kan nu worden bestukt als de flyback goed werkt bij een
+ ingangspanning van 360v.
+\end_layout
+
+\begin_layout Itemize
+Controleer of het opstartcircuit werkt en de flyback converter autonoom
+ werkt.
+\end_layout
+
+\begin_layout Standard
+(*De stroom door de primaire spoel is de bepalen door de spanning over de
+ shunt R6//R7//R8//R9 te meten.
+\end_layout
+
+\begin_layout Subsection
+Discussie
+\end_layout
+
+\begin_layout Standard
+Door tijdgebrek heeft de opdrachtgever ervoor gekozen om het eigen ontwerp
+ niet te onderwerpen aan een hardware test.
+ Het troubleshooten van deze soort schakelingen neemt veel tijd in beslag
+ en het is mogelijk dat de schakeling beschadigd raakt in het proces.
+ In plaats voor de test met het eigen ontwerp wordt er een ontwerp aangeleverd
+ door de opdrachtgever.
+\end_layout
+
+\end_body
+\end_document
