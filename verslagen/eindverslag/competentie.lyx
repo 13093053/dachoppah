@@ -111,11 +111,20 @@ Onderzoeken
 Hoewel bij alle projecten meerdere competenties worden ontwikkeld, wordt
  er altijd nadruk gelegd op één of enkele van deze competenties.
  Bij dit project staat de competentie beheren centraal.
- In de praktijk vertaald het beheren zich bijvoorbeeld in het verzorgen
- of een bijdrage leveren aan beheersystemen / onderhoudsplannen, het testen
- van de werking van een product aan de hand van kwaliteitseisen, het verzorgen
- van een goede werking / goed gebruik van het product na de realisatie,
- enzovoorts.
+ In de praktijk vertaald
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+vertaalt? met een t
+\end_layout
+
+\end_inset
+
+ het beheren zich bijvoorbeeld in het verzorgen of een bijdrage leveren
+ aan beheersystemen / onderhoudsplannen, het testen van de werking van een
+ product aan de hand van kwaliteitseisen, het verzorgen van een goede werking
+ / goed gebruik van het product na de realisatie, enzovoorts.
  In dit hoofdstuk zal toegelicht worden welke van onze activiteiten en keuzes
  bij hebben gedragen aan deze competentie.
 \end_layout
@@ -157,8 +166,18 @@ Beheer van informatie
 \end_layout
 
 \begin_layout Standard
-Net als communicatie is ook de de uitwisseling van informatie (in de vorm
- van bestanden) een zeer belangrijk aspect.
+Net als communicatie is ook de de
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Twee de's?
+\end_layout
+
+\end_inset
+
+ uitwisseling van informatie (in de vorm van bestanden) een zeer belangrijk
+ aspect.
  De voorkeur lag op een systeem dat ons de mogelijkheid bied om gezamenlijk
  aan documenten te werken in een robuuste en overzichtelijke manier.
  Dit resulteerde in de beslissing om Git te gebruiken voor het uitwisselen
