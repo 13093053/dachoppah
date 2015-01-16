@@ -76,8 +76,15 @@ Ontwerpen
 
 \begin_layout Standard
 De Flyback converter is afgeleid van de Buck-Boost converter.
- In figuur 4.1 is een overzicht gegeven van de afleiding van Buck-Boost converter
- naar Flyback converter.
+ In figuur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Afleiding-van-Buck-Boost"
+
+\end_inset
+
+ is een overzicht gegeven van de afleiding van Buck-Boost converter naar
+ Flyback converter.
 \end_layout
 
 \begin_layout Standard
@@ -100,6 +107,13 @@ status open
 Afleiding van Buck-Boost naar Flyback.
  De bovenste schakeling is de Buck-Boost converter en de onderste schakeling
  is de Flyback converter
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Afleiding-van-Buck-Boost"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -116,13 +130,14 @@ Afleiding van Buck-Boost naar Flyback.
 Ontwerp 19V
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Wikkelverhouding
 \end_layout
 
 \begin_layout Standard
-Voor het ontwerpen van de Flyback converter, mag de duty cycle maximaal
- 50% zijn.
+Voor het ontwerpen van de Flyback converter mag de duty cycle maximaal 50%
+ zijn.
+ Als de duty cycle groter dan 50% is, zijn er meer verliezen.
  De formule voor de wikkelverhouding is:
 \end_layout
 
@@ -144,7 +159,11 @@ IN
 
 \end_inset
 
-gelijk zijn aan de minimale spanning van de gegeven specificaties.
+gelijk zijn aan de minimale 
+\end_layout
+
+\begin_layout Standard
+spanning van de gegeven specificaties.
  De wikkelverhouding is gelijk aan:
 \end_layout
 
@@ -178,97 +197,8 @@ S
 \end_layout
 
 \begin_layout Standard
-Voor het bewijs dat de wikkelverhouding 
-\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{300}{19}$
-\end_inset
-
- is, zijn de volgende berekeningen gemaakt:
-\end_layout
-
-\begin_layout Standard
-Voor V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN
-\end_layout
-
-\end_inset
-
- = 360V:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $V_{OUT}=V_{IN}*\frac{N_{S}}{N_{P}}*\frac{dT}{T-dT}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $19=360*\frac{19}{300}*\frac{dT}{0,00001-dT}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $19*300*(0,00001-dT)=360*19*dT$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $0,057-5700*dT=6840*dT$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $12540*dT=0,057$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $dT=4,545μs$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $d=\frac{dT}{T}=\frac{4,545}{10}=0,4545(45,45\%)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-De duty cycle is voor de maximale ingangsspanning (V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN
-\end_layout
-
-\end_inset
-
- = 360V) ongeveer gelijk aan 45,45% en 45,45% ligt onder de 50%.
- Dus de wikkelverhouding is:
-\end_layout
-
-\begin_layout Standard
-N
+Als de wikkelverhouding bepaald is aan de hand van een ingangsspanning van
+ 360V (N
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -286,20 +216,23 @@ S
 
 \end_inset
 
-<=> 300 : : 19
+<=> 360 : : 19), dan wordt de duty cycle groter dan 50% bij een ingangsspanning
+ lager dan 360V.
+ Dus de wikkelverhouding moet bepaald worden met een minimale ingangsspanning
+ van 300V.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Primaire Piekstroom
 \end_layout
 
 \begin_layout Standard
-De formule voor de piekwaarde van de primaire stroom is:
+De formule voor de primaire piekstroom is:
 \begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Formula $I_{P}=\frac{4*P_{OUT}}{V_{IN}*η}$
+\begin_inset Formula $Î_{P}=\frac{4*P_{OUT}}{V_{IN}*η}$
 \end_inset
 
 
@@ -312,17 +245,17 @@ Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
 
 \begin_layout Standard
 Voor het berekenen van de primaire piekstroom, wordt een ingangsspanning
- van 330V en een rendement van 0,80 gebruikt.
+ van 300V en een rendement van 0,75 gebruikt.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $I_{Ppiek}=\frac{4*30}{330*0,80}=0,455A$
+\begin_inset Formula $Î_{P}=\frac{4*30}{300*0,75}=0,533A$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Primaire Spoel
 \end_layout
 
@@ -332,30 +265,25 @@ De formule voor de primaire spoel is:
 \end_inset
 
 
-\begin_inset Formula $L_{P}=\frac{V_{IN^{2}}}{8*P_{OUT}*f}*η$
+\begin_inset Formula $L_{P}=\frac{V_{IN}^{2}}{8*P_{OUT}*f}*η$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
- 0,85.
 \end_layout
 
 \begin_layout Standard
 Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
- 330V en een rendement van 0,80 gebruikt
+ 300V en een rendement van 0,75 gebruikt.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $L_{P}=\frac{330^{2}}{8*30*100000}*0,80=3,63mH$
+\begin_inset Formula $L_{P}=\frac{300^{2}}{8*30*100000}*0,75=2,8125mH$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Opgeslagen Energie
 \end_layout
 
@@ -365,25 +293,26 @@ De formule voor de energie die opgeslagen is in de luchtspleet is:
 \end_inset
 
 
-\begin_inset Formula $W=\frac{1}{2}*L_{P}*I_{Ppiek}^{2}$
+\begin_inset Formula $W=\frac{1}{2}*L_{P}*Î_{P}^{2}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-De energie die opgeslagen is in de luchtspleet is:
+De energie die opgeslagen is in de luchtspleet met een uitgangsspanning
+ van 19V is:
 \begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Formula $W=\frac{1}{2}*3,63*10^{-3}*0,455^{2}=0,376mJ$
+\begin_inset Formula $W=\frac{1}{2}*2,8125*10^{-3}*0,533^{2}=0,4mJ$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Secundaire Spoel
 \end_layout
 
@@ -393,15 +322,15 @@ Voor het bepalen van de secundaire spoel, moet eerst een ETD kern gekozen
 \end_layout
 
 \begin_layout Standard
-Voor de ETD kern is voor ETD59/31/22 met een luchtspleet en matriaal N27
- gekozen, omdat met deze kern de minste wikkelingen voor berekend zijn en
- ook zijn de wikkelingen het meest naukeurig vergeleken met de andere kernen.
+Voor de ETD kern is voor ETD44/22/15 met een luchtspleet en matriaal N67
+ gekozen, omdat met deze kern de wikkelingen het meest naukeurig zijn vergeleken
+ met de andere kernen.
  Voor andere kernen worden wikkelingen berekent met bijvoorbeeld 58,46 en
  wikkelingen kunnen alleen hele getallen zijn.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $A_{L}=1588nH$
+\begin_inset Formula $A_{L}=438nH$
 \end_inset
 
 
@@ -409,7 +338,7 @@ Voor de ETD kern is voor ETD59/31/22 met een luchtspleet en matriaal N27
 \end_inset
 
 
-\begin_inset Formula $A_{MIN}=368mm^{2}$
+\begin_inset Formula $A_{MIN}=172mm^{2}$
 \end_inset
 
 
@@ -421,10 +350,10 @@ Eerst wordt de werkelijke primaire wikkelingen berekent:
 \end_inset
 
 
-\begin_inset Formula $N_{Pwerkelijk}=\sqrt{\frac{L_{P}}{A_{L}}}=\sqrt{\frac{0,00318}{621*10^{-9}}}=47,81$
+\begin_inset Formula $N_{Pwerkelijk}=\sqrt{\frac{L_{P}}{A_{L}}}=\sqrt{\frac{0,0028125}{438*10^{-9}}}=80,13$
 \end_inset
 
-≈ 48
+≈ 80
 \end_layout
 
 \begin_layout Standard
@@ -433,10 +362,10 @@ De werkelijke secundaire wikkelingen is nu te berekenen:
 \end_inset
 
 
-\begin_inset Formula $N_{Swerkelijk}=\frac{N_{S}}{N_{P}}*N_{Pwerkelijk}=\frac{15}{300}*72=3,04$
+\begin_inset Formula $N_{Swerkelijk}=\frac{N_{S}}{N_{P}}*N_{Pwerkelijk}=\frac{19}{300}*80=5,06$
 \end_inset
 
- ≈ 3
+ ≈ 5
 \end_layout
 
 \begin_layout Standard
@@ -445,7 +374,7 @@ De secundaire spoel kan nu berekent worden:
 \end_inset
 
 
-\begin_inset Formula $L_{S}=N_{Swerklijk}{}^{2}*A_{L}=3^{2}*1588*10^{-9}=14,292*10^{-6}H=14,292μH$
+\begin_inset Formula $L_{S}=N_{Swerklijk}{}^{2}*A_{L}=5^{2}*438*10^{-9}=10,95*10^{-6}H=10,95μH$
 \end_inset
 
 
@@ -457,27 +386,29 @@ Ter controle wordt de B berekend en de B mag maximaal 0,3T zijn.
 \end_inset
 
 
-\begin_inset Formula $B=\frac{L_{p}*I_{Ppiek}}{N_{P}*A_{MIN}}=\frac{0,00363*0,455}{48*368*10^{-6}}=0,093T$
+\begin_inset Formula $B=\frac{L_{p}*Î_{P}}{N_{P}*A_{MIN}}=\frac{0,0028125*0,533}{80*172*10^{-6}}=0,11T$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-0,093T is kleiner dan 0,3T dus een secundaire spoel van 14,292μH voldoet.
+0,11T is kleiner dan 0,3T dus een secundaire spoel van 10,95μH voldoet.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Secundaire Piekstroom
 \end_layout
 
 \begin_layout Standard
-De energie opgeslagen in de luchtspleet is gelijk aan:
+In een ideaal geval (geen verliezen van het overdracht van energie van primaire-
+ naar secundaire kant) is de energie opgeslagen in de luchtspleet gelijk
+ aan:
 \begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Formula $W=\frac{1}{2}*L_{P}*I_{Ppiek}=\frac{1}{2}*L_{S}*L_{Spiek}=0,376mJ$
+\begin_inset Formula $W=\frac{1}{2}*L_{P}*Î_{P}^{2}=\frac{1}{2}*L_{S}*Î_{S}^{2}=0,4mJ$
 \end_inset
 
 
@@ -489,14 +420,18 @@ De secundaire piekstroom is als volg te berekenen:
 \end_inset
 
 
-\begin_inset Formula $I_{S}=\sqrt{\frac{2*W}{L_{S}}}=\sqrt{\frac{2*0,376*10^{-3}}{14,292*10^{-6}}}=7,25A$
+\begin_inset Formula $Î_{S}=\sqrt{\frac{2*W}{L_{S}}}=\sqrt{\frac{2*0,4*10^{-3}}{10,95*10^{-6}}}=8,55A$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 ESR
+\end_layout
+
+\begin_layout Standard
+Er wordt een 100μF uitgangscondensator gebruikt.
 \end_layout
 
 \begin_layout Standard
@@ -514,8 +449,9 @@ Voor de rimpelspanning word gekozen voor 0,5V.
 \end_layout
 
 \begin_layout Standard
-Omdat er vanuit gaat dat de Flyback converter in discontinue bedrijf zit,
- geldt:
+Er wordt vanuit gegaan dat de Flyback converter met een uitgang van 19V
+ in discontinue bedrijf zit.
+ Dus er geldt:
 \begin_inset Newline newline
 \end_inset
 
@@ -533,7 +469,7 @@ Omdat er vanuit gaat dat de Flyback converter in discontinue bedrijf zit,
 \color none
 \lang english
 
-\begin_inset Formula $I_{Spiek}=\text{∆}I_{S}$
+\begin_inset Formula $Î_{S}=\text{∆}I_{S}=8,55A$
 \end_inset
 
 
@@ -545,13 +481,18 @@ ESR kan berekent worden:
 \end_inset
 
 
-\begin_inset Formula $ESR=\frac{0,5}{7,25}=0,0689Ohm$
+\begin_inset Formula $ESR=\frac{0,5}{8,55}=0,0585Ohm$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+De condensator die gebruikt wordt, heeft een veel lagere ESR, dus de rimpelspann
+ing valt binnen de specificatie.
+\end_layout
+
+\begin_layout Subsubsection*
 Mosfet
 \end_layout
 
@@ -560,66 +501,15 @@ De formule voor de spanning door de Mosfet is:
 \begin_inset Newline newline
 \end_inset
 
-V
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-DS 
-\end_layout
-
+\begin_inset Formula $V_{DS}=V_{IN}+V_{OUT}*\frac{N_{P}}{N_{S}}\text{≈}2*V_{IN}$
 \end_inset
 
-= V
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
- + V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
-\end_inset
-
-*(N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P 
-\end_layout
-
-\end_inset
-
-/N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S 
-\end_layout
-
-\end_inset
-
-) ≈ 2 * V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
-Voor de maximale spanning door de Mosfet wordt van uit gegaan dat de ingangspann
-ing (V
+Voor de maximale spanning door de Mosfet wordt vanuit gegaan dat V
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -628,7 +518,7 @@ IN
 
 \end_inset
 
-) gelijk is aan 360V.
+ gelijk is aan 360V.
  De maximale spanning door de Mosfet is gelijk aan:
 \begin_inset Newline newline
 \end_inset
@@ -642,7 +532,7 @@ DS
 
 \end_inset
 
-= 2*360 = 720V
+= 2*360V = 720V
 \end_layout
 
 \begin_layout Standard
@@ -651,7 +541,7 @@ De maximale stroom door de mosfet is:
 \end_inset
 
 
-\begin_inset Formula $I_{DS}=I_{Ppiek}=0,455A$
+\begin_inset Formula $I_{DS}=Î_{P}=0,533A$
 \end_inset
 
 
@@ -676,12 +566,12 @@ DS
 
 \end_inset
 
-van 0.455A aan kan.
+van 0.533A aan kan.
  De mosfet moet van een heatsink worden voorzien om dit vermogen te kunnen
  schakelen.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Diode
 \end_layout
 
@@ -690,66 +580,15 @@ De formule voor de spanning door de diode is:
 \begin_inset Newline newline
 \end_inset
 
-U
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-R 
-\end_layout
-
-\end_inset
-
-= V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
-\end_inset
-
-+ V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
-*(N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S 
-\end_layout
-
-\end_inset
-
-/N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P 
-\end_layout
-
-\end_inset
-
-) ≈ 2 * V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
+\begin_inset Formula $U_{D}=V_{OUT}+V_{IN}*\frac{N_{S}}{N_{P}}\text{≈}2*V_{OUT}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Voor de maximale spanning door de Diode wordt van uit gegaan dat de ingangspanni
-ng (V
+Voor de maximale spanning door de Diode wordt van uit gegaan dat V
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -758,21 +597,21 @@ IN
 
 \end_inset
 
-) gelijk is aan 360V.
+ gelijk is aan 360V.
  De maximale spanning door de Diode is gelijk aan:
 \begin_inset Newline newline
 \end_inset
 
-V
+U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
-DS 
+D 
 \end_layout
 
 \end_inset
 
-= 2*19 = 38V
+= 19V + 22,8V = 41,8V
 \end_layout
 
 \begin_layout Standard
@@ -781,7 +620,7 @@ De maximale stroom door de diode is:
 \end_inset
 
 
-\begin_inset Formula $I_{D}=I_{Spiek}=7,25A$
+\begin_inset Formula $I_{D}=Î_{S}=8,55A$
 \end_inset
 
 
@@ -789,7 +628,7 @@ De maximale stroom door de diode is:
 
 \begin_layout Standard
 Om de spoelstroom gelijk te richten is er een diode nodig die een spanning
- van 38v kan sperren en een stroom van 7,25A kan doorlaten.
+ van 41,8V kan sperren en een stroom van 8,55A kan doorlaten.
 \end_layout
 
 \begin_layout Standard
@@ -803,21 +642,8 @@ Om de spoelstroom gelijk te richten is er een diode nodig die een spanning
 Ontwerp 15V
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Wikkelverhouding
-\end_layout
-
-\begin_layout Standard
-Voor het ontwerpen van de Flyback converter, mag de duty cycle maximaal
- 50% zijn.
- De formule voor de wikkelverhouding is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{V_{IN}}{V_{OUT}}$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -864,25 +690,8 @@ S
 <=> 20 : : 1
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Primaire Piekstroom
-\end_layout
-
-\begin_layout Standard
-De formule voor de piekwaarde van de primaire stroom is:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $I_{Ppiek}=\frac{4*P_{OUT}}{V_{IN}*η}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
- 0,85.
 \end_layout
 
 \begin_layout Standard
@@ -891,31 +700,14 @@ Voor het berekenen van de primaire piekstroom, wordt een ingangsspanning
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $I_{Ppiek}=\frac{4*30}{300*0,85}=0,47A$
+\begin_inset Formula $Î_{P}=\frac{4*30}{300*0,85}=0,47A$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Primaire Spoel
-\end_layout
-
-\begin_layout Standard
-De formule voor de primaire spoel is:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $L_{P}=\frac{V_{IN^{2}}}{8*P_{OUT}*f}*η$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
- 0,85.
 \end_layout
 
 \begin_layout Standard
@@ -930,7 +722,36 @@ Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
+Opgeslagen Energie
+\end_layout
+
+\begin_layout Standard
+De formule voor de energie die opgeslagen is in de luchtspleet is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $W=\frac{1}{2}*L_{P}*Î_{P}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De energie die opgeslagen is in de luchtspleet met een uitgangsspanning
+ van 15V is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $W=\frac{1}{2}*3,18*10^{-3}*0,47^{2}=0,35mJ$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
 Secundaire Spoel
 \end_layout
 
@@ -1001,7 +822,7 @@ Ter controle wordt de B berekend en de B mag maximaal 0,3T zijn.
 \end_inset
 
 
-\begin_inset Formula $B=\frac{L_{p}*I_{Ppiek}}{N_{P}*A_{MIN}}=\frac{0,00318*0,47}{72*71*10^{-6}}=0,2945T$
+\begin_inset Formula $B=\frac{L_{p}*Î_{P}}{N_{P}*A_{MIN}}=\frac{0,00318*0,47}{72*71*10^{-6}}=0,2945T$
 \end_inset
 
 
@@ -1011,28 +832,41 @@ Ter controle wordt de B berekend en de B mag maximaal 0,3T zijn.
 0,2945T is kleiner dan 0,3T dus een secundaire spoel van 9,9μH voldoet.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Secundaire Piekstroom
 \end_layout
 
 \begin_layout Standard
-De secundaire piekstroom is:
+In een ideaal geval is de energie opgeslagen in de luchtspleet is gelijk
+ aan:
 \begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Formula $I_{Spiek}=1,2*2=2,4A$
+\begin_inset Formula $W=\frac{1}{2}*L_{P}*Î_{P}^{2}=\frac{1}{2}*L_{S}*Î_{S}^{2}=0,35mJ$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+De secundaire piekstroom is als volg te berekenen:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $Î_{S}=\sqrt{\frac{2*W}{L_{S}}}=\sqrt{\frac{2*0,35*10^{-3}}{9,9*10^{-6}}}=8,4A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
 ESR
 \end_layout
 
 \begin_layout Standard
-Er wordt een 100uF uitgangscondensator gebruikt.
+Er wordt een 100μF uitgangscondensator gebruikt.
  Het is een speciale low-ESR condensator.
  Bij deze condensator is de rimpelspanning van de ESR hoger dan die van
  de C, dus er wordt gekeken naar de rimpel van de ESR.
@@ -1044,11 +878,17 @@ Een rimpelspanning van 0,5V is acceptabel.
 \end_layout
 
 \begin_layout Standard
-∆Is = 0.4 * 2 = 0,8A 
+\begin_inset Formula $∆I_{S}=Î_{S}=8,4A$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-ESR = 0.5 / (0.4 * 2) = 0.625 Ohm 
+\begin_inset Formula $ESR\text{=}\frac{0,5V}{8,4A}=0,0595\text{Ω}$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1056,70 +896,8 @@ De condensator die gebruikt wordt, heeft een veel lagere ESR, dus de rimpelspann
 ing valt binnen de specificatie.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Mosfet
-\end_layout
-
-\begin_layout Standard
-De formule voor de spanning door de Mosfet is:
-\begin_inset Newline newline
-\end_inset
-
-V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-DS 
-\end_layout
-
-\end_inset
-
-= V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
- + V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
-\end_inset
-
-*(N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P 
-\end_layout
-
-\end_inset
-
-/N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S 
-\end_layout
-
-\end_inset
-
-) ≈ 2 * V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
@@ -1147,7 +925,7 @@ DS
 
 \end_inset
 
-= 2*360 = 720V
+= 2 * 360V = 720V
 \end_layout
 
 \begin_layout Standard
@@ -1156,7 +934,7 @@ De maximale stroom door de mosfet is:
 \end_inset
 
 
-\begin_inset Formula $I_{DS}=I_{Ppiek}=0,47A$
+\begin_inset Formula $I_{DS}=Î_{P}=0,47A$
 \end_inset
 
 
@@ -1186,70 +964,8 @@ van 0.47A aan kan.
  schakelen.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Diode
-\end_layout
-
-\begin_layout Standard
-De formule voor de spanning door de diode is:
-\begin_inset Newline newline
-\end_inset
-
-U
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-R 
-\end_layout
-
-\end_inset
-
-= V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
-\end_inset
-
-+ V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
-*(N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S 
-\end_layout
-
-\end_inset
-
-/N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P 
-\end_layout
-
-\end_inset
-
-) ≈ 2 * V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1268,16 +984,16 @@ IN
 \begin_inset Newline newline
 \end_inset
 
-V
+U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
-DS 
+D 
 \end_layout
 
 \end_inset
 
-= 2 * 15V = 30V
+= 15V + 18V = 33V
 \end_layout
 
 \begin_layout Standard
@@ -1286,7 +1002,7 @@ De maximale stroom door de diode is:
 \end_inset
 
 
-\begin_inset Formula $I_{D}=I_{Spiek}=1,2*2=2,4A$
+\begin_inset Formula $I_{D}=Î_{S}=8,4A$
 \end_inset
 
 
@@ -1294,7 +1010,7 @@ De maximale stroom door de diode is:
 
 \begin_layout Standard
 Om de spoelstroom gelijk te richten is er een diode nodig die een spanning
- van 30v kan sperren en een stroom van 2,4A kan doorlaten.
+ van 33V kan sperren en een stroom van 8,4A kan doorlaten.
 \end_layout
 
 \begin_layout Standard
@@ -1308,21 +1024,8 @@ Om de spoelstroom gelijk te richten is er een diode nodig die een spanning
 Ontwerp 12V
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Wikkelverhouding
-\end_layout
-
-\begin_layout Standard
-Voor het ontwerpen van de Flyback converter, mag de duty cycle maximaal
- 50% zijn.
- De formule voor de wikkelverhouding is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{N_{P}}{N_{S}}=\frac{V_{IN}}{V_{OUT}}$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1366,76 +1069,70 @@ S
 
 \end_inset
 
-<=> 20 : : 1
+<=> 25 : : 1
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Primaire Piekstroom
 \end_layout
 
 \begin_layout Standard
-De formule voor de piekwaarde van de primaire stroom is:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $I_{Ppiek}=\frac{4*P_{OUT}}{V_{IN}*η}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
- 0,85.
-\end_layout
-
-\begin_layout Standard
 Voor het berekenen van de primaire piekstroom, wordt een ingangsspanning
- van ???? en een rendement van ????? gebruikt.
+ van 300V en een rendement van 0,85 gebruikt.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $I_{Ppiek}=\frac{4*30}{????*???}=????A$
+\begin_inset Formula $I_{Ppiek}=\frac{4*30}{300*0,85}=0,47A$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Primaire Spoel
 \end_layout
 
 \begin_layout Standard
-De formule voor de primaire spoel is:
+Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
+ 300V en een rendement van 0,85 gebruikt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{P}=\frac{300^{2}}{8*30*100000}*0,85=3,18mH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Opgeslagen Energie
+\end_layout
+
+\begin_layout Standard
+De formule voor de energie die opgeslagen is in de luchtspleet is:
 \begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Formula $L_{P}=\frac{V_{IN^{2}}}{8*P_{OUT}*f}*η$
+\begin_inset Formula $W=\frac{1}{2}*L_{P}*Î_{P}^{2}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Het rendement (η) van de Flyback converter ligt ongeveer tussen 0,75 en
- 0,85.
-\end_layout
+De energie die opgeslagen is in de luchtspleet is:
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
- ???? en een rendement van ???? gebruikt
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula $L_{P}=\frac{???^{2}}{8*30*100000}*????=????mH$
+\begin_inset Formula $W=\frac{1}{2}*3,18*10^{-3}*0,47^{2}=0,35mJ$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Secundaire Spoel
 \end_layout
 
@@ -1445,12 +1142,12 @@ Voor het bepalen van een secundaire spoel moet eerst een ETD kern gekozen
 \end_layout
 
 \begin_layout Standard
-ETD??/??/?? is het meest gunstige voor de Flyback converter met een uitgangsspan
+ETD29/16/10 is het meest gunstige voor de Flyback converter met een uitgangsspan
 ning van 12V.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $A_{L}=????nH$
+\begin_inset Formula $A_{L}=621nH$
 \end_inset
 
 
@@ -1458,7 +1155,7 @@ ning van 12V.
 \end_inset
 
 
-\begin_inset Formula $A_{MIN}=????mm^{2}$
+\begin_inset Formula $A_{MIN}=71mm^{2}$
 \end_inset
 
 
@@ -1470,7 +1167,7 @@ Eerst wordt de werkelijke primaire wikkelingen berekent:
 \end_inset
 
 
-\begin_inset Formula $N_{Pwerkelijk}=\sqrt{\frac{L_{P}}{A_{L}}}=\sqrt{\frac{???}{???}}=???$
+\begin_inset Formula $N_{Pwerkelijk}=\sqrt{\frac{L_{P}}{A_{L}}}=\sqrt{\frac{0,00318}{621*10^{-9}}}=72$
 \end_inset
 
 
@@ -1482,10 +1179,10 @@ De werkelijke secundaire wikkelingen is nu te berekenen:
 \end_inset
 
 
-\begin_inset Formula $N_{Swerkelijk}=\frac{12}{300}*???=????$
+\begin_inset Formula $N_{Swerkelijk}=\frac{12}{300}*72=2,88$
 \end_inset
 
- ≈ ???
+ ≈ 3
 \end_layout
 
 \begin_layout Standard
@@ -1494,7 +1191,7 @@ De secundaire spoel kan nu berekent worden:
 \end_inset
 
 
-\begin_inset Formula $L_{S}=???^{2}*???*10^{-9}=???μH$
+\begin_inset Formula $L_{S}=3^{2}*621*10^{-9}=5,589μH$
 \end_inset
 
 
@@ -1506,37 +1203,112 @@ Ter controle wordt de B berekend en de B mag maximaal 0,3T zijn.
 \end_inset
 
 
-\begin_inset Formula $B=\frac{L_{p}*I_{Ppiek}}{N_{P}*A_{MIN}}=\frac{???*????}{??*??*10^{-6}}=????T$
+\begin_inset Formula $B=\frac{L_{p}*Î_{P}}{N_{P}*A_{MIN}}=\frac{0,00318*0,47}{72*71*10^{-6}}=0,2923T$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-?????T is kleiner dan 0,3T dus een secundaire spoel van ???μH voldoet.
+0,2923T is kleiner dan 0,3T dus een secundaire spoel van 5,589μH voldoet.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Secundaire Piekstroom
 \end_layout
 
 \begin_layout Standard
-De secundaire piekstroom is:
+In een ideaal geval is de energie opgeslagen in de luchtspleet is gelijk
+ aan:
 \begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Formula $I_{Spiek}=???$
+\begin_inset Formula $W=\frac{1}{2}*L_{P}*Î_{P}^{2}=\frac{1}{2}*L_{S}*Î_{S}^{2}=0,35mJ$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+De secundaire piekstroom is als volg te berekenen:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $Î_{S}=\sqrt{\frac{2*W}{L_{S}}}=\sqrt{\frac{2*0,35*10^{-3}}{5,589*10^{-6}}}=11,2A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
 ESR
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+Er wordt een 100μF uitgangscondensator gebruikt.
+\end_layout
+
+\begin_layout Standard
+Voor de rimpelspanning word gekozen voor 0,5V.
+ Met de rimpelspanning bekend kan de ESR (equivalent series resistance)
+ berekend worden met hehulp van de volgende formule:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $∆V_{OUT}^{ESR}\text{≈}\text{∆}I_{S}*ESR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Er wordt vanuit gegaan dat de Flyback converter met een uitgang van 12V
+ in discontinue bedrijf zit.
+ Dus er geldt:
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $Î_{S}=\text{∆}I_{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ESR kan berekent worden:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $ESR=\frac{0,5}{11,2}=0,0446Ohm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De condensator die gebruikt wordt, heeft een veel lagere ESR, dus de rimpelspann
+ing valt binnen de specificatie.
+\end_layout
+
+\begin_layout Subsubsection*
 Mosfet
 \end_layout
 
@@ -1545,61 +1317,11 @@ De formule voor de spanning door de Mosfet is:
 \begin_inset Newline newline
 \end_inset
 
-V
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-DS 
-\end_layout
-
+\begin_inset Formula $V_{DS}=V_{IN}+V_{OUT}*\frac{N_{P}}{N_{S}}\text{≈}2*V_{IN}$
 \end_inset
 
-= V
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
- + V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
-\end_inset
-
-*(N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P 
-\end_layout
-
-\end_inset
-
-/N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S 
-\end_layout
-
-\end_inset
-
-) ≈ 2 * V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Standard
@@ -1636,7 +1358,7 @@ De maximale stroom door de mosfet is:
 \end_inset
 
 
-\begin_inset Formula $I_{DS}=I_{Ppiek}=???A$
+\begin_inset Formula $I_{DS}=Î_{P}=0,47A$
 \end_inset
 
 
@@ -1661,12 +1383,12 @@ DS
 
 \end_inset
 
-van ???A aan kan.
+van 0,47A aan kan.
  De mosfet moet van een heatsink worden voorzien om dit vermogen te kunnen
  schakelen.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Diode
 \end_layout
 
@@ -1675,58 +1397,8 @@ De formule voor de spanning door de diode is:
 \begin_inset Newline newline
 \end_inset
 
-U
-\begin_inset script subscript
 
-\begin_layout Plain Layout
-R 
-\end_layout
-
-\end_inset
-
-= V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
-\end_inset
-
-+ V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-IN 
-\end_layout
-
-\end_inset
-
-*(N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-S 
-\end_layout
-
-\end_inset
-
-/N
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-P 
-\end_layout
-
-\end_inset
-
-) ≈ 2 * V
-\begin_inset script subscript
-
-\begin_layout Plain Layout
-OUT 
-\end_layout
-
+\begin_inset Formula $U_{D}=V_{OUT}+V_{IN}*\frac{N_{S}}{N_{P}}\text{≈}2*V_{OUT}$
 \end_inset
 
 
@@ -1748,16 +1420,16 @@ IN
 \begin_inset Newline newline
 \end_inset
 
-V
+U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
-DS 
+D
 \end_layout
 
 \end_inset
 
-= 2 * 12V = 24V
+ = 12V + 14,4V = 26,4V
 \end_layout
 
 \begin_layout Standard
@@ -1766,7 +1438,7 @@ De maximale stroom door de diode is:
 \end_inset
 
 
-\begin_inset Formula $I_{D}=I_{Spiek}=????A$
+\begin_inset Formula $I_{D}=Î_{S}=11,2A$
 \end_inset
 
 
@@ -1774,7 +1446,7 @@ De maximale stroom door de diode is:
 
 \begin_layout Standard
 Om de spoelstroom gelijk te richten is er een diode nodig die een spanning
- van 24V kan sperren en een stroom van ???A kan doorlaten.
+ van 26,4V kan sperren en een stroom van 11,2A kan doorlaten.
 \end_layout
 
 \end_body
