@@ -5,7 +5,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language dutch
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -24,7 +24,9 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -64,50 +66,20 @@ Testprocedure
 \end_layout
 
 \begin_layout Standard
-Er zijn twee testprocedures beschreven: een procedure voor een simulatiemodel
- en een voor een hardware test.
+De ontwerpen zijn onderworpen aan twee tests: Een test in de simulator en
+ een hardware test.
 \end_layout
 
 \begin_layout Standard
-De test in de simulatie dient ervoor om de berekeningen voor ieder ontwerp
- te controleren.
+De simulatie dient ervoor om de berekeningen voor ieder ontwerp te controleren.
+ Meer hierover in het hoofdstuk Simulatie.
 \end_layout
 
 \begin_layout Standard
 De hardwaretest geeft inzicht over de onvoorziene effecten van niet-ideale
  componenten op de schakeling.
- Als deze effecten de werking teveel beinvloeden zodat de schakeling niet
+ Als deze effecten de werking te veel beinvloeden zodat de schakeling niet
  naar behoren werkt moeten er aanpassingen in het ontwerp worden gemaakt.
-\end_layout
-
-\begin_layout Subsection
-Simulatie test
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Moet het in dit hoofdstuk?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Er is een standaard flyback schakeling gesimuleerd met dezelfde eigenschappen
- als de eigen ontwerpen.
-\end_layout
-
-\begin_layout Standard
-De volgende eigenschappen van de schakeling zijn afkomstig van het eigen
- ontwerp: De wikkelverhouding en spoelinductie van de primaire en secundaire
- spoel
-\end_layout
-
-\begin_layout Standard
-De volgende eigenschappen zijn afkomstig van het schema van de opdrachtgever:
- De mosfet, diode en uitgangscondensator
 \end_layout
 
 \begin_layout Subsection
@@ -157,13 +129,13 @@ Test of het driver IC werkt
 \end_layout
 
 \begin_layout Itemize
-Voed het driver IC met 8,5 - 15v.
+Voed het driver IC met 8,5 - 15V.
  Als de driver aan staat trekt deze ongeveer 10mA.
 \end_layout
 
 \begin_layout Itemize
 Schakel nu de ingangsspanning aan.
- Begin laag en schroef de spanning geleidelijk op tot 360v.
+ Begin laag en schroef de spanning geleidelijk op tot 360V.
  Meet de stroom en spanning over de primaire spoel* en over de mosfet.
  Werkt de schakeling in flyback mode?
 \end_layout
@@ -184,14 +156,14 @@ Sluit de secundaire spoel aan zodat deze in tegenfase is met de primaire
 \end_layout
 
 \begin_layout Itemize
-Meet spanning en stroom van de secundaire spoel onbelast bij een ingangspanning
- van 360v.
- De dutycycle van de gate zou nu minder dan 50% moeten zijn.
+Meet de spanning en stroom van de secundaire spoel onbelast bij een ingangspanni
+ng van 360v.
+ De duty-cycle van de gate zou nu minder dan 50% moeten zijn.
 \end_layout
 
 \begin_layout Itemize
 Herhaal deze meting met een belasting van 2A.
- De dutycycle van de gate zou nu 50% moeten zijn.
+ De duty-cycle van de gate zou nu 50% moeten zijn.
 \end_layout
 
 \begin_layout Itemize
@@ -214,7 +186,7 @@ Sluit de tertiaire spoel aan zodat deze in tegenfase is met de primaire
 
 \begin_layout Itemize
 Het opstartcircuit kan nu worden bestukt als de flyback goed werkt bij een
- ingangspanning van 360v.
+ ingangspanning van 360V.
 \end_layout
 
 \begin_layout Itemize
@@ -232,12 +204,12 @@ Discussie
 \end_layout
 
 \begin_layout Standard
-Door tijdgebrek heeft de opdrachtgever ervoor gekozen om het eigen ontwerp
- niet te onderwerpen aan een hardware test.
+Door tijdgebrek heeft de opdrachtgever ervoor gekozen om de ontwerpen van
+ de projectgroepen niet te onderwerpen aan een hardware test.
  Het troubleshooten van deze soort schakelingen neemt veel tijd in beslag
  en het is mogelijk dat de schakeling beschadigd raakt in het proces.
- In plaats voor de test met het eigen ontwerp wordt er een ontwerp aangeleverd
- door de opdrachtgever.
+ In plaats hiervoor wordt er een ontwerp aangeleverd door de opdrachtgever
+ dat wel getest zal worden.
 \end_layout
 
 \end_body
