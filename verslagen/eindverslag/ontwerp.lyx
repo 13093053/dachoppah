@@ -159,11 +159,7 @@ IN
 
 \end_inset
 
-gelijk zijn aan de minimale 
-\end_layout
-
-\begin_layout Standard
-spanning van de gegeven specificaties.
+gelijk zijn aan de minimale spanning van de gegeven specificaties.
  De wikkelverhouding is gelijk aan:
 \end_layout
 
@@ -273,7 +269,7 @@ De formule voor de primaire spoel is:
 
 \begin_layout Standard
 Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
- 300V en een rendement van 0,75 gebruikt.
+ 300V,een rendement van 0,75 en een frequentie van 100kHz gebruikt.
 \end_layout
 
 \begin_layout Standard
@@ -325,8 +321,8 @@ Voor het bepalen van de secundaire spoel, moet eerst een ETD kern gekozen
 Voor de ETD kern is voor ETD44/22/15 met een luchtspleet en matriaal N67
  gekozen, omdat met deze kern de wikkelingen het meest naukeurig zijn vergeleken
  met de andere kernen.
- Voor andere kernen worden wikkelingen berekent met bijvoorbeeld 58,46 en
- wikkelingen kunnen alleen hele getallen zijn.
+ Voor andere kernen worden wikkelingen berekent met bijvoorbeeld 58,46 of
+ 63,69 en wikkelingen kunnen alleen hele getallen zijn.
 \end_layout
 
 \begin_layout Standard
@@ -381,7 +377,7 @@ De secundaire spoel kan nu berekent worden:
 \end_layout
 
 \begin_layout Standard
-Ter controle wordt de B berekend en de B mag maximaal 0,3T zijn.
+Ter controle wordt de B berekent en de B mag maximaal 0,3T zijn.
 \begin_inset Newline newline
 \end_inset
 
@@ -437,7 +433,7 @@ Er wordt een 100μF uitgangscondensator gebruikt.
 \begin_layout Standard
 Voor de rimpelspanning word gekozen voor 0,5V.
  Met de rimpelspanning bekend kan de ESR (equivalent series resistance)
- berekend worden met hehulp van de volgende formulen:
+ berekend worden met hehulp van de volgende formule:
 \begin_inset Newline newline
 \end_inset
 
@@ -532,7 +528,7 @@ DS
 
 \end_inset
 
-= 2*360V = 720V
+= 2 * 360V = 720V
 \end_layout
 
 \begin_layout Standard
@@ -588,7 +584,7 @@ De formule voor de spanning door de diode is:
 \end_layout
 
 \begin_layout Standard
-Voor de maximale spanning door de Diode wordt van uit gegaan dat V
+Voor de maximale spanning door de Diode wordt vanuit gegaan dat V
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -712,7 +708,7 @@ Primaire Spoel
 
 \begin_layout Standard
 Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
- 300V en een rendement van 0,85 gebruikt
+ 300V, een rendement van 0,85 en een frequentie van 100kHz gebruikt.
 \end_layout
 
 \begin_layout Standard
@@ -817,7 +813,7 @@ De secundaire spoel kan nu berekent worden:
 \end_layout
 
 \begin_layout Standard
-Ter controle wordt de B berekend en de B mag maximaal 0,3T zijn.
+Ter controle wordt B berekent en de B mag maximaal 0,3T zijn.
 \begin_inset Newline newline
 \end_inset
 
@@ -837,8 +833,7 @@ Secundaire Piekstroom
 \end_layout
 
 \begin_layout Standard
-In een ideaal geval is de energie opgeslagen in de luchtspleet is gelijk
- aan:
+In een ideaal geval is de energie opgeslagen in de luchtspleet gelijk aan:
 \begin_inset Newline newline
 \end_inset
 
@@ -901,8 +896,8 @@ Mosfet
 \end_layout
 
 \begin_layout Standard
-Voor de maximale spanning door de Mosfet wordt van uit gegaan dat de ingangspann
-ing (V
+Voor de maximale spanning door de Mosfet wordt vanuit gegaan dat de ingangspanni
+ng (V
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -969,8 +964,8 @@ Diode
 \end_layout
 
 \begin_layout Standard
-Voor de maximale spanning door de Diode wordt van uit gegaan dat de ingangspanni
-ng (V
+Voor de maximale spanning door de Diode wordt vanuit gegaan dat de ingangspannin
+g (V
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1094,7 +1089,7 @@ Primaire Spoel
 
 \begin_layout Standard
 Voor het berekenen van de primaire spoel, wordt een ingangsspanning van
- 300V en een rendement van 0,85 gebruikt
+ 300V, een rendement van 0,85 en een frequentie van 100kHz gebruikt.
 \end_layout
 
 \begin_layout Standard
@@ -1325,8 +1320,8 @@ De formule voor de spanning door de Mosfet is:
 \end_layout
 
 \begin_layout Standard
-Voor de maximale spanning door de Mosfet wordt van uit gegaan dat de ingangspann
-ing (V
+Voor de maximale spanning door de Mosfet wordt vanuit gegaan dat de ingangspanni
+ng (V
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -1349,7 +1344,7 @@ DS
 
 \end_inset
 
-= 2*360 = 720V
+= 2 * 360V = 720V
 \end_layout
 
 \begin_layout Standard
@@ -1405,8 +1400,8 @@ De formule voor de spanning door de diode is:
 \end_layout
 
 \begin_layout Standard
-Voor de maximale spanning door de Diode wordt van uit gegaan dat de ingangspanni
-ng (V
+Voor de maximale spanning door de Diode wordt vanuit gegaan dat de ingangspannin
+g (V
 \begin_inset script subscript
 
 \begin_layout Plain Layout
