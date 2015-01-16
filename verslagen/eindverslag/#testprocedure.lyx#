@@ -5,7 +5,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language dutch
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -24,7 +24,9 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -76,7 +78,7 @@ De simulatie dient ervoor om de berekeningen voor ieder ontwerp te controleren.
 \begin_layout Standard
 De hardwaretest geeft inzicht over de onvoorziene effecten van niet-ideale
  componenten op de schakeling.
- Als deze effecten de werking teveel beinvloeden zodat de schakeling niet
+ Als deze effecten de werking te veel beinvloeden zodat de schakeling niet
  naar behoren werkt moeten er aanpassingen in het ontwerp worden gemaakt.
 \end_layout
 
@@ -127,13 +129,13 @@ Test of het driver IC werkt
 \end_layout
 
 \begin_layout Itemize
-Voed het driver IC met 8,5 - 15v.
+Voed het driver IC met 8,5 - 15V.
  Als de driver aan staat trekt deze ongeveer 10mA.
 \end_layout
 
 \begin_layout Itemize
 Schakel nu de ingangsspanning aan.
- Begin laag en schroef de spanning geleidelijk op tot 360v.
+ Begin laag en schroef de spanning geleidelijk op tot 360V.
  Meet de stroom en spanning over de primaire spoel* en over de mosfet.
  Werkt de schakeling in flyback mode?
 \end_layout
@@ -154,14 +156,14 @@ Sluit de secundaire spoel aan zodat deze in tegenfase is met de primaire
 \end_layout
 
 \begin_layout Itemize
-Meet spanning en stroom van de secundaire spoel onbelast bij een ingangspanning
- van 360v.
- De dutycycle van de gate zou nu minder dan 50% moeten zijn.
+Meet de spanning en stroom van de secundaire spoel onbelast bij een ingangspanni
+ng van 360v.
+ De duty-cycle van de gate zou nu minder dan 50% moeten zijn.
 \end_layout
 
 \begin_layout Itemize
 Herhaal deze meting met een belasting van 2A.
- De dutycycle van de gate zou nu 50% moeten zijn.
+ De duty-cycle van de gate zou nu 50% moeten zijn.
 \end_layout
 
 \begin_layout Itemize
@@ -184,7 +186,7 @@ Sluit de tertiaire spoel aan zodat deze in tegenfase is met de primaire
 
 \begin_layout Itemize
 Het opstartcircuit kan nu worden bestukt als de flyback goed werkt bij een
- ingangspanning van 360v.
+ ingangspanning van 360V.
 \end_layout
 
 \begin_layout Itemize
