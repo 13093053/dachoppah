@@ -75,24 +75,138 @@ Competentie: Beheren
 \end_layout
 
 \begin_layout Standard
-Gebruik gemaakt van Github.
+Als Bachelor of Engineering moeten studenten aan kunnen tonen dat zij de
+ volgende competenties beheersen:
+\end_layout
+
+\begin_layout Itemize
+Analyseren;
+\end_layout
+
+\begin_layout Itemize
+Ontwerpen;
+\end_layout
+
+\begin_layout Itemize
+Realiseren;
+\end_layout
+
+\begin_layout Itemize
+Beheren;
+\end_layout
+
+\begin_layout Itemize
+Managen;
+\end_layout
+
+\begin_layout Itemize
+Adviseren;
+\end_layout
+
+\begin_layout Itemize
+Onderzoeken
 \end_layout
 
 \begin_layout Standard
-Communicatie door Telegram, e-mail en telefoonnummer.
+Hoewel bij alle projecten meerdere competenties worden ontwikkeld, wordt
+ er altijd nadruk gelegd op één of enkele van deze competenties.
+ Bij dit project staat de competentie beheren centraal.
+ In de praktijk vertaald het beheren zich bijvoorbeeld in het verzorgen
+ of een bijdrage leveren aan beheersystemen / onderhoudsplannen, het testen
+ van de werking van een product aan de hand van kwaliteitseisen, het verzorgen
+ van een goede werking / goed gebruik van het product na de realisatie,
+ enzovoorts.
+ In dit hoofdstuk zal toegelicht worden welke van onze activiteiten en keuzes
+ bij hebben gedragen aan deze competentie.
+\end_layout
+
+\begin_layout Subsection
+Beheer van communicatie
 \end_layout
 
 \begin_layout Standard
-Achter de docenten gegaan voor informatie met betrekking tot het project
- die vaag was.
+Eén van de eerste fundamenten die werden gelegd voor het project waren de
+ communicatiemogelijkheden.
+ Voor een goed verloop van het project is communicatie essentieel, en dan
+ wel met de mogelijkheid om zowel binnen de schoolomgeving als in de privé-omgev
+ing bereikbaar te zijn als projectlid.
+ Er was behoefte aan een service dat zowel stationair (desktop PC, laptop)
+ als mobiel (smartphone, tablet) te gebruiken is, en hiermee was de keuze
+ gevallen op Telegram, een instant-messaging applicatie.
+ Telegram is te gebruiken op een breed scala aan platformen, waardoor iedereen
+ de mogelijkheid had dit programma te gebruiken zonder daarvoor extra stappen
+ te moeten ondernemen.
+ Daarnaast wordt de gehele gesprekgeschiedenis op de servers van Telegram
+ opgeslagen, waardoor leden altijd terug kunnen kijken naar gemiste berichten.
+ Zo gaan belangrijke berichtjes nooit aan iemand voorbij.
 \end_layout
 
 \begin_layout Standard
-Kwaliteitsbeheer door elkaar zijn/haar werk nagegeken.
+Naast directe communicatie is er ook gebruik gemaakt van e-mail voor de
+ communicatie tussen projectgroep en (begeleidende) docenten.
+ Van alle mailtjes naar docenten werd altijd een CC naar de andere projectleden
+ gestuurd zodat iedereen direct op de hoogte was van eventueel belangrijke
+ informatie.
+ Uiteraard zijn ook telefoonnummers uitgewisseld zodat men elkaar kan bereiken
+ wanneer Telegram niet beschikbaar is of wanneer er met spoed contact opgenomen
+ moet worden.
+\end_layout
+
+\begin_layout Subsection
+Beheer van informatie
 \end_layout
 
 \begin_layout Standard
-Beheren door de plan van aanpak te wijzen.
+Net als communicatie is ook de de uitwisseling van informatie (in de vorm
+ van bestanden) een zeer belangrijk aspect.
+ De voorkeur lag op een systeem dat ons de mogelijkheid bied om gezamenlijk
+ aan documenten te werken in een robuuste en overzichtelijke manier.
+ Dit resulteerde in de beslissing om Git te gebruiken voor het uitwisselen
+ van bestanden onderling.
+ Git is een zogenaamd versiebeheersysteem, waarbij (in combinatie met de
+ web-gebaseerde GitHub service) overzichtelijk kan worden gewerkt aan bijvoorbee
+ld verslagen.
+ Er is een goed overzicht voor de veranderingen die elk lid maakt aan de
+ bestanden, en er kan altijd gemakkelijk een wijziging ongedaan worden gemaakt
+ als dit wenselijk is.
+\end_layout
+
+\begin_layout Standard
+Omdat de voordelen van Git alleen van toepassing zijn op plain-text bestanden,
+ is tevens besloten om LyX te gebruiken voor het maken van alle documentatie.
+ LyX is een grafische, LaTeX-gebaseerde tekstverwerker die zeer geschikt
+ blijkt bij het creëren van documenten met meerdere personen.
+ Omdat de opmaak al nagenoeg geheel vooraf is gedefinieerd kan men zich
+ volledig richten op de inhoud.
+ Kopzorgen en extra verlies van tijd vanwege inconsistente opmaak zijn hiermee
+ verholpen.
+ Daarnaast bied LyX de mogelijkheid om documenten samen te stellen uit losse
+ aparte documenten, zodat er bijvoorbeeld aparte bestanden kunnen worden
+ gebruikt voor de hoofstukken in een verslag.
+ Men kan dan in aparte documenten werken waardoor de kans op conflicten
+ in bestanden nog kleiner wordt.
+\end_layout
+
+\begin_layout Subsection
+Beheer van kwaliteit
+\end_layout
+
+\begin_layout Standard
+sample text
+\end_layout
+
+\begin_layout Subsection
+Beheer van project
+\end_layout
+
+\begin_layout Standard
+============================
+\end_layout
+
+\begin_layout Standard
+>to add: "Achter de docenten gegaan voor informatie met betrekking tot het
+ project", "Kwaliteitsbeheer door elkaar zijn/haar werk nagegeken.", "Beheren
+ door de plan van aanpak te wijzen."
 \end_layout
 
 \end_body
