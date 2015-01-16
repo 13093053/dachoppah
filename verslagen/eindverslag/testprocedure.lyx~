@@ -114,6 +114,16 @@ T1
 J3, J10 en J4, J9 nog niet verbinden
 \end_layout
 
+\begin_layout Standard
+Dit zijn de jumpers die de secundaire en tertiaire spoelen met de rest van
+ de achterliggende schakeling verbinden moeten nog niet verbonden worden.
+ De spanning over de spoelen moet eerst bepaald worden zonder belasting
+ om te controleren of spoelen goed gewikkeld en aangesloten zijn.
+ Daarna kan er een stroommeting gedaan worden door tussen de spoelterminals
+ en de achterliggende schakeling een shunt te plaatsen en hierover de spanning
+ te meten.
+\end_layout
+
 \begin_layout Subsubsection
 Test of het driver IC werkt
 \end_layout
