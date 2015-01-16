@@ -192,21 +192,71 @@ Beheer van kwaliteit
 \end_layout
 
 \begin_layout Standard
-sample text
+Er zijn ook initiatieven genomen om de kwaliteit van de op te leveren producten
+ te waarborgen.
+ Alle ontwerpen van de converters worden gedaan vanuit hetzelfde basismodel
+ zodat er onderling vergeleken kan worden en mogelijke fouten makkelijker
+ op te sporen zijn.
+ Voor de gerealiseerde flyback converter is een testprocedure opgesteld
+ om na te gaan of de converter naar behoren werkt en voldoet aan alle eisen
+ en gewenste specificaties.
+\end_layout
+
+\begin_layout Standard
+Ook de verslagen worden op kwaliteit gecontroleerd.
+ Met behulp van het boek Rapport over Rapporteren
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+[insert proper sourcing here]
+\end_layout
+
+\end_inset
+
+ wordt er voor gezorgd dat de documentatie voldoet aan de standaarden die
+ worden verwacht van de rapporten.
+ Dankzij het gebruik van Git en GitHub heeft iedereen altijd toegang tot
+ de nieuwste versie van de gemaakte documenten.
+ Er is afgesproken dat iedereen altijd elkaars werk doorneemt om feedback
+ te leveren en eventueel correcties te maken.
 \end_layout
 
 \begin_layout Subsection
-Beheer van project
+Beheer van het project
 \end_layout
 
 \begin_layout Standard
-============================
+Om het project in goede banen te leiden is er een plan van aanpak opgesteld
+ waarin het project wordt beschreven.
+ Zo wordt duidelijk wat er gedaan gaat worden maar ook wat niet de bedoeling
+ is om te doen.
+ Ook de planning is hierin opgenomen zodat de activiteiten op een gestructureerd
+e manier uitgevoerd kunnen worden.
+ Naast deze voorbereidende acties is ook gedurende het verloop van het project
+ actief gewerkt aan het beheren van het project.
 \end_layout
 
 \begin_layout Standard
->to add: "Achter de docenten gegaan voor informatie met betrekking tot het
- project", "Kwaliteitsbeheer door elkaar zijn/haar werk nagegeken.", "Beheren
- door de plan van aanpak te wijzen."
+Vanzelfsprekend zijn alle lessen Vermogenselektronica bijgewoond om zoveel
+ mogelijk kennis op te doen die kan helpen bij het project.
+ Als er toch nog onduidelijkheden waren is er altijd naar de docenten gestapt
+ voor extra ondersteuning.
+ Enkele keren waren er onduidelijkheden betreffende het project, en ook
+ hierbij is het initiatief genomen om verheldering te vragen bij de organiserend
+e docent.
+\end_layout
+
+\begin_layout Subsection
+Resultaten beheer
+\end_layout
+
+\begin_layout Standard
+Het beheren van de communicatie en informatie is gedurende het hele project
+ uitstekend gegaan.
+ Zeker met het gebruik van GitHub en LyX zijn meerdere malen de voordelen
+ gebleken met betrekking tot de samenwerking aan de bestanden.
+ [insert more concluding stuff here, suggestions appreciated]
 \end_layout
 
 \end_body
