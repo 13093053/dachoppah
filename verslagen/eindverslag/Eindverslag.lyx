@@ -87,19 +87,19 @@ Kevin Oei, 13090062
 \begin_inset Newline newline
 \end_inset
 
-Daniel Martoredjo, 130xxxxx
+Daniël Martoredjo, 13024833
 \begin_inset Newline newline
 \end_inset
 
-Koen van Vliet, 130xxxxx
+Koen van Vliet, 13093053
 \begin_inset Newline newline
 \end_inset
 
-Daan Conijn, 130xxxxxx
+Daan Conijn, 13023217
 \begin_inset Newline newline
 \end_inset
 
-Wouter Boogert, 130xxxxx
+Wouter Boogert, 13023462
 \begin_inset Newline newline
 \end_inset
 
@@ -268,7 +268,33 @@ Literatuur
 \begin_layout Enumerate
 van Duijsen, P.J.
  (2014).
- Vermogenselektronica: Schakelende Voeding.
+ 
+\shape italic
+Vermogenselektronica: Schakelende Voedingen
+\shape default
+ (1e druk).
+ De Haagse Hogeschool.
+\end_layout
+
+\begin_layout Enumerate
+Hoogland, W., Brand, I., Dik, R.
+ (2010).
+ 
+\shape italic
+Rapport over Rapporteren
+\shape default
+ (6e druk).
+\begin_inset Newline newline
+\end_inset
+
+Groningen/Houten: Noordhoff Uitgevers.
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Literatuur_rapport-over-rapporteren"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -111,7 +111,7 @@ Onderzoeken
 Hoewel bij alle projecten meerdere competenties worden ontwikkeld, wordt
  er altijd nadruk gelegd op één of enkele van deze competenties.
  Bij dit project staat de competentie beheren centraal.
- In de praktijk vertaald het beheren zich bijvoorbeeld in het verzorgen
+ In de praktijk vertaalt het beheren zich bijvoorbeeld in het verzorgen
  of een bijdrage leveren aan beheersystemen / onderhoudsplannen, het testen
  van de werking van een product aan de hand van kwaliteitseisen, het verzorgen
  van een goede werking / goed gebruik van het product na de realisatie,
@@ -157,8 +157,8 @@ Beheer van informatie
 \end_layout
 
 \begin_layout Standard
-Net als communicatie is ook de de uitwisseling van informatie (in de vorm
- van bestanden) een zeer belangrijk aspect.
+Net als communicatie is ook de uitwisseling van informatie (in de vorm van
+ bestanden) een zeer belangrijk aspect.
  De voorkeur lag op een systeem dat ons de mogelijkheid bied om gezamenlijk
  aan documenten te werken in een robuuste en overzichtelijke manier.
  Dit resulteerde in de beslissing om Git te gebruiken voor het uitwisselen
@@ -205,11 +205,16 @@ Er zijn ook initiatieven genomen om de kwaliteit van de op te leveren producten
 \begin_layout Standard
 Ook de verslagen worden op kwaliteit gecontroleerd.
  Met behulp van het boek Rapport over Rapporteren
-\begin_inset Foot
-status open
+\begin_inset script superscript
 
 \begin_layout Plain Layout
-[insert proper sourcing here]
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Literatuur_rapport-over-rapporteren"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -252,11 +257,23 @@ Resultaten beheer
 \end_layout
 
 \begin_layout Standard
-Het beheren van de communicatie en informatie is gedurende het hele project
- uitstekend gegaan.
+Het beheer van het project is uiteindelijk niet optimaal verlopen, gezien
+ het feit dat het eindverslag nog op de dag van de deadline is afgemaakt.
+ Dit in tegenstelling tot het streven om het verslag eerder af te hebben.
+ Het beheren van de communicatie en informatie daarentegen is gedurende
+ het hele project uitstekend gegaan.
  Zeker met het gebruik van GitHub en LyX zijn meerdere malen de voordelen
  gebleken met betrekking tot de samenwerking aan de bestanden.
- [insert more concluding stuff here, suggestions appreciated]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Als er iemand nog iets aan toe kan voegen, laat het weten a.u.b.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
