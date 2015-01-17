@@ -295,8 +295,8 @@ name "tab:Overzicht-gegeven-eisen"
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="13">
-<features rotate="0" tabularvalignment="middle">
+<lyxtabular version="3" rows="4" columns="12">
+<features rotate="0" tabularvalignment="middle" tabularwidth="2cm">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -306,8 +306,7 @@ name "tab:Overzicht-gegeven-eisen"
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -370,15 +369,6 @@ U
 \end_inset
 
 [V]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -569,15 +559,6 @@ D
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 300 : 19
 \end_layout
 
@@ -697,15 +678,6 @@ D
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 20 : 1
 \end_layout
 
@@ -817,15 +789,6 @@ D
 
 \begin_layout Plain Layout
 12
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
