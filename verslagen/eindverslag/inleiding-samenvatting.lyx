@@ -75,11 +75,7 @@ Samenvatting
 \end_layout
 
 \begin_layout Standard
-Dit rapport behandeld....
-\end_layout
-
-\begin_layout Standard
-In hoofdstuk een wordt besproken over.....
+In hoofdstuk één is een inleiding van het verslag te zien.
 \end_layout
 
 \begin_layout Standard
@@ -928,15 +924,10 @@ Er zijn twee testprocedures beschreven: een procedure voor een simulatiemodel
 \end_layout
 
 \begin_layout Standard
-...
-\end_layout
-
-\begin_layout Standard
-...
-\end_layout
-
-\begin_layout Standard
-Ter conclusie....
+Ten slotte wordt het rapport afgesloten met de conclusies en aanbevelingen
+ met daarna de bijlagen met formules ter ondersteuning van de ontwerpkeuzen.
+ Ook komen er in de bijlagen de agenda's en notulen ter ondersteuning voor
+ het hoofdstuk beheer.
 \end_layout
 
 \begin_layout Standard
@@ -951,15 +942,10 @@ Inleiding
 \end_layout
 
 \begin_layout Standard
-verhaaltje...
-\end_layout
-
-\begin_layout Standard
-in hoofdstuk 1 wordt aandacht besteed aan .....
-\end_layout
-
-\begin_layout Standard
-in hoofdstuk 2 ....
+Het is echt indrukwekkend dat apparaten zoals mobiele telefoons gevoed kunnen
+ worden met een stopcontact spanning van 220V.
+ Sommige mensen vragen zich af als dat mogelijk is.
+ Dat is inderdaad wel mogelijk.
 \end_layout
 
 \begin_layout Standard
@@ -994,6 +980,19 @@ Dit rapport behandelt de voortgang van het ontwerpen en het ontwerpen en
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+De de rest hieronder relevant?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 In hoofdstuk 2 van dit rapport wordt aandacht besteed aan hoe dit project
  beheerd werd.
  Hier wordt er gekeken naar het beheren van communicatie, informatie, kwaliteit,
@@ -1018,13 +1017,6 @@ In hoofdstuk 5 komt het stappenplan voor het testen van de flyback converters
 
 \begin_layout Standard
 ...
-\end_layout
-
-\begin_layout Standard
-Ten slotte wordt het rapport afgesloten met de conclusies en aanbevelingen
- met daarna de bijlagen met formules ter ondersteuning van de ontwerpkeuzen.
- Ook komen er in de bijlagen de agenda's en notulen ter ondersteuning voor
- het hoofdstuk beheer.
 \end_layout
 
 \end_body
