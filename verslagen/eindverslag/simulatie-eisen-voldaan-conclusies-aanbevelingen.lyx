@@ -100,7 +100,8 @@ Voldaan aan eisen?
 Waarschijnlijk wel.
  Onze berekeningen zijn gebaseert op de eisen.
  Onze ontwerpen werken met een schakelfrequentie van 100 kHz, zijn berekend
- op 30W, en kunnen de gespecificeerde spanning van 19V, 15V of 12V leveren.
+ op een uitgangsvermogen van 30W, en kunnen de gespecificeerde spanning
+ van 19V, 15V of 12V leveren.
  We hebben de uitkomsten niet kunnen valideren, dus er bestaat een kans
  dat er een fout in de berekeningen zit.
  We verwachten dat de uitgangsspanning iets lager zal zijn dan berekend
@@ -108,7 +109,7 @@ Waarschijnlijk wel.
  en een ongunstige spoel.
  De uitkomsten zijn in de zelfde orde van grote als de componenten in de
  ontwerp van de opdrachtgever.
- We verwachten daarom dat onze ontwerpen ook goed zijn.
+ We verwachten daarom dat onze ontwerpen goed werken.
  
 \begin_inset Newpage newpage
 \end_inset
@@ -121,10 +122,27 @@ Conclusies en aanbevelingen
 \end_layout
 
 \begin_layout Standard
-De berekende ontwerpen voldoen waarschijnlijk aan de eisen.
+We hebben 3 ontwerpen voor 3 verschillende uitgangsspanningen gemaakt.
+ De berekende ontwerpen voldoen waarschijnlijk aan de eisen.
  Omdat een goede simulatie of praktijktest voor ons niet mogelijk waren
  hebben we dit niet kunnen valideren.
+ Voordat een ontwerp daadwerkelijk geproduceert gaat worden moet er eerst
+ een goede simulatie worden gedraait, en testen worden gedaan in de prakijk.
  
+\end_layout
+
+\begin_layout Standard
+Het beheer van het project is uiteindelijk niet optimaal verlopen, gezien
+ het feit dat het eindverslag nog op de dag van de deadline is afgemaakt.
+ Dit in tegenstelling tot het streven om het verslag eerder af te hebben.
+ Het beheren van de communicatie en informatie daarentegen is gedurende
+ het hele project uitstekend gegaan.
+ Zeker met het gebruik van GitHub en LyX zijn meerdere malen de voordelen
+ gebleken met betrekking tot de samenwerking aan de bestanden
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
