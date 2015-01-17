@@ -312,5 +312,460 @@ Bijlage
 De notulen en agenda's van projectgroep 2 is hieronder te zien.
 \end_layout
 
+\begin_layout Subsection*
+Notulen
+\end_layout
+
+\begin_layout Subsubsection*
+Week 1
+\end_layout
+
+\begin_layout Subparagraph*
+Dinsdag
+\end_layout
+
+\begin_layout Standard
+Notulen week1 Datum: 18-nov-2014
+\end_layout
+
+\begin_layout Standard
+Aanwezigen: wouter, daan, kevin, koen, andrew, daniel
+\end_layout
+
+\begin_layout Standard
+Informatie: De software en andere tools die worden gebruikt tijdens het
+ project: - Git met GitHub (bestanden delen & versiebeheer) - Lyx (tekstverwerki
+ng met LaTeX) - Blackboard (bestanden inleveren) - Telegram (communicatie
+ intern) - Email (communicatie extern)
+\end_layout
+
+\begin_layout Standard
+Taakverdeling: - Groepsleider & contactpersoon extern: Andrew - Notulen:
+ Koen
+\end_layout
+
+\begin_layout Standard
+Actiepunten: - Projectcontract opstellen - PVA schrijven (kort en leesbaar)
+ - Boek rapport over rapporteren aanschaffen
+\end_layout
+
+\begin_layout Standard
+Volgende meetings: - Vrijdag 12:00 (Vergadering) - Maandag 15:00 (Vergadering
+ met dhr.
+ H.
+ Ferchani)
+\end_layout
+
+\begin_layout Subparagraph*
+Vrijdag
+\end_layout
+
+\begin_layout Standard
+Notulen week1 Datum: 21-nov-2014
+\end_layout
+
+\begin_layout Standard
+Aanwezigen: wouter, daan, kevin, koen, andrew, daniel
+\end_layout
+
+\begin_layout Standard
+Informatie: Op 28 november moet er een tussenverslag worden ingeleverd
+\end_layout
+
+\begin_layout Standard
+Actiepunten: Projectboek doorlezen (dit weekend - allen) Git programma installer
+en en min.
+ 1 commit pp.
+ (dit weekend - allen) Checklist op repo (dit weekend - Koen) PvA verdeling
+ (dit weekend - allen) 
+\end_layout
+
+\begin_layout Subsubsection*
+Week 2
+\end_layout
+
+\begin_layout Standard
+Notulen week 2 Maandag Datum: 24 nov 2014
+\end_layout
+
+\begin_layout Standard
+Aanwezigen: wouter, daan, kevin, koen, andrew, daniel, dhr.
+ H.
+ Ferchani
+\end_layout
+
+\begin_layout Standard
+Informatie: Het PVA moet worden ingeleverd bij woudstra en ferchani via
+ de email.
+ Er worden kritische vragen gesteld tijdens de presentatie.
+ We moeten verschillende opties presenteren en onderbouwen welke optie volgens
+ ons het meest voordelig is.
+ Vraag: Wat moet het eindproduct zijn? Nu logischerwijs terugwerken om te
+ zien wat er nodig is om dit te bereiken.
+ Beperk tot: Stroom en Datavoorziening.
+ Voor-en nadelen overwegen voor keuze.
+\end_layout
+
+\begin_layout Standard
+De wiskunde die erachter zit in bijlagen zetten.
+\end_layout
+
+\begin_layout Standard
+Bij schrijven van rapport een logische structuur aanhouden en niet domweg
+ het raamwerk invullen.
+\end_layout
+
+\begin_layout Standard
+Actiepunten: Wouter & Koen schrijven ontwerpverslag (deadline Donderdag)
+ De rest schrijft PvA (deadline ???) kevin voegt tevens het PvA bij elkaar.
+\end_layout
+
+\begin_layout Standard
+Volgende vergadering: di 2dec 13:15 
+\end_layout
+
+\begin_layout Subsubsection*
+Week 3
+\end_layout
+
+\begin_layout Standard
+Notulen dinsdag week 3 Datum: 2 dec 2014
+\end_layout
+
+\begin_layout Standard
+==Aanwezigen== wouter, daan, kevin, koen, andrew, daniel, dhr.
+ H.
+ Ferchani
+\end_layout
+
+\begin_layout Standard
+==Flyback converter== 12v -> Daan & Wouter 15v -> Daniel & Koen 19v -> Andrew
+ & Kevin
+\end_layout
+
+\begin_layout Standard
+==Eindrapport== Er moeten 3 ontwerprapporten in het eindrapport verwerkt
+ worden.
+ De ontwerpen moeten ook vergeleken worden: Welke van ONZE 3 ontwerpen is
+ het beste? Om te bepalen welk ontwerp het beste is moeten we zelf criterea
+ stellen, maar ook criterea van de opdrachtgever meenemen.
+\end_layout
+
+\begin_layout Standard
+DEADLINE: Vrijdag Lesweek 7
+\end_layout
+
+\begin_layout Standard
+Inhoud: * Feedback op deelrapport moet worden meegenomen in het eindrapport.
+ * Klantgericht (M2Desk directeur) * Overwegingen: Kosten, snelheid, veiligheid.
+ (Tastbare dingen die de opdrachtgever begrijpt) * Neem de lezer mee in
+ gedachtengang.
+ * Er moet een samenvatting in het rapport.
+ Dit is de samenvatting van alle hoofdstukken inclusief de inleiding en
+ conclusie.
+ * Kopteksten zijn vragen: Hoe kan ik ...? Waarom is ...? * Elk hoofdstuk heeft
+ zijn eigen inleiding en conclusie.
+ In de inleiding wordt kort verteld waar het hoofdstuk over gaat.
+ Gebruikt signaalwoorden (om te beginnen, ten tweede, daarna, vervolgens)
+\end_layout
+
+\begin_layout Standard
+==Eindpresentatie==
+\end_layout
+
+\begin_layout Standard
+==Actiepunten== Woensdagmiddag PvA samengevoegd (Kevin) Woensdagavond PvA
+ inleveren (Andrew)
+\end_layout
+
+\begin_layout Subsubsection*
+Week 4
+\end_layout
+
+\begin_layout Standard
+Notulen dinsdag week 4 Datum: 9 dec 2014
+\end_layout
+
+\begin_layout Standard
+==Aanwezigen== wouter, daan, kevin, koen, andrew, daniel, dhr.
+ H.
+ Ferchani
+\end_layout
+
+\begin_layout Standard
+==Informatie== Het assesment is in week 9 Er kan een afspraak gemaakt worden
+ met dhr.
+ Ferchani om te oefenen met presenteren.
+ (Sessie van 1 uur)
+\end_layout
+
+\begin_layout Standard
+/!
+\backslash
+ Het is nog steeds onduidelijk aan wie het verslag gericht moet zijn.
+ Dhr.
+ Woudstra zegt dat het naar hem gericht moet zijn, maar Dhr.
+ Ferchani zegt dat het naar de opdrachtgever: M2Desk gericht moet zijn.
+ Er moet nog uitsluitsel over worden gegeven.
+\end_layout
+
+\begin_layout Standard
+Het is ook nog niet duidelijk hoe de beheer-competentie getoetst zal worden.
+\end_layout
+
+\begin_layout Standard
+==Actiepunten== Testprocedure schrijven - Week 6 (Koen) Simulatie - Maandag
+ (Wouter) PCB & schema's krijgen - Vrijdag (Iedereen) Berekenen van waarden
+ voor standaard flyback - Donderdag (Iedereen)
+\end_layout
+
+\begin_layout Standard
+Volgende meeting: Dinsdag 16 dec.
+ 11:20
+\end_layout
+
+\begin_layout Subsubsection*
+Week 5
+\end_layout
+
+\begin_layout Standard
+Notulen dinsdag week 5 Datum: 2014/12/16
+\end_layout
+
+\begin_layout Standard
+Actiepunten: Testprocedure: Koen week6 Simulatietool: Wouter Maandag af
+ PCB's & Schema voor vrijdag week 5 Standaard flyback doorrekenen - Iedereen
+ voor donderdag
+\end_layout
+
+\begin_layout Standard
+Volgende meeting: Presenteren oefenen met H.
+ Ferchani - Dinsdag 6 jan 11:00 
+\end_layout
+
+\begin_layout Subsubsection*
+Week 6 
+\end_layout
+
+\begin_layout Standard
+Aanwezigen: iedereen aanwezig
+\end_layout
+
+\begin_layout Standard
+Testprocedure: - Eisen stellen - resultaten - conclusie - voorwaardes 
+\end_layout
+
+\begin_layout Standard
+Dit moet minimaal in het verslag komen.
+ Moet begrijpelijk zijn voor de mens.
+\end_layout
+
+\begin_layout Standard
+VOlgende afspraak: dinsdag 13 januari 2015 11:30 uur.
+\end_layout
+
+\begin_layout Subsubsection*
+Week 7
+\end_layout
+
+\begin_layout Subparagraph*
+Dinsdag
+\end_layout
+
+\begin_layout Standard
+Notulen week 7 (dinsdag 13 januari 2015)
+\end_layout
+
+\begin_layout Standard
+Aanwezigen: Iedereen aanwezig behalve Koen van Vliet
+\end_layout
+
+\begin_layout Standard
+Competentie 'beheren' in het verslag zetten.
+ - zoals dat ding van github - telegram
+\end_layout
+
+\begin_layout Standard
+beheren -> kunnen aantonen hoe op niveau 2 aangetoond is.
+ Ook wat niet goed gegaan is in het verslag bijvoorbeeld geen logboek bijgehoude
+n.
+ In de bijlage van het verslag de notulen, agenda's en andere dingen gerelateerd
+ aan PROENT.
+ Een eindverslag met drie ontwerpverslagen erin.
+\end_layout
+
+\begin_layout Standard
+De competentie 'beheren' bewerken in je digitale portfolio (optioneel)
+\end_layout
+
+\begin_layout Standard
+Tip: Presentatie proberen spannend te maken.
+\end_layout
+
+\begin_layout Subparagraph*
+Donderdag
+\end_layout
+
+\begin_layout Standard
+Notulen week 7 donderdag Datum: 15 Jan 2015
+\end_layout
+
+\begin_layout Standard
+Aanwezigen: - Andrew - Daan - Daniel - Kevin - Koen - Wouter
+\end_layout
+
+\begin_layout Standard
+Indeling eindverslag: Voorwoord - Daan Samenvatting - } Daniel Inleiding
+ - } Beheer - Kevin Eisen - Daan Ontwerp - Andrew Testprocedure - Koen Simulatie
+ - } Wouter Voldaan aan eisen? - } Conclusie - } 
+\end_layout
+
+\begin_layout Standard
+Indeling overig: Soldeerduo: Daan en Daniel Samenvoegen eindverslag: Kevin
+ Assesment presenteren: Daan en Koen Meten aan flyback: Wouter en Daniel
+ 
+\end_layout
+
+\begin_layout Standard
+Inhoud eindverslag: ----------------- Het is de bedoeling dat ieder hoofdstuk
+ van een korte inleiding en conclusie wordt voorzien.
+ Dit bevordert de structuur.
+ ----------------- Voorwoord: - Dankwoord - Dingen die niets met het verslag
+ zelf te maken hebben, maar wel relevant zijn.
+ 
+\end_layout
+
+\begin_layout Standard
+Samenvatting: - Samenvatting van alle hoofdstukken die volgen 
+\end_layout
+
+\begin_layout Standard
+Inleiding: - Achtergronden - Wie is de groep? - Voor wie is de opdracht
+ uitgevoerd? - Probleemstelling 
+\end_layout
+
+\begin_layout Standard
+Beheer: - Kennis, informatie, communicatie, inventaris, tijd & planning,
+ grenzen 
+\end_layout
+
+\begin_layout Standard
+Ontwerpeisen: - Eisen voor de 3 flyback converters 
+\end_layout
+
+\begin_layout Standard
+Ontwerp: - Ontwerpkeuzes - Ontwerpproces met enkele berekeningen - Eisen
+ voor componenten 
+\end_layout
+
+\begin_layout Standard
+Testprocedure: - Stappenplan voor het testen van een flyback converter.
+ 
+\end_layout
+
+\begin_layout Standard
+Simulatie: - Overzicht simulatie + resultaten 
+\end_layout
+
+\begin_layout Standard
+Voldaan aan de eisen? - Vergelijken van simulatie-resultaten met ontwerpeisen.
+\end_layout
+
+\begin_layout Subsection*
+Agenda's
+\end_layout
+
+\begin_layout Subsubsection*
+Week 1
+\end_layout
+
+\begin_layout Standard
+Niet beschikbaar.
+\end_layout
+
+\begin_layout Subsubsection*
+Week 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename agenda's_foto's/2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Week 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename agenda's_foto's/3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Week 4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename agenda's_foto's/4.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Week 5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename agenda's_foto's/5.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Week 6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename agenda's_foto's/6.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Week 7
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename agenda's_foto's/7.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
