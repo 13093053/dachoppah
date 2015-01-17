@@ -72,6 +72,13 @@
 
 \begin_layout Section
 Eisen
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Eisen"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -99,7 +106,7 @@ s
 
 \end_inset
 
-de schakelfrequentie van de mosfet, U
+ de schakelfrequentie van de mosfet, U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -108,7 +115,7 @@ de schakelfrequentie van de mosfet, U
 
 \end_inset
 
-is de ingangsspanning, P is het uitgangsvermogen en U
+ is de ingangsspanning, P is het uitgangsvermogen en U
 \begin_inset script subscript
 
 \begin_layout Plain Layout
@@ -117,7 +124,7 @@ is de ingangsspanning, P is het uitgangsvermogen en U
 
 \end_inset
 
-is de uitgangsspanning.
+ is de uitgangsspanning.
 \end_layout
 
 \begin_layout Subsection
@@ -179,7 +186,7 @@ s
 
 \end_inset
 
-[kHz]
+ [kHz]
 \end_layout
 
 \end_inset
@@ -197,7 +204,7 @@ U
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
@@ -224,7 +231,7 @@ U
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
@@ -342,7 +349,7 @@ s
 
 \end_inset
 
-[kHz]
+ [kHz]
 \end_layout
 
 \end_inset
@@ -360,7 +367,7 @@ U
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
@@ -387,7 +394,7 @@ U
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
@@ -448,7 +455,7 @@ U
 \end_layout
 
 \begin_layout Standard
-In tabel
+In tabel 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Specificaties-12V-converter"
@@ -505,7 +512,7 @@ s
 
 \end_inset
 
-[kHz]
+ [kHz]
 \end_layout
 
 \end_inset
@@ -523,7 +530,7 @@ U
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
@@ -550,7 +557,7 @@ U
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
