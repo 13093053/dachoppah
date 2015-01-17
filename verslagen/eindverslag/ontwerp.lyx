@@ -72,6 +72,13 @@
 
 \begin_layout Section
 Ontwerpen
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ontwerpen"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -798,7 +805,7 @@ Er wordt een 100μF uitgangscondensator gebruikt.
  Bij deze condensator is de rimpelspanning van de ESR hoger dan die van
  de C, dus er wordt gekeken naar de rimpel van de ESR.
  
-\begin_inset Formula $∆V_{out}^{ESR}=∆I_{S}*ESR$
+\begin_inset Formula $∆V_{OUT}^{ESR}=∆I_{S}*ESR$
 \end_inset
 
  

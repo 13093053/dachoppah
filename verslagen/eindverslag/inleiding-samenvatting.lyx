@@ -80,14 +80,21 @@ Dit rapport behandelt de voortgang van de ontwerpen en het ontwerpen en
  Aan ons, studenten van projectgroep 2 van de opleiding Elektrotechniek
  aan de Haagse Hogeschool vestiging Delft, is de opdracht gegeven om deze
  flyback converters te ontwerpen die van een ingangsspanning van 300-360
- V een uitgangspanning zal maken van 12, 15 en 19 V.
- Deze flyback converters zullen als voeding dienen voor de M2Desk, die gebruikt
- zal worden voor digitale toetsingen.
+ V een uitgangsspanning zal maken van 12, 15 en 19V.
+ Deze flyback converters zullen als voeding dienen voor de M2Desk, een in
+ de tafel geïntegreerde PC die gebruikt zal worden voor digitale toetsingen.
 \end_layout
 
 \begin_layout Standard
-Hoofdstuk twee omschrijft de competentie beheer en hoe we aan niveau twee
- voldaan hebben.
+Hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Competentie:-Beheren"
+
+\end_inset
+
+ omschrijft de competentie beheren en hoe we hebben gewerkt aan het in praktijk
+ brengen van deze competentie.
  In tabel 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -95,7 +102,8 @@ reference "tab:Competentie:-Beheer"
 
 \end_inset
 
- is een overzicht van de competentie beheer te zien, wat er gedaan is.
+ is een overzicht van de competentie beheer binnen ons project te zien,
+ en wat er gedaan is.
 \end_layout
 
 \begin_layout Standard
@@ -131,7 +139,7 @@ name "tab:Competentie:-Beheer"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Beheer van Communicatie
+Beheer van communicatie
 \end_layout
 
 \end_inset
@@ -162,15 +170,7 @@ Beheer van informatie
 
 \begin_layout Plain Layout
 Voor de uitwisseling van bestanden, is het zogenaamde versiebeheersysteem
- 
-\begin_inset Quotes prd
-\end_inset
-
-Git
-\begin_inset Quotes prd
-\end_inset
-
- gebruikt.
+ "Git" gebruikt.
  Voor de documentatie is er gebruik gemaakt van LyX, een grafische LaTeX-gebasee
 rde tekstverwerker.
 \end_layout
@@ -196,7 +196,7 @@ Alle ontwerpen van de converters worden gedaan vanuit hetzelfde basismodel,
  zodat er onderling vergeleken kan worden en mogelijke fouten makkelijker
  op te sporen zijn.
  Alle verslagen zijn gemaakt volgens de richtlijnen van het boek Rapport
- over rapporteren.
+ over Rapporteren.
 \end_layout
 
 \end_inset
@@ -216,11 +216,11 @@ Beheer van het project
 \begin_inset Text
 
 \begin_layout Plain Layout
-Om het project in goede banen te leiden is ern een plan van aanpak opgesteld,
+Om het project in goede banen te leiden is een een plan van aanpak opgesteld,
  waarin het project wordt beschreven.
  Omdat onze projectgroep niet zoveel kennis had op het gebied van flyback
  converters, zijn er lessen van het vak Vermogenselektronica bijgewoond
- om de kennis op te doen voor het helpen tot stand komen van dit project.
+ om de kennis op te doen die nodig is voor het goede verloop van het project.
 \end_layout
 
 \end_inset
@@ -240,7 +240,10 @@ Resultaten
 \begin_inset Text
 
 \begin_layout Plain Layout
-...
+Het beheer is voor het grootste deel goed verlopen, met uitzondering van
+ het planningsbeheer.
+ Het niet tijdig halen van de deadline voor het eindverslag is hier het
+ grootste voorbeeld van.
 \end_layout
 
 \end_inset
@@ -259,7 +262,15 @@ Resultaten
 \end_layout
 
 \begin_layout Standard
-Hoofdstuk drie bevat de eisen voor het ontwerp van de 19V, 15V en 12V uitgang.
+Hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Eisen"
+
+\end_inset
+
+ beschrijft de eisen voor het ontwerp van de converters met 19V, 15V en
+ 12V uitgang.
  In tabel 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -295,17 +306,8 @@ name "tab:Overzicht-gegeven-eisen"
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="13">
+<lyxtabular version="3" rows="4" columns="4">
 <features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -324,7 +326,7 @@ s
 
 \end_inset
 
-[kHz]
+ [kHz]
 \end_layout
 
 \end_inset
@@ -342,7 +344,7 @@ U
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
@@ -351,11 +353,206 @@ U
 \begin_inset Text
 
 \begin_layout Plain Layout
-P[W]
+P [W]
 \end_layout
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+ [V]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vervolgens wordt in hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ontwerpen"
+
+\end_inset
+
+ het ontwerp van de drie converters beschreven.
+ Hieronder een overzicht van alle berekende waarden die van belang zijn
+ bij het ontwerp.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Overzicht berekende keuzen voor de flyback converters
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Overzicht-berekende-keuzen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="10">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -369,7 +566,7 @@ U
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
@@ -423,7 +620,7 @@ p
 
 \end_inset
 
-[mH]
+ [mH]
 \end_layout
 
 \end_inset
@@ -441,7 +638,7 @@ s
 
 \end_inset
 
-[mH]
+ [mH]
 \end_layout
 
 \end_inset
@@ -468,7 +665,7 @@ DS
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
@@ -486,7 +683,7 @@ DS
 
 \end_inset
 
-[A]
+ [A]
 \end_layout
 
 \end_inset
@@ -504,7 +701,7 @@ D
 
 \end_inset
 
-[V]
+ [V]
 \end_layout
 
 \end_inset
@@ -522,40 +719,13 @@ D
 
 \end_inset
 
-[A]
+ [A]
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-100
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-300-360
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -661,33 +831,6 @@ D
 \begin_inset Text
 
 \begin_layout Plain Layout
-100
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-300-360
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 15
 \end_layout
 
@@ -785,33 +928,6 @@ D
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-100
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-300-360
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -926,12 +1042,20 @@ D
 
 \begin_layout Standard
 Er zijn twee testprocedures beschreven: een procedure voor een simulatiemodel
- en een voor een hardware test.
- Bij simulatie wordt gebruikt gemaakt met het programma ...
- om te zien als de simulaties ongeveer kloppen met de berekeningen.
- Bij de hardware test wordt er eerst getest of de driver IC werkt.
+ en één voor een hardwaretest.
+ Deze worden in hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Testprocedure"
+
+\end_inset
+
+ en het daarop volgende hoofdstuk toegelicht.
+ Bij simulatie wordt gebruikt gemaakt van het programma Caspoc om te zien
+ of de simulaties ongeveer kloppen met de berekeningen.
+ Bij de hardwaretest wordt er eerst getest of de driver IC werkt.
  Vervolgens of de schakeling in flyback mode werkt.
- Ten slotte wordt de flyback converter getest met opstartcircuit.
+ Ten slotte wordt de flyback converter getest inclusief opstartcircuit.
 \end_layout
 
 \begin_layout Standard
@@ -953,78 +1077,96 @@ Inleiding
 \end_layout
 
 \begin_layout Standard
-Het is echt indrukwekkend dat apparaten zoals mobiele telefoons gevoed kunnen
- worden met een stopcontact spanning van 220V.
- Sommige mensen vragen zich af als dat mogelijk is.
- Hebben apparaten geen spanningen lager dan 220V nodig? Nou de meeste apparaten
- wel en het is inderdaad mogelijk om de spanning van 220V om te zetten naar
- een lagere spanning met behulp van een flyback converter.
+Het is indrukwekkend hoe apparaten zoals mobiele telefoons gevoed/opgeladen
+ kunnen worden met een netspanning van 220V.
+ Sommige mensen vragen zich af of dit mogelijk is.
+ Hebben apparaten geen spanningen (veel) lager dan 220V nodig? Dit is bij
+ de meeste apparaten inderdaad het geval.
+ Om deze spanning van 220V om te zetten naar een lagere spanning is een
+ schakelende voeding nodig, in de meeste gevallen een zogenaamde flyback
+ converter.
 \end_layout
 
 \begin_layout Standard
-De Haagse Hogeschool wilt het lokaal 0.126 geschikt maken voor digitaal toetsen.
- In dit lokaal moet in de toetsperiode voorzien worden van 100-400 computers.
+De Haagse Hogeschool wilt het lokaal 0.126 geschikt maken voor digitaaltoetsen.
+ Dit lokaal moet in de toetsperiode voorzien worden van 100-400 computers.
  In tegenstelling tot het gebruik van een normale PC die een vermogen vraagt
  van ongeveer 360W, wordt de M2Desk gebruikt die een vermogen vraagt van
- 11-24W.
- Stel dat het lokaal 100 computers nodig heeft, dan wordt de gevraagde vermogen
- van de normale PC's rond de 36 kW, terwijl de gevraagde vermogen van de
- M2Desk's 1,1-2,4 kW is.
- Het is dan duidelijk dat het lokaal het beste met de M2Desk ingericht moet
+ maar liefts 11-24W.
+ Stel dat het lokaal 100 computers nodig heeft, dan wordt het gevraagde
+ vermogen van de normale PC's rond de 36 kW, terwijl het gevraagde vermogen
+ met M2Desk's 1,1-2,4 kW is.
+ Het is dan duidelijk dat het lokaal het beste met de M2Desk ingericht kan
  worden.
- Helaas is nog niet bekend wat de optimale voedingspanning is van de M2Desk
+ Helaas is nog niet bekend wat de optimale voedingspanning is voor de M2Desk
  computers.
 \end_layout
 
 \begin_layout Standard
 Aan ons, studenten van projectgroep 2 van de opleiding Elektrotechniek aan
  de Haagse Hogeschool, is de opdracht gegeven om converters te ontwikkelen
- met verschillende uitgangspanning: 12, 15 en 19 V.
+ met verschillende uitgangsspanningen: 12, 15 en 19V.
  Voor de voeding van deze computers wordt een gelijkspanningsvoeding van
  300-360V gebruikt.
  Dit houdt in dat er DC-DC converters, oftewel flyback converters, ontwikkeld
- moeten worden die de 300-360 V omzetten naar een spanning van 12, 15 en
+ moeten worden die de 300-360V omzetten naar een spanning van 12, 15 en
  19V.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-De de rest hieronder relevant?
-\end_layout
+In hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Competentie:-Beheer"
 
 \end_inset
 
+ van dit rapport wordt aandacht besteed aan het verwerken van de competentie
+ beheer in het project.
+ Er wordt gekeken naar het beheren van communicatie, informatie, kwaliteit,
+ en het project.
+ In hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Eisen"
 
+\end_inset
+
+ komen de ontwerpeisen van de drie flyback converters aan bod.
+ Deze eisen zijn door de opdrachtgever gegeven.
+ In hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ontwerpen"
+
+\end_inset
+
+ wordt er aandacht besteed aan de ontwerpkeuzes en het ontwerpproces van
+ de drie flyback converters.
+ Ook wordt er naar de zelf opgestelde eisen van de gewenste componenten
+ gekeken.
+ In hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Testprocedure"
+
+\end_inset
+
+ komt het stappenplan voor het testen van de flyback converters aan bod.
 \end_layout
 
 \begin_layout Standard
-In hoofdstuk 2 van dit rapport wordt aandacht besteed aan hoe dit project
- beheerd werd.
- Hier wordt er gekeken naar het beheren van communicatie, informatie, kwaliteit,
- het project, ....
-\end_layout
+Hierna volgen de bijlagen waarin extra formules zijn opgenomen die zijn
+ gebruikt bij het maken van de ontwerpkeuzes.
+ Ook de agenda's en notulen van de vergaderingen zijn hier terug te vinden
+ als toevoeging op hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Competentie:-Beheren"
 
-\begin_layout Standard
-In hoofdstuk 3 komen de ontwerpeisen, van de drie flyback converters aan
- bod.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-In hoofdstuk 4 wordt er aandacht besteed aan de ontwerpkeuzes en het ontwerpproc
-es van de drie flyback converters.
- Ook wordt er naar de eisen van de gewenste componenten gekeken.
-\end_layout
-
-\begin_layout Standard
-In hoofdstuk 5 komt het stappenplan voor het testen van de flyback converters
- aan bod.
-\end_layout
-
-\begin_layout Standard
-...
+.
 \end_layout
 
 \end_body

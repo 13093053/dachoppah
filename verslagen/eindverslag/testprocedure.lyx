@@ -72,80 +72,38 @@
 
 \begin_layout Section
 Testprocedure
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Testprocedure"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 De ontwerpen zijn onderworpen aan twee tests: Een test in de simulator en
- een hardware test.
+ een hardwaretest.
 \end_layout
 
 \begin_layout Standard
 De simulatie dient ervoor om de berekeningen voor ieder ontwerp te controleren.
- Meer hierover 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-is
-\end_layout
-
-\end_inset
-
- in het hoofdstuk Simulatie 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-te zien
-\end_layout
-
-\end_inset
-
-.
+ Meer hierover is in het hoofdstuk Simulatie te vinden.
 \end_layout
 
 \begin_layout Standard
 De hardwaretest geeft inzicht over de onvoorziene effecten van niet-ideale
  componenten op de schakeling.
- Als deze effecten de werking te veel beinvloeden
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-,
-\end_layout
-
-\end_inset
-
- zodat de schakeling niet naar behoren werkt
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-,
-\end_layout
-
-\end_inset
-
- moeten er aanpassingen in het ontwerp worden gemaakt.
+ Als deze effecten de werking te veel beïnvloeden zodat de schakeling niet
+ naar behoren werkt, moeten er aanpassingen in het ontwerp worden gemaakt.
 \end_layout
 
 \begin_layout Subsection
-Hardware test
+Hardwaretest
 \end_layout
 
 \begin_layout Standard
-De flyback converter kan volgens dit
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-naar wat verwijst 'dit'? de onderstaande?
-\end_layout
-
-\end_inset
-
- stappenplan getest worden.
+De flyback converter kan volgens het volgende stappenplan getest worden.
 \end_layout
 
 \begin_layout Standard
@@ -184,18 +142,9 @@ Voed het driver IC met 8,5 - 15V.
 \begin_layout Itemize
 Schakel nu de ingangsspanning aan.
  Begin laag en schroef de spanning geleidelijk op tot 360V.
- Meet de stroom en spanning over de primaire spoel* en over de mosfet.
- Werkt de schakeling in flyback mode?
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Hoort deze vraag hier? of is dit een extra punt?
-\end_layout
-
-\end_inset
-
-
+ Meet de stroom door en de spanning over de primaire spoel*.
+ Doe hetzelfde voor de mosfet.
+ Ga aan de hand van deze metingen na of de schakeling in flyback mode werkt.
 \end_layout
 
 \begin_layout Itemize
@@ -215,17 +164,7 @@ Sluit de secundaire spoel aan zodat deze in tegenfase is met de primaire
 
 \begin_layout Itemize
 Meet de spanning en stroom van de secundaire spoel onbelast bij een ingangspanni
-ng van 360v
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-V
-\end_layout
-
-\end_inset
-
-.
+ng van 360V.
  De duty-cycle van de gate zou nu minder dan 50% moeten zijn.
 \end_layout
 
@@ -273,7 +212,7 @@ Discussie
 
 \begin_layout Standard
 Door tijdgebrek heeft de opdrachtgever ervoor gekozen om de ontwerpen van
- de projectgroepen niet te onderwerpen aan een hardware test.
+ de projectgroepen niet te onderwerpen aan een hardwaretest.
  Het troubleshooten van deze soort schakelingen neemt veel tijd in beslag
  en het is mogelijk dat de schakeling beschadigd raakt in het proces.
  In plaats hiervoor wordt er een ontwerp aangeleverd door de opdrachtgever
