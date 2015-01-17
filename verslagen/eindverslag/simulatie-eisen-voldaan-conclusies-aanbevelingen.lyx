@@ -75,6 +75,17 @@ Simulatie
 \end_layout
 
 \begin_layout Standard
+We hebben de berekende ontwerpen helaas niet kunnen testen.
+ Een betrouwbare simulatie was niet mogelijk wegens een ontbrekende parameter
+ van de spoel.
+ Het simulatiepakket heeft wederzijdste inductie nodig.
+ De kennis ontbrak ons om deze te berekenen.
+\end_layout
+
+\begin_layout Standard
+In de praktijk hebben we ze niet kunnen testen door tijdsgebrek, en het
+ beperkte budget.
+ 
 \begin_inset Newpage newpage
 \end_inset
 
@@ -86,6 +97,19 @@ Voldaan aan eisen?
 \end_layout
 
 \begin_layout Standard
+Waarschijnlijk wel.
+ Onze berekeningen zijn gebaseert op de eisen.
+ Onze ontwerpen werken met een schakelfrequentie van 100 kHz, zijn berekend
+ op 30W, en kunnen de gespecificeerde spanning van 19V, 15V of 12V leveren.
+ We hebben de uitkomsten niet kunnen valideren, dus er bestaat een kans
+ dat er een fout in de berekeningen zit.
+ We verwachten dat de uitgangsspanning iets lager zal zijn dan berekend
+ omdat we geen rekening hebben gehouden met de spanningsval over de diode,
+ en een ongunstige spoel.
+ De uitkomsten zijn in de zelfde orde van grote als de componenten in de
+ ontwerp van de opdrachtgever.
+ We verwachten daarom dat onze ontwerpen ook goed zijn.
+ 
 \begin_inset Newpage newpage
 \end_inset
 
@@ -94,6 +118,13 @@ Voldaan aan eisen?
 
 \begin_layout Section
 Conclusies en aanbevelingen
+\end_layout
+
+\begin_layout Standard
+De berekende ontwerpen voldoen waarschijnlijk aan de eisen.
+ Omdat een goede simulatie of praktijktest voor ons niet mogelijk waren
+ hebben we dit niet kunnen valideren.
+ 
 \end_layout
 
 \end_body
