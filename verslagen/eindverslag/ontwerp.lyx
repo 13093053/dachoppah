@@ -402,7 +402,7 @@ Voor de rimpelspanning word gekozen voor 0,5V.
 \end_inset
 
 
-\begin_inset Formula $∆V_{ESR,OUT}\text{≈}\text{∆}I_{S}*ESR$
+\begin_inset Formula $∆V_{OUT}^{ESR}\text{≈}\text{∆}I_{S}*ESR$
 \end_inset
 
 
@@ -798,20 +798,10 @@ Er wordt een 100μF uitgangscondensator gebruikt.
  Bij deze condensator is de rimpelspanning van de ESR hoger dan die van
  de C, dus er wordt gekeken naar de rimpel van de ESR.
  
-\begin_inset Formula $∆V_{out}=∆I_{S}*ESR$
+\begin_inset Formula $∆V_{out}^{ESR}=∆I_{S}*ESR$
 \end_inset
 
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Dit komt niet overeen met de formule bij de andere twee uitgangsspanningen?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1167,7 +1157,7 @@ Voor de rimpelspanning word gekozen voor 0,5V.
 \end_inset
 
 
-\begin_inset Formula $∆V_{ESR,OUT}\text{\ensuremath{≈}}\Delta I_{S}*ESR$
+\begin_inset Formula $∆V_{OUT}^{ESR}\text{\ensuremath{≈}}\Delta I_{S}*ESR$
 \end_inset
 
 
