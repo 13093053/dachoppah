@@ -1060,9 +1060,8 @@ reference "sec:Testprocedure"
 
 \begin_layout Standard
 Ten slotte wordt het rapport afgesloten met de conclusies en aanbevelingen
- met daarna de bijlagen met formules ter ondersteuning van de ontwerpkeuzen.
- Ook komen er in de bijlagen de agenda's en notulen ter ondersteuning voor
- het hoofdstuk beheer.
+ met daarna de bijlagen met daarin de agenda's en notulen ter ondersteuning
+ voor het hoofdstuk beheer.
 \end_layout
 
 \begin_layout Standard
@@ -1153,13 +1152,35 @@ reference "sec:Testprocedure"
 \end_inset
 
  komt het stappenplan voor het testen van de flyback converters aan bod.
+ Hierna wordt in hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Simulatie"
+
+\end_inset
+
+ het simulatieproces beschreven (wat in dit geval helaas niet gelukt is).
+ Ter afsluiting volgt in hoofdstuk 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Voldaan-aan-eisen?"
+
+\end_inset
+
+ en 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusies-en-aanbevelingen"
+
+\end_inset
+
+ een blik op de resultaten en de conclusies van de eindproducten en het
+ project.
 \end_layout
 
 \begin_layout Standard
-Hierna volgen de bijlagen waarin extra formules zijn opgenomen die zijn
- gebruikt bij het maken van de ontwerpkeuzes.
- Ook de agenda's en notulen van de vergaderingen zijn hier terug te vinden
- als toevoeging op hoofdstuk 
+Inbegrepen zijn de bijlagen waarin de agenda's en notulen van de vergaderingen
+ zijn terug te vinden als toevoeging op hoofdstuk 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Competentie:-Beheren"

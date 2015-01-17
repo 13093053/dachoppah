@@ -83,7 +83,7 @@ name "sec:Testprocedure"
 
 \begin_layout Standard
 De ontwerpen zijn onderworpen aan twee tests: Een test in de simulator en
- een hardware test.
+ een hardwaretest.
 \end_layout
 
 \begin_layout Standard
@@ -99,7 +99,7 @@ De hardwaretest geeft inzicht over de onvoorziene effecten van niet-ideale
 \end_layout
 
 \begin_layout Subsection
-Hardware test
+Hardwaretest
 \end_layout
 
 \begin_layout Standard
@@ -212,7 +212,7 @@ Discussie
 
 \begin_layout Standard
 Door tijdgebrek heeft de opdrachtgever ervoor gekozen om de ontwerpen van
- de projectgroepen niet te onderwerpen aan een hardware test.
+ de projectgroepen niet te onderwerpen aan een hardwaretest.
  Het troubleshooten van deze soort schakelingen neemt veel tijd in beslag
  en het is mogelijk dat de schakeling beschadigd raakt in het proces.
  In plaats hiervoor wordt er een ontwerp aangeleverd door de opdrachtgever

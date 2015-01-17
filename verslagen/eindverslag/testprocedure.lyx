@@ -142,7 +142,18 @@ Voed het driver IC met 8,5 - 15V.
 \begin_layout Itemize
 Schakel nu de ingangsspanning aan.
  Begin laag en schroef de spanning geleidelijk op tot 360V.
- Meet de stroom door en de spanning over de primaire spoel*.
+ Meet de stroom door en de spanning over de primaire spoel
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+De stroom door de primaire spoel is de bepalen door de spanning over de
+ shunt R6//R7//R8//R9 te meten.
+\end_layout
+
+\end_inset
+
+.
  Doe hetzelfde voor de mosfet.
  Ga aan de hand van deze metingen na of de schakeling in flyback mode werkt.
 \end_layout
@@ -199,11 +210,6 @@ Het opstartcircuit kan nu worden bestukt als de flyback goed werkt bij een
 \begin_layout Itemize
 Controleer of het opstartcircuit werkt en de flyback converter autonoom
  werkt.
-\end_layout
-
-\begin_layout Standard
-(*De stroom door de primaire spoel is de bepalen door de spanning over de
- shunt R6//R7//R8//R9 te meten.
 \end_layout
 
 \begin_layout Subsection
