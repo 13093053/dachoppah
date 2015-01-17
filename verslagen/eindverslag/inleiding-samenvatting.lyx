@@ -75,44 +75,27 @@ Samenvatting
 \end_layout
 
 \begin_layout Standard
-In hoofdstuk één is een inleiding van het verslag te zien.
-\end_layout
-
-\begin_layout Standard
-Hoofdstuk twee omschrijft de competentie beheer en hoe we aan niveau twee
- voldaan hebben.
-\end_layout
-
-\begin_layout Standard
-Hoofdstuk drie ........
-\end_layout
-
-\begin_layout Standard
-Dit rapport behandelt de voortgang van het ontwerpen en het ontwerpen en
+Dit rapport behandelt de voortgang van de ontwerpen en het ontwerpen en
  testen van drie flyback converters.
  Aan ons, studenten van projectgroep 2 van de opleiding Elektrotechniek
- aan de Haagse Hogeschool, is de opdracht gegeven om deze flyback converters
- te ontwerpen die van een ingangsspanning van 300-360 V een uitgangspanning
- zal maken van 12, 15 en 19 V.
+ aan de Haagse Hogeschool vestiging Delft, is de opdracht gegeven om deze
+ flyback converters te ontwerpen die van een ingangsspanning van 300-360
+ V een uitgangspanning zal maken van 12, 15 en 19 V.
  Deze flyback converters zullen als voeding dienen voor de M2Desk, die gebruikt
  zal worden voor digitale toetsingen.
 \end_layout
 
 \begin_layout Standard
-De achtereenvolgende hoofdstukken gaan in op:
-\end_layout
+Hoofdstuk twee omschrijft de competentie beheer en hoe we aan niveau twee
+ voldaan hebben.
+ In tabel 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Competentie:-Beheer"
 
-\begin_layout Itemize
-Het beheer van dit project
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-De ontwerpeisen van de flyback converters, de ontwerpkeuzen en het ontwerpproces
- van de drie flyback converters.
-\end_layout
-
-\begin_layout Itemize
-Het testen van de flyback converter en de resultaten van deze.
+ is een overzicht van de competentie beheer te zien, wat er gedaan is.
 \end_layout
 
 \begin_layout Standard
@@ -125,7 +108,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Competentie: Beheer
+Competentie: Beheer 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Competentie:-Beheer"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -269,6 +259,19 @@ Resultaten
 \end_layout
 
 \begin_layout Standard
+Hoofdstuk drie bevat de eisen voor het ontwerp van de 19V, 15V en 12V uitgang.
+ In tabel 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Overzicht-gegeven-eisen"
+
+\end_inset
+
+ zijn de eisen en berekeningen van de ontwerpen van de flyback converters
+ te zien.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -279,6 +282,13 @@ status open
 
 \begin_layout Plain Layout
 Overzicht gegeven eisen en keuzen voor de flyback converters
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Overzicht-gegeven-eisen"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -917,7 +927,8 @@ D
 \begin_layout Standard
 Er zijn twee testprocedures beschreven: een procedure voor een simulatiemodel
  en een voor een hardware test.
- Bij simulatie ...blabla...
+ Bij simulatie wordt gebruikt gemaakt met het programma ...
+ om te zien als de simulaties ongeveer kloppen met de berekeningen.
  Bij de hardware test wordt er eerst getest of de driver IC werkt.
  Vervolgens of de schakeling in flyback mode werkt.
  Ten slotte wordt de flyback converter getest met opstartcircuit.
@@ -945,7 +956,9 @@ Inleiding
 Het is echt indrukwekkend dat apparaten zoals mobiele telefoons gevoed kunnen
  worden met een stopcontact spanning van 220V.
  Sommige mensen vragen zich af als dat mogelijk is.
- Dat is inderdaad wel mogelijk.
+ Hebben apparaten geen spanningen lager dan 220V nodig? Nou de meeste apparaten
+ wel en het is inderdaad mogelijk om de spanning van 220V om te zetten naar
+ een lagere spanning met behulp van een flyback converter.
 \end_layout
 
 \begin_layout Standard
@@ -972,11 +985,6 @@ Aan ons, studenten van projectgroep 2 van de opleiding Elektrotechniek aan
  Dit houdt in dat er DC-DC converters, oftewel flyback converters, ontwikkeld
  moeten worden die de 300-360 V omzetten naar een spanning van 12, 15 en
  19V.
-\end_layout
-
-\begin_layout Standard
-Dit rapport behandelt de voortgang van het ontwerpen en het ontwerpen en
- testen van deze flyback converters.
 \end_layout
 
 \begin_layout Standard
